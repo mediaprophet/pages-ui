@@ -11,7 +11,7 @@
     height: 500px !important;
 }
 
-:host /deep/ {
+:host  ::ng-deep{
     .echarts-tooltip{
         border-radius: 2px;
         padding: 3px 8px;

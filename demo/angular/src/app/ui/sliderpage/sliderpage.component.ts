@@ -9,14 +9,13 @@ export class SliderpageComponent implements OnInit {
   value1 = 20;
   value2 = 10;
   rangeValue;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   marks: any = {
-    0  : '0°C',
-    26 : '26°C',
-    37 : '37°C',
+    0: '0°C',
+    26: '26°C',
+    37: '37°C',
     100: '100°C'
   };
 }

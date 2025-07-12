@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { pagesToggleService } from '../../@pages/services/toggler.service'
+import { pagesToggleService } from '@pages/services/toggler.service';
 declare var pg: any;
 @Component({
   selector: 'app-boxed-alt',
@@ -7,16 +7,15 @@ declare var pg: any;
   styleUrls: ['./boxed-alt.component.scss']
 })
 export class BoxedAltComponent implements OnInit {
-
-  constructor(private toggler:pagesToggleService) { }
+  constructor(private toggler: pagesToggleService) {}
 
   ngOnInit() {
-    this.toggler.setBodyLayoutClass("box-layout");
-    this.toggler.setBodyLayoutClass("menu-pin");
+    this.toggler.setBodyLayoutClass('box-layout');
+    this.toggler.setBodyLayoutClass('menu-pin');
   }
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     //@TODO : USE service
-    pg.removeClass(document.body,"box-layout");
+    pg.removeClass(document.body, 'box-layout');
   }
 }

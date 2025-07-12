@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SimplywhiteBuilderComponent } from './simplywhite-builder.component';
 
@@ -6,11 +6,10 @@ describe('SimplywhiteBuilderComponent', () => {
   let component: SimplywhiteBuilderComponent;
   let fixture: ComponentFixture<SimplywhiteBuilderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimplywhiteBuilderComponent ]
-    })
-    .compileComponents();
+      declarations: [SimplywhiteBuilderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -7,11 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableRoutes } from './tables.routing';
 
 //Core Pages Layout Components
-import { SharedModule } from '../@pages/components/shared.module';
+import { SharedModule } from '@pages/components/shared.module';
 
 //Thirdparty Dependencies - table and model
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { ModalModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 //Demo Pages
 import { BasicComponent } from './basic/basic.component';
@@ -29,4 +29,4 @@ import { AdvanceComponent } from './advance/advance.component';
   ],
   declarations: [BasicComponent, AdvanceComponent]
 })
-export class TablesModule { }
+export class TablesModule {}

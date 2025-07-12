@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ExecutiveBuilderComponent } from './executive-builder.component';
 
@@ -6,11 +6,10 @@ describe('ExecutiveBuilderComponent', () => {
   let component: ExecutiveBuilderComponent;
   let fixture: ComponentFixture<ExecutiveBuilderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExecutiveBuilderComponent ]
-    })
-    .compileComponents();
+      declarations: [ExecutiveBuilderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

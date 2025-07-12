@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BlankpageComponent } from './blankpage.component';
 
@@ -6,11 +6,10 @@ describe('BlankpageComponent', () => {
   let component: BlankpageComponent;
   let fixture: ComponentFixture<BlankpageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlankpageComponent ]
-    })
-    .compileComponents();
+      declarations: [BlankpageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

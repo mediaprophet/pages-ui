@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
@@ -13,38 +13,37 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="Meet pages - The simplest and fastest way to build web UI for your dashboard or app." name="description" />
+    <meta content="Ace" name="author" />
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">
     <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
     <link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/themes/modern.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="fixed-header horizontal-menu horizontal-app-menu ">
     <!-- START PAGE-CONTAINER -->
     <div class="header p-r-0 bg-primary">
       <div class="header-inner header-md-height">
-        <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu text-white" data-toggle="horizontal-menu"></a>
+        <a href="#" class="btn-link toggle-sidebar d-lg-none text-white sm-p-l-0 btn-icon-link" data-toggle="horizontal-menu">
+          <i class="pg-icon">menu</i>
+        </a>
         <div class="">
           <div class="brand inline no-border d-sm-inline-block">
             <img src="assets/img/logo_white.png" alt="logo" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
           </div>
           <!-- START NOTIFICATION LIST -->
-          <ul class="d-lg-inline-block d-none notification-list no-margin b-grey b-l b-r no-style p-l-30 p-r-20">
+          <ul class="d-lg-inline-block d-none  notification-list no-margin b-grey b-l b-r no-style p-l-30 p-r-20">
             <li class="p-r-10 inline">
               <div class="dropdown">
-                <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
+                <a href="javascript:;" id="notification-center" class="header-icon btn-icon-link" data-bs-toggle="dropdown">
+                  <i class="pg-icon">world</i>
                   <span class="bubble"></span>
                 </a>
                 <!-- START Notification Dropdown -->
@@ -57,14 +56,14 @@
                       <div class="notification-item unread clearfix">
                         <!-- START Notification Item-->
                         <div class="heading open">
-                          <a href="#" class="text-complete pull-left">
-                            <i class="pg-map fs-16 m-r-10"></i>
+                          <a href="#" class="text-complete pull-left d-flex align-items-center">
+                            <i class="pg-icon m-r-10">map</i>
                             <span class="bold">Carrot Design</span>
                             <span class="fs-12 m-l-10">David Nester</span>
                           </a>
                           <div class="pull-right">
                             <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
-                              <div><i class="fa fa-angle-left"></i>
+                              <div><i class="pg-icon">chevron_down</i>
                               </div>
                             </div>
                             <span class=" time">few sec ago</span>
@@ -72,8 +71,8 @@
                           <div class="more-details">
                             <div class="more-details-inner">
                               <h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br>
-                                                            distinguishes between <br>
-                                                            A leader and a follower.”</h5>
+																															distinguishes between <br>
+																															A leader and a follower.”</h5>
                               <p class="small hint-text">
                                 Commented on john Smiths wall.
                                 <br> via pages framework.
@@ -83,7 +82,7 @@
                         </div>
                         <!-- END Notification Item-->
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -93,7 +92,7 @@
                       <div class="notification-item  clearfix">
                         <div class="heading">
                           <a href="#" class="text-danger pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">98% Server Load</span>
                             <span class="fs-12 m-l-10">Take Action</span>
                           </a>
@@ -109,8 +108,8 @@
                       <!-- START Notification Item-->
                       <div class="notification-item  clearfix">
                         <div class="heading">
-                          <a href="#" class="text-warning-dark pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                          <a href="#" class="text-warning pull-left">
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">Warning Notification</span>
                             <span class="fs-12 m-l-10">Buy Now</span>
                           </a>
@@ -136,7 +135,7 @@
                           <span class="pull-right time">11:00pm</span>
                         </div>
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -159,44 +158,58 @@
               </div>
             </li>
             <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-link"></a>
+              <a href="#" class="header-icon btn-icon-link">
+                <i class="pg-icon">link_alt</i>
+              </a>
             </li>
             <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-thumbs"></a>
+              <a href="#" class="header-icon btn-icon-link">
+                <i class="pg-icon">grid_alt</i>
+              </a>
             </li>
           </ul>
           <!-- END NOTIFICATIONS LIST -->
-          <a href="#" class="search-link d-lg-inline-block d-none" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
+          <a href="#" class="search-link d-lg-inline-block d-none" data-toggle="search"><i class="pg-icon">search</i>Type
+				anywhere to <span class="bold">search</span></a>
         </div>
         <div class="d-flex align-items-center">
           <!-- START User Info-->
-          <div class="pull-left p-r-10 fs-14 font-heading d-lg-inline-block d-none text-white">
+          <div class="pull-left p-r-10 fs-14 d-lg-inline-block d-none text-white">
             <span class="semi-bold">David</span> <span class="">Nest</span>
           </div>
-          <div class="dropdown pull-right">
-            <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="thumbnail-wrapper d32 circular inline sm-m-r-5">
-                <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
-                </span>
+          <div class="dropdown pull-right d-lg-block">
+            <button class="profile-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="profile dropdown">
+              <span class="thumbnail-wrapper d32 circular inline">
+						<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg"
+							data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+					</span>
             </button>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-              <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
-              <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
-              <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
-              <a href="#" class="clearfix bg-master-lighter dropdown-item">
-                <span class="pull-left">Logout</span>
-                <span class="pull-right"><i class="pg-power"></i></span>
-              </a>
+              <a href="#" class="dropdown-item"><span>Signed in as <br /><b>David Aunsberg</b></span></a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Your Profile</a>
+              <a href="#" class="dropdown-item">Your Activity</a>
+              <a href="#" class="dropdown-item">Your Archive</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Features</a>
+              <a href="#" class="dropdown-item">Help</a>
+              <a href="#" class="dropdown-item">Settings</a>
+              <a href="#" class="dropdown-item">Logout</a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item fs-12 hint-text">Last edited by David<br />on Friday at 5:27PM</span>
             </div>
           </div>
           <!-- END User Info-->
-          <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
+          <a href="#" class="header-icon m-l-10 sm-no-margin sm-p-r-0 d-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
+            <i class="pg-icon btn-icon-link">menu_add</i>
+          </a>
         </div>
       </div>
       <div class="bg-white">
         <div class="container">
           <div class="menu-bar header-sm-height" data-pages-init='horizontal-menu' data-hide-extra-li="4">
-            <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-close" data-toggle="horizontal-menu">
+            <a href="#" class="btn-link header-icon toggle-sidebar d-lg-none" data-toggle="horizontal-menu">
+              <i class="pg-icon">close</i>
             </a>
             <ul>
               <li>
@@ -222,7 +235,7 @@
                     <a href="calendar_lazy.html">Lazy load</a>
                   </li>
                   <li class="">
-                    <a href="https://docs.pages.revox.io/apps/calendar" target="_blank">Documentation</a>
+                    <a href="https://docs.pages.revox.io/apps/calendar" rel="noreferrer" target="_blank">Documentation</a>
                   </li>
                 </ul>
               </li>
@@ -381,10 +394,10 @@
             <div class=" container p-l-0 p-r-0   container-fixed-lg sm-p-l-0 sm-p-r-0">
               <div class="inner">
                 <!-- START BREADCRUMB -->
-                <div class="row">
+                <div class="row row m-b-40">
                   <div class="col-xl-7 col-lg-6 ">
                     <!-- START card -->
-                    <div class="card card-default">
+                    <div class="">
                       <div class="card-body text-center">
                         <img class="image-responsive-height demo-mw-600" src="assets/img/demo/form_hero.gif" alt="">
                       </div>
@@ -394,23 +407,15 @@
                   <div class="col-xl-5 col-lg-6 ">
                     <!-- START card -->
                     <div class="card card-transparent">
-                      <div class="card-header ">
-                        <div class="card-title">Getting started
-                        </div>
-                      </div>
                       <div class="card-body">
-                        <h3>One of the most underestimated elements of design is typography. However, it’s
-									critical in both print and web media. We Made it Perfect in both.</h3>
+                        <p class="overline">Form Elements</p>
+                        <h3>Forms are one of the most used components in a dashboard. we made it fun to work with.</h3>
+                        <p>Keeping with our policy of shifting from the traditional to modern, we have introduced a couple of Contemporary form elements to boost and create an exceptional Experience</p>
                         <br>
                         <div>
-                          <div class="profile-img-wrapper m-t-5 inline">
-                            <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
-                            <div class="chat-status available">
-                            </div>
-                          </div>
-                          <div class="inline m-l-10">
-                            <p class="small hint-text m-t-5">VIA senior product manage
-                              <br> for UI/UX at REVOX</p>
+                          <div class="m-t-20">
+                            <p class="">Have an Improvement? or a suggestion?
+                              <br><a href="" target="_blank" rel="noopener noreferrer">Goto request box</a></p>
                           </div>
                         </div>
                       </div>
@@ -425,6 +430,13 @@
           <!-- START CONTAINER FLUID -->
           <div class=" container    container-fixed-lg">
             <div class="row">
+              <div class="col-8 p-t-30">
+                <h3>Choosing the right text field</h3>
+                <p class="m-b-30">Pages are equipped with two types of text-field designs, made specifically to improve usability and create a uniquely exciting experience. Both types of text fields provide the same functionality, so the type of text field you use can depend on style alone. Use these two if it works best with your app’s visual style or Best accommodates the goals of your UI.
+                </p>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-lg-6">
                 <!-- START card -->
                 <div class="card card-default">
@@ -434,9 +446,8 @@
                     </div>
                   </div>
                   <div class="card-body">
-                    <h5>
-							Pages default style
-						</h5>
+                    <h4>Pages default text-field design</h4>
+                    <p class="m-t-10 m-b-20 mw-80">Pages Form Elements reshaped the conventional text-fields in aim to improve usability and create a fun, unique and exciting experience.</p>
                     <form class="" role="form">
                       <div class="form-group form-group-default required ">
                         <label>Project</label>
@@ -482,33 +493,29 @@
                     </div>
                   </div>
                   <div class="card-body">
-                    <h5>
-							Traditional Standard Style
-						</h5>
+                    <h4>Traditional text-field design.</h4>
+                    <p class="m-t-10 m-b-20 mw-80">We understand that sometimes conventions shouldn't be removed completely. People are already used to them. Use these text-fields whenever it is necessary.</p>
                     <form role="form">
                       <div class="form-group">
                         <label>Your name</label>
-                        <span class="help">e.g. "Mona Lisa Portrait"</span>
                         <input type="email" class="form-control" required>
                       </div>
                       <div class="form-group">
                         <label>Password</label>
-                        <span class="help">e.g. "Mona Lisa Portrait"</span>
                         <input type="password" class="form-control" required>
+                        <span class="help">Requires a minimum of 12 characters.</span>
                       </div>
                       <div class="form-group">
                         <label>Email</label>
-                        <span class="help">e.g. "some@example.com"</span>
                         <input type="email" class="form-control" placeholder="ex: some@example.com" required>
+                        <span class="help">This will not be shown publicly</span>
                       </div>
                       <div class="form-group">
                         <label>Placeholder</label>
-                        <span class="help">e.g. "some@example.com"</span>
                         <input type="email" class="form-control" placeholder="ex: some@example.com" required>
                       </div>
                       <div class="form-group">
                         <label>Disabled</label>
-                        <span class="help">e.g. "some@example.com"</span>
                         <input type="email" class="form-control" value="You can put anything here" disabled>
                       </div>
                     </form>
@@ -522,65 +529,6 @@
           <!-- START CONTAINER FLUID -->
           <div class=" container    container-fixed-lg">
             <div class="row">
-              <div class="col-lg-4">
-                <!-- START card -->
-                <div class="card card-default">
-                  <div class="card-header ">
-                    <div class="card-title">Form Options
-                    </div>
-                    <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h5>Form
-                      <span class="semi-bold">Controls</span>
-                    </h5>
-                    <p>Adding on top of existing browser controls, Bootstrap includes other useful form components. Add text or buttons before or after any text-based input. Do note that select elements are not supported here.</p>
-                    <br>
-                    <div class="input-group transparent">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text transparent"><i class="fa fa-instagram"></i>
-                          </span>
-                      </div>
-                      <input type="text" placeholder="Username" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text primary"><i class="fa fa-align-justify"></i>
-                          </span>
-                      </div>
-                      <input type="text" placeholder="Username" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                      <input type="text" class="form-control">
-                      <div class="input-group-append">
-                        <span class="input-group-text primary"><i class="fa fa-align-justify"></i>
-                          </span>
-                      </div>
-                    </div>
-                    <br>
-                    <form role="form">
-                      <div class="form-group form-group-default input-group">
-                        <div class="form-input-group">
-                          <label>Project</label>
-                          <input type="email" class="form-control">
-                        </div>
-                        <div class="input-group-append ">
-                          <span class="input-group-text">Pages
-                            </span>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
               <div class="col-lg-8">
                 <!-- START card -->
                 <div class="card card-default">
@@ -588,18 +536,14 @@
                     <div class="card-title">Size options
                     </div>
                     <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
                     </div>
                   </div>
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-6">
                         <h5>Pages default control sizes
-								</h5>
-                        <p>Input form element sizes on defualt pages design, These are highly customizable. You can either chose the default or you can select Standard input elements</p>
+							</h5>
+                        <p>Input form element sizes on default pages design, These are highly customizable. You can either chose the default or you can select Standard input elements</p>
                         <form role="form">
                           <div class="form-group form-group-default">
                             <label class="label-lg">Large</label>
@@ -617,20 +561,65 @@
                       </div>
                       <div class="col-md-6">
                         <h5>Standard control sizes
-								</h5>
+							</h5>
                         <form role="form">
-                          <div class="form-group m-b-10">
+                          <div class="form-group">
+                            <label>Large</label>
                             <input type="text" placeholder=".input-lg" class="form-control input-lg">
                           </div>
-                          <div class="form-group m-b-10">
+                          <div class="form-group">
+                            <label>Medium</label>
                             <input type="text" placeholder="Default input" class="form-control">
                           </div>
-                          <div class="form-group m-b-10">
+                          <div class="form-group">
+                            <label>Small</label>
                             <input type="text" placeholder=".input-sm" class="form-control input-sm">
                           </div>
                         </form>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <!-- END card -->
+              </div>
+              <div class="col-lg-4">
+                <!-- START card -->
+                <div class="card card-default">
+                  <div class="card-header ">
+                    <div class="card-title">Form Options
+                    </div>
+                    <div class="tools"></div>
+                  </div>
+                  <div class="card-body">
+                    <h5>Form addons</h5>
+                    <p>Adding on top of existing browser controls, Bootstrap includes other useful form components. Add text or buttons before or after any text-based input. Addons supports all background color classes</p>
+                    <br>
+                    <div class="form-group input-group transparent">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text transparent"><i class="pg-icon">inbox</i>
+							</span>
+                      </div>
+                      <input type="text" placeholder="email@pages.io" class="form-control">
+                    </div>
+                    <div class="form-group input-group">
+                      <input type="text" placeholder="#000000" class="form-control">
+                      <div class="input-group-append">
+                        <span class="input-group-text primary"><i class="pg-icon">paint_bucket</i>
+							</span>
+                      </div>
+                    </div>
+                    <form role="form">
+                      <div class="form-group form-group-default input-group">
+                        <div class="form-input-group">
+                          <label>Project</label>
+                          <input type="email" placeholder="email address" class="form-control">
+                        </div>
+                        <div class="input-group-append ">
+                          <span class="input-group-text">pages.io
+								</span>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
                 <!-- END card -->
@@ -643,147 +632,136 @@
             <!-- START card -->
             <div class="card card-default">
               <div class="card-header ">
-                <div class="card-title">Checkbox controls
+                <div class="card-title">Checkbox and radio button
                 </div>
                 <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
                 </div>
               </div>
               <div class="card-body">
-                <div class="row">
+                <div class="row m-b-15">
                   <div class="col-lg-4">
-                    <h5>Color
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Our very own image-less pure CSS and retina compatible check box. These check boxes are customized and aviable in all boostrap color classes</p>
-                    <br>
-                    <div class="checkbox ">
-                      <input type="checkbox" value="1" id="checkbox1">
-                      <label for="checkbox1">Keep Me Signed in</label>
+                    <h5>Checkboxes </h5>
+                    <p class="m-b-20">Pages checkboxes use a light-weighted image sequence for smoother animation with better performance. All checkboxes and radio buttons use native Bootstrap classes.</p>
+                    <div class="form-check">
+                      <input type="checkbox" id="defaultCheck" checked>
+                      <label for="defaultCheck">
+                        Default checkbox
+                      </label>
                     </div>
-                    <div class="checkbox check-success  ">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox2">
-                      <label for="checkbox2">I agree</label>
+                    <div class="form-check complete">
+                      <input type="checkbox" id="checkColorOpt1">
+                      <label for="checkColorOpt1">
+                        I agree to the terms and conditions
+                      </label>
                     </div>
-                    <div class="checkbox check-primary">
-                      <input type="checkbox" value="1" id="checkbox3">
-                      <label for="checkbox3">Mark</label>
+                    <div class="form-check primary">
+                      <input type="checkbox" id="checkColorOpt2" checked>
+                      <label for="checkColorOpt2">
+                        Mark as read
+                      </label>
                     </div>
-                    <div class="checkbox check-info">
-                      <input type="checkbox" value="1" id="checkbox4">
-                      <label for="checkbox4">Steve Jobs</label>
-                    </div>
-                    <div class="checkbox check-warning">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox5">
-                      <label for="checkbox5">Action</label>
-                    </div>
-                    <div class="checkbox check-danger">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox6">
-                      <label for="checkbox6">Mark as read</label>
-                    </div>
+                    <p class="m-t-15 small">Checkboxes, switches and radio buttons support all colors in Pages. Simply add the required color class. For example <code class="code-sm">.primary</code></p>
                   </div>
                   <div class="col-lg-4">
-                    <h5>Shape
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Bored with traditional boxed shape check boxes? Here is a circle one simply add the class
+                    <h5>Shape alternative</h5>
+                    <p class="m-b-20">Bored with traditional boxed shape check boxes? Here is a circle one simply add the class
                       <code>.checkbox-circle</code>to change it</p>
-                    <br>
-                    <div class="checkbox  checkbox-circle">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox7">
-                      <label for="checkbox7">Keep Me Signed in</label>
+                    <div class="form-check checkbox-circle danger">
+                      <input type="checkbox" id="checkcircleColorOpt1">
+                      <label for="checkcircleColorOpt1">
+                        Delete all personal settings
+                      </label>
                     </div>
-                    <div class="checkbox check-success checkbox-circle">
-                      <input type="checkbox" value="1" id="checkbox8">
-                      <label for="checkbox8">I agree</label>
+                    <div class="form-check checkbox-circle complete">
+                      <input type="checkbox" id="checkcircleColorOpt2" checked>
+                      <label for="checkcircleColorOpt2">
+                        Keep me signed in
+                      </label>
                     </div>
-                    <div class="checkbox check-primary checkbox-circle">
-                      <input type="checkbox" checked="checked" value="1" id="checkbox9">
-                      <label for="checkbox9">Mark</label>
-                    </div>
+                    <p class="m-t-25 small m-b-10">You can change the position of any checkbox, switch or radio button by simply adding <code class="code-sm">.right</code> class</p>
                   </div>
                   <div class="col-lg-4">
-                    <h5>State
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>These act the same way as normal HTML check boxes. Here are some states that</p>
-                    <br>
-                    <div class="checkbox check-success">
-                      <input type="checkbox" disabled="disabled" value="check1" name="check" id="check1">
-                      <label for="check1">Checkbox No. 1</label>
-                      <br>
-                      <input type="checkbox" disabled="disabled" checked="checked" value="check2" name="check" id="check2">
-                      <label for="check2">Checkbox No. 2</label>
+                    <h5>States</h5>
+                    <p class="m-b-20">Checkboxes support the disabled attribute and <code>:indeterminate</code> pseudo class which is set manually via JavaScript since there is no available HTML attribute for specifying it</p>
+                    <div class="form-check form-check-inline complete">
+                      <input type="checkbox" id="checkboxIndeterminate">
+                      <label for="checkboxIndeterminate">
+                        Indeterminate
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" id="disableCheck" checked disabled>
+                      <label for="disableCheck">
+                        Disabled checkbox
+                      </label>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- END card -->
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class=" container    container-fixed-lg">
-            <!-- START card -->
-            <div class="card card-default">
-              <div class="card-header ">
-                <div class="card-title">Toggle controls
-                </div>
-                <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
-                </div>
-              </div>
-              <div class="card-body">
                 <div class="row">
                   <div class="col-lg-4">
-                    <h5>Color
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Pure CSS radio button with a cool animation. These are available in all primary colors in bootstrap
+                    <h5>Switch</h5>
+                    <p class="m-b-20">Convert a checkbox into a switch by simply adding <code>.switch</code>. Switches also support the disabled attribute.</p>
+                    <div>
+                      <div class="form-check form-check-inline switch">
+                        <input type="checkbox" id="pagesSwitch" checked>
+                        <label for="pagesSwitch">Default switch</label>
+                      </div>
+                      <div class="form-check form-check-inline switch">
+                        <input type="checkbox" id="switchDisabled" disabled>
+                        <label for="switchDisabled"> disabled </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="form-check form-check-inline switch switch-lg complete">
+                        <input type="checkbox" id="switch-lg">
+                        <label for="switch-lg">Auto-brightness</label>
+                      </div>
+                      <div class="form-check form-check-inline switch switch-lg success">
+                        <input type="checkbox" id="switchColorOpt">
+                        <label for="switchColorOpt">wifi </label>
+                      </div>
+                    </div>
+                    <p class="small m-t-15">Add <code class="code-sm">switch-lg</code> to render a lager switch size. Switch elements render all colors in checkboxes</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <h5>Radio buttons</h5>
+                    <p class="m-b-20">Pure CSS radio button with a cool animation. These are available in all primary colors in bootstrap
                     </p>
-                    <br>
-                    <div class="radio radio-success">
-                      <input type="radio" value="yes" name="optionyes" id="yes">
-                      <label for="yes">Agree</label>
-                      <input type="radio" checked="checked" value="no" name="optionyes" id="no">
-                      <label for="no">Disagree</label>
+                    <div class="form-check">
+                      <input type="radio" name="texture" id="defaultradio" value="Default" checked>
+                      <label for="defaultradio">
+                        Default
+                      </label>
+                    </div>
+                    <div class="form-check complete">
+                      <input type="radio" name="texture" id="radio1" value="Medium">
+                      <label for="radio1">
+                        Medium textures
+                      </label>
+                    </div>
+                    <div class="form-check primary">
+                      <input type="radio" name="texture" id="radio2" value="Verbose">
+                      <label for="radio2">
+                        Verbose channel
+                      </label>
                     </div>
                   </div>
                   <div class="col-lg-4">
-                    <h5>State
-							<span class="semi-bold">Options</span>
-						</h5>
-                    <p>Use of different color opacity helps to destigues between different states such as disable
+                    <h5>States</h5>
+                    <p>Use of different color opacity helps to distinguish between different states such as disable
                     </p>
                     <br>
-                    <div class="radio radio-primary">
-                      <input type="radio" disabled="disabled" value="Disabled" name="Disabled" id="Disabled">
-                      <label for="Disabled">Disabled</label>
-                      <input type="radio" disabled="disabled" checked="checked" value="ADisabled" name="ADisabled" id="ADisabled">
-                      <label for="ADisabled">Disabled</label>
+                    <div class="form-check form-check-inline complete">
+                      <input type="radio" name="state" id="radioInline" value="Default" checked>
+                      <label for="radioInline">
+                        Default
+                      </label>
                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <h5>Slide
-							<span class="semi-bold">Toggle</span>
-						</h5>
-                    <p>A cool iOS slide toggle. These are cutomize for all boostrap colors</p>
-                    <br>
-                    <div class="row">
-                      <div class="col-6">
-                        <input type="checkbox" data-init-plugin="switchery" checked="checked" disabled="disabled" />
-                        <input type="checkbox" data-init-plugin="switchery" checked="checked" />
-                      </div>
-                      <div class="col-6">
-                        <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
-                        <input type="checkbox" data-init-plugin="switchery" data-size="large" data-color="primary" checked="checked" />
-                      </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="state" id="radioDisabled" value="disabled" disabled>
+                      <label for="radioDisabled">
+                        Disabled
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -800,16 +778,12 @@
                 <div class="card-title">Dropdown Controls
                 </div>
                 <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-4">
-                    <p>We've simplified our dropdown buttons by getting rid of the dedicated dropdown associated with them, this looks more clean and also available in all different colors</p>
+                    <p>We've simplified our dropdown buttons by getting rid of the dedicated dropdown associated with them, this looks cleaner and also available in all different colors</p>
                     <br>
                     <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
                       <option value="sightseeing">Web-safe</option>
@@ -822,9 +796,9 @@
                   </div>
                   <div class="col-md-4">
                     <h5>
-							Simple dropdowns
-						</h5>
-                    <p>These are highly customizable dropdowns that come with search option for use to search</p>
+						Simple dropdowns
+					</h5>
+                    <p>These are highly customizable dropdowns that come with a search option for user to search</p>
                     <form role="form">
                       <div class="form-group ">
                         <select class="full-width" data-init-plugin="select2">
@@ -911,9 +885,9 @@
                   </div>
                   <div class="col-md-4">
                     <h5>
-							Multi select
-						</h5>
-                    <p>Fancy multiselect option box. Customized for the anypreference</p>
+						Multi select
+					</h5>
+                    <p>Fancy multi-select option box. Customized for any preference</p>
                     <br>
                     <select id="multi" class="full-width" multiple>
                       <option value="Jim">Jim</option>
@@ -945,16 +919,13 @@
                 <div class="card-title">Typehead
                 </div>
                 <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-4">
-                    <p>You the following input will give suggestion as you type, you can fetch your list from an external data source.</p>
+                    <p>You the following input will give a suggestion as you type, you can fetch your list from an external data source.
+                    </p>
                     <br>
                     <div class="form-group">
                       <input class="typeahead form-control sample-typehead" type="text" placeholder="States of USA">
@@ -965,8 +936,8 @@
                   </div>
                   <div class="col-md-4">
                     <h5>
-							Supporting Different Styles
-						</h5>
+						Supporting Different Styles
+					</h5>
                     <p>Supports both attached form layouts and also traditional input text fields</p>
                     <div class="form-group">
                       <input class="typeahead form-control sample-typehead" type="text" placeholder="States of USA">
@@ -980,9 +951,9 @@
                   </div>
                   <div class="col-md-4">
                     <h5>
-							Advance Options
-						</h5>
-                    <p>Want to customize how the data is display, you can do that too with tyephead custom templates</p>
+						Advanced Options
+					</h5>
+                    <p>Want to customize how the data is displayed? you can do that too with tyephead custom templates</p>
                     <br>
                     <div class="form-group" id="custom-templates">
                       <input class="typeahead form-control" type="text" placeholder="Oscar winners for Best Picture">
@@ -1002,24 +973,20 @@
                 <div class="card-title">Date Controls
                 </div>
                 <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-lg-4">
                     <h5>Simple Date
-      							<span class="semi-bold">Picker</span>
-      						</h5>
-                    <p>Date picker is powered by boostrap date picker, this is customized in way that it suites our theme and design, Have a look!</p>
+						<span class="semi-bold">Picker</span>
+					</h5>
+                    <p>The Date picker is powered by boostrap date picker, this is customized in a way that it suites our theme and design, Have a look!</p>
                     <br>
                     <div class="input-group date col-md-8 p-l-0">
                       <input type="text" class="form-control" id="datepicker-component">
                       <div class="input-group-append ">
-                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        <span class="input-group-text"><i class="pg-icon">calendar</i></span>
                       </div>
                     </div>
                     <br>
@@ -1029,14 +996,14 @@
                         <input type="email" class="form-control" placeholder="Pick a date" id="datepicker-component2">
                       </div>
                       <div class="input-group-append ">
-                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        <span class="input-group-text"><i class="pg-icon">calendar</i></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <h5>Date
-        							<span class="semi-bold">Range</span>
-        						</h5>
+						<span class="semi-bold">Range</span>
+					</h5>
                     <p>Date range can be set by the same plugin, this is use full when taking two dates at a time
                     </p>
                     <br>
@@ -1048,7 +1015,7 @@
                     <br>
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                        <span class="input-group-text"><i class="pg-icon">calendar</i></span>
                       </div>
                       <input type="text" name="reservation" id="daterangepicker" class="form-control" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM" />
                     </div>
@@ -1058,7 +1025,7 @@
                         <div class="input-group bootstrap-timepicker">
                           <input id="timepicker" type="text" class="form-control">
                           <div class="input-group-append">
-                            <span class="input-group-text"><i class="pg-clock"></i></span>
+                            <span class="input-group-text"><i class="pg-icon">time</i></span>
                           </div>
                         </div>
                       </div>
@@ -1066,9 +1033,10 @@
                   </div>
                   <div class="col-lg-4">
                     <h5>Advance
-          							<span class="semi-bold">Settings</span>
-          						</h5>
-                    <p>Some advance setting that you can do with this calender, like to start from years an disable sections of dates</p>
+						<span class="semi-bold">Settings</span>
+					</h5>
+                    <p>Some advance setting that you can do with this calender like to start from years a disable sections of dates
+                    </p>
                     <br>
                     <div id="datepicker-embeded"></div>
                   </div>
@@ -1086,65 +1054,62 @@
                 <div class="card-title">Input helpers
                 </div>
                 <div class="tools">
-                  <a href="javascript:;" class="collapse"></a>
-                  <a href="#grid-config" data-toggle="modal" class="config"></a>
-                  <a href="javascript:;" class="reload"></a>
-                  <a href="javascript:;" class="remove"></a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-lg-6">
                     <h5>
-							Input masks
-						</h5>
-                    <p>These assure the user will never enter invalid phone no, email or anything that has a pattern even without validations</p>
+						Input masks
+					</h5>
+                    <p>These assure the user will never enter invalid phone no, email or anything that has a pattern even without validations
+                    </p>
                     <br>
                     <div class="form-group">
                       <label>Date</label>
-                      <span class="help">e.g. "25/12/2013"</span>
                       <input type="text" id="date" class="form-control">
+                      <span class="help">e.g. "25/12/2020"</span>
                     </div>
                     <div class="form-group">
                       <label>Telephone</label>
-                      <span class="help">e.g. "(324) 234-3243"</span>
                       <input type="text" id="phone" class="form-control">
+                      <span class="help">e.g. "(324) 234-3243"</span>
                     </div>
                     <div class="form-group">
                       <label>Custom</label>
-                      <span class="help">e.g. "23-4324324"</span>
                       <input type="text" id="tin" class="form-control">
+                      <span class="help">e.g. "23-4324324"</span>
                     </div>
                     <div class="form-group">
                       <label>Social Security Number</label>
-                      <span class="help">e.g. "432-43-2432"</span>
                       <input type="text" id="ssn" class="form-control" placeholder="You can put anything here">
+                      <span class="help">e.g. "432-43-2432"</span>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <h5>Input autonumeric
-						</h5>
+					</h5>
                     <p>Do you forget small things? here is something that helps to automatically placed forgotten dollar signs, decimal places and even comma separates and many more!</p>
                     <br>
                     <div class="form-group">
                       <label>Decimal place and comma separator</label>
-                      <span class="help">e.g. "53,000.00"</span>
                       <input type="text" data-a-dec="." data-a-sep="," class="autonumeric form-control">
+                      <span class="help">e.g. "53,000.00"</span>
                     </div>
                     <div class="form-group">
                       <label>Weird way but works</label>
-                      <span class="help">e.g. "45.000,00"</span>
                       <input type="text" data-a-dec="," data-a-sep="." class="autonumeric form-control">
+                      <span class="help">e.g. "45.000,00"</span>
                     </div>
                     <div class="form-group">
                       <label>Dollar prefix</label>
-                      <span class="help">e.g. "$45.50"</span>
                       <input type="text" data-a-sign="$ " class="autonumeric form-control">
+                      <span class="help">e.g. "$45.50"</span>
                     </div>
                     <div class="form-group">
                       <label>Range</label>
-                      <span class="help">e.g. "0 - 9,999"</span>
                       <input type="text" data-v-min="0" data-v-max="9999" class="autonumeric form-control">
+                      <span class="help">e.g. "0 - 9,999"</span>
                     </div>
                   </div>
                 </div>
@@ -1161,16 +1126,12 @@
                 <div class="card-title">WYSIWYG editors
                 </div>
                 <div class="tools">
-                  <a class="collapse" href="javascript:;"></a>
-                  <a class="config" data-toggle="modal" href="#grid-config"></a>
-                  <a class="reload" href="javascript:;"></a>
-                  <a class="remove" href="javascript:;"></a>
                 </div>
               </div>
               <div class="card-body no-scroll card-toolbar">
-                <h5>Summernote</h5>
-                <div class="summernote-wrapper">
-                  <div id="summernote">Hello Summernote</div>
+                <h5>Quill Editor</h5>
+                <div class="quill-wrapper">
+                  <div id="quill">Hello Quill</div>
                 </div>
               </div>
             </div>
@@ -1187,10 +1148,6 @@
                     <div class="card-title">Tag Input
                     </div>
                     <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
                     </div>
                   </div>
                   <div class="card-body">
@@ -1215,16 +1172,12 @@
                       Drag n' drop uploader
                     </div>
                     <div class="tools">
-                      <a class="collapse" href="javascript:;"></a>
-                      <a class="config" data-toggle="modal" href="#grid-config"></a>
-                      <a class="reload" href="javascript:;"></a>
-                      <a class="remove" href="javascript:;"></a>
                     </div>
                   </div>
                   <div class="card-body no-scroll no-padding">
                     <form action="/file-upload" class="dropzone no-margin">
                       <div class="fallback">
-                        <input name="file" type="file" multiple/>
+                        <input name="file" type="file" multiple />
                       </div>
                     </form>
                   </div>
@@ -1241,11 +1194,9 @@
         <!-- START CONTAINER FLUID -->
         <div class=" container   container-fixed-lg footer">
           <div class="copyright sm-text-center">
-            <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2017 </span>
-              <span class="font-montserrat">REVOX</span>.
-              <span class="hint-text">All rights reserved. </span>
-              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
+            <p class="small-text no-margin pull-left sm-pull-reset">
+              ©2014-2020 All Rights Reserved. Pages® and/or its subsidiaries or affiliates are registered trademark of Revox Ltd.
+              <span class="hint-text m-l-15">Pages v05.23 20201105.r.190</span>
             </p>
             <p class="small no-margin pull-right sm-pull-reset">
               Hand-crafted <span class="hint-text">&amp; made with Love</span>
@@ -1263,16 +1214,16 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="">
-          <a href="#quickview-notes" data-target="#quickview-notes" data-toggle="tab" role="tab">Notes</a>
+          <a href="#quickview-notes" data-bs-target="#quickview-notes" data-bs-toggle="tab" role="tab">Notes</a>
         </li>
         <li>
-          <a href="#quickview-alerts" data-target="#quickview-alerts" data-toggle="tab" role="tab">Alerts</a>
+          <a href="#quickview-alerts" data-bs-target="#quickview-alerts" data-bs-toggle="tab" role="tab">Alerts</a>
         </li>
         <li class="">
-          <a class="active" href="#quickview-chat" data-toggle="tab" role="tab">Chat</a>
+          <a class="active" href="#quickview-chat" data-bs-toggle="tab" role="tab">Chat</a>
         </li>
       </ul>
-      <a class="btn-link quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-close"></i></a>
+      <a class="btn-icon-link invert quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-icon">close</i></a>
       <!-- Tab panes -->
       <div class="tab-content">
         <!-- BEGIN Notes !-->
@@ -1283,20 +1234,20 @@
               <div class="toolbar clearfix">
                 <ul class="pull-right ">
                   <li>
-                    <a href="#" class="delete-note-link"><i class="fa fa-trash-o"></i></a>
+                    <a href="#" class="delete-note-link"><i class="pg-icon">trash_alt</i></a>
                   </li>
                   <li>
-                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-plus"></i></a>
+                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">add</i></a>
                   </li>
                 </ul>
-                <button class="btn-remove-notes btn btn-xs btn-block hide"><i class="fa fa-times"></i> Delete</button>
+                <button aria-label="" class="btn-remove-notes btn btn-xs btn-block hide"><i class="pg-icon">close</i>Delete</button>
               </div>
               <ul>
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="1">
+                <li data-noteid="1" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox1" type="checkbox" value="1">
                       <label for="qncheckbox1"></label>
                     </div>
@@ -1306,20 +1257,22 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push">
+                      <i class="pg-icon">chevron_right</i>
+                    </a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox2" type="checkbox" value="1">
                       <label for="qncheckbox2"></label>
                     </div>
@@ -1329,20 +1282,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox3" type="checkbox" value="1">
                       <label for="qncheckbox3"></label>
                     </div>
@@ -1352,20 +1305,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="3">
+                <li data-noteid="3" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox4" type="checkbox" value="1">
                       <label for="qncheckbox4"></label>
                     </div>
@@ -1375,20 +1328,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="4">
+                <li data-noteid="4" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox5" type="checkbox" value="1">
                       <label for="qncheckbox5"></label>
                     </div>
@@ -1398,10 +1351,10 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
@@ -1413,19 +1366,19 @@
             <div class="view note" id="quick-note">
               <div>
                 <ul class="toolbar">
-                  <li><a href="#" class="close-note-link"><i class="pg-arrow_left"></i></a>
+                  <li><a href="#" class="close-note-link"><i class="pg-icon">chevron_left</i></a>
                   </li>
-                  <li><a href="#" data-action="Bold" class="fs-12"><i class="fa fa-bold"></i></a>
+                  <li><a href="#" data-action="Bold" class="fs-12"><i class="pg-icon">format_bold</i></a>
                   </li>
-                  <li><a href="#" data-action="Italic" class="fs-12"><i class="fa fa-italic"></i></a>
+                  <li><a href="#" data-action="Italic" class="fs-12"><i class="pg-icon">format_italics</i></a>
                   </li>
-                  <li><a href="#" class="fs-12"><i class="fa fa-link"></i></a>
+                  <li><a href="#" class="fs-12"><i class="pg-icon">link</i></a>
                   </li>
                 </ul>
                 <div class="body">
                   <div>
                     <div class="top">
-                      <span>21st april 2014 2:13am</span>
+                      <span>21st april 2020 2:13am</span>
                     </div>
                     <div class="content">
                       <div class="quick-note-editor full-width full-height js-input" contenteditable="true"></div>
@@ -1446,16 +1399,16 @@
               <div class="navbar navbar-default navbar-sm">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-more"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
                     Notications
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-search"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">search</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1476,14 +1429,14 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">David Nester Birthday</span>
+                          <span class="text-color">David Nester Birthday</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today <br></span>
-                          <span class="text-master">All Day</span>
+                          <span class="text-color">All Day</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1495,10 +1448,10 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">Meeting at 2:30</span>
+                          <span class="text-color">Meeting at 2:30</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today</span>
@@ -1522,11 +1475,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1537,11 +1490,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1561,11 +1514,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-danger fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-danger fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">12:13AM GTM, 10230, ID:WR174s<br></span>
-                          <span class="text-master">Server Load Exceeted. Take action</span>
+                          <span class="text-color link">12:13AM GTM, 10230, ID:WR174s<br></span>
+                          <span class="text-color">Server Load Exceeted. Take action</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1587,8 +1540,8 @@
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-plus"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">add</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
@@ -1596,8 +1549,8 @@
                     <div class="fs-11">Show All</div>
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-more"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1615,8 +1568,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ava flores</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ava flores</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1633,8 +1586,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bella mccoy</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bella mccoy</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1646,8 +1599,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bob stephens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bob stephens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1664,8 +1617,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">carole roberts</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">carole roberts</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1677,8 +1630,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">christopher perez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">christopher perez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1695,8 +1648,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">danielle fletcher</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">danielle fletcher</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1708,8 +1661,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">david sutton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">david sutton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1726,8 +1679,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">earl hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">earl hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1739,8 +1692,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">elaine lawrence</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">elaine lawrence</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1752,8 +1705,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ellen grant</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ellen grant</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1765,8 +1718,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">erik taylor</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">erik taylor</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1778,8 +1731,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">everett wagner</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">everett wagner</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1796,8 +1749,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">freddie gomez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">freddie gomez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1814,8 +1767,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">glen jensen</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">glen jensen</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1827,8 +1780,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">gwendolyn walker</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">gwendolyn walker</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1845,8 +1798,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">janet romero</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">janet romero</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1863,8 +1816,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">kim martinez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">kim martinez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1881,8 +1834,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lawrence white</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lawrence white</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1894,8 +1847,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">leroy bell</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">leroy bell</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1907,8 +1860,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">letitia carr</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">letitia carr</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1920,8 +1873,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lucy castro</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lucy castro</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1938,8 +1891,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mae hayes</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mae hayes</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1951,8 +1904,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marilyn owens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marilyn owens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1964,8 +1917,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marlene cole</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marlene cole</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1977,8 +1930,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha warren</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha warren</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1990,8 +1943,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha dean</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha dean</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2003,8 +1956,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mia diaz</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mia diaz</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2022,8 +1975,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">noah elliott</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">noah elliott</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2040,8 +1993,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">phyllis hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">phyllis hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2058,8 +2011,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">raul rodriquez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">raul rodriquez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2071,8 +2024,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">rhonda barnett</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">rhonda barnett</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2084,8 +2037,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">roberta king</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">roberta king</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2102,8 +2055,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">scott armstrong</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">scott armstrong</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2115,8 +2068,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sebastian austin</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sebastian austin</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2128,8 +2081,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sofia davis</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sofia davis</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2146,8 +2099,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">terrance young</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">terrance young</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2159,8 +2112,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">theodore woods</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">theodore woods</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2172,8 +2125,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">todd wood</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">todd wood</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2185,8 +2138,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">tommy jenkins</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">tommy jenkins</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2203,8 +2156,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">wilma hicks</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">wilma hicks</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2218,15 +2171,15 @@
               <!-- BEGIN Header  !-->
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
-                  <a href="javascript:;" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-arrow_left"></i>
+                  <a href="javascript:;" class="link text-color action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">chevron_left</i>
                   </a>
                   <div class="view-heading">
                     John Smith
                     <div class="fs-11 hint-text">Online</div>
                   </div>
-                  <a href="#" class="link text-master inline action p-r-10 pull-right ">
-                    <i class="pg-more"></i>
+                  <a href="#" class="link text-color action p-r-10 pull-right ">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                 </div>
               </div>
@@ -2280,13 +2233,14 @@
               <div class="b-t b-grey bg-white clearfix p-l-10 p-r-10">
                 <div class="row">
                   <div class="col-1 p-t-15">
-                    <a href="#" class="link text-master"><i class="fa fa-plus-circle"></i></a>
+                    <a href="#" class="link text-color"><i class="pg-icon">add</i></a>
                   </div>
                   <div class="col-8 no-padding">
+                    <label class="d-none">Reply</label>
                     <input type="text" class="form-control chat-input" data-chat-input="" data-chat-conversation="#my-conversation" placeholder="Say something">
                   </div>
-                  <div class="col-2 link text-master m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
-                    <a href="#" class="link text-master"><i class="pg-camera"></i></a>
+                  <div class="col-2 link text-color m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
+                    <a href="#" class="link text-color"><i class="pg-icon">camera</i></a>
                   </div>
                 </div>
               </div>
@@ -2308,8 +2262,8 @@
           <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
           <!-- END Overlay Logo !-->
           <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light overlay-close text-black fs-16">
-            <i class="pg-close"></i>
+          <a href="#" class="close-icon-light btn-link btn-rounded  overlay-close text-black">
+            <i class="pg-icon">close</i>
           </a>
           <!-- END Overlay Close !-->
         </div>
@@ -2318,111 +2272,104 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <div class="inline-block">
-            <div class="checkbox right">
-              <input id="checkboxn" type="checkbox" value="1" checked="checked">
-              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
+          <div class="d-flex align-items-center">
+            <div class="form-check right m-b-0">
+              <input id="checkboxn" type="checkbox" value="1">
+              <label for="checkboxn">Search within page</label>
             </div>
-          </div>
-          <div class="inline-block m-l-10">
-            <p class="fs-13">Press enter to search</p>
+            <p class="fs-13 hint-text m-l-10 m-b-0">Press enter to search</p>
           </div>
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span>
-                <strong>suggestions :</strong>
+        <div class="container-fluid p-t-20">
+          <span class="hint-text">
+                suggestions :
             </span>
-          <span id="overlay-suggestions"></span>
+          <span class="overlay-suggestions"></span>
           <br>
-          <div class="search-results m-t-40">
-            <p class="bold">Pages Search Results</p>
+          <div class="search-results m-t-30">
+            <p class="bold">Pages Search Results: <span class="overlay-suggestions"></span></p>
             <div class="row">
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>
-                      <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <img width="36" height="36" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="hint-text">via john smith</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on pages</h5>
+                    <p class="small-text hint-text">via john smith</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
                     <div>T</div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="hint-text">via pages</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> related topics</h5>
+                    <p class="small-text hint-text">via pages</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div><i class="fa fa-headphones large-text "></i>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <div>M
                     </div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="hint-text">via pagesmix</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> music</h5>
+                    <p class="small-text hint-text">via pagesmix</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
               </div>
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                    <div><i class="fa fa-facebook large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-info text-white d-flex align-items-center">
+                    <i class="pg-icon">facebook</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="hint-text">via facebook</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on facebook</h5>
+                    <p class="small-text hint-text">via facebook</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                    <div><i class="fa fa-twitter large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-complete text-white d-flex align-items-center">
+                    <i class="pg-icon">twitter</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via twitter</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via twitter</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                    <div><i class="fa fa-google-plus large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular text-white bg-danger d-flex align-items-center">
+                    <i class="pg-icon">google_plus</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via google plus</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via google plus</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
@@ -2437,6 +2384,8 @@
     <!-- END OVERLAY -->
     <!-- BEGIN VENDOR JS -->
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
+    <script src="assets/plugins/liga.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
@@ -2449,8 +2398,6 @@
     <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
     <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
-    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
     <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
@@ -2458,7 +2405,7 @@
     <script src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/quill/quill.min.js" type="text/javascript"></script>
     <script src="assets/plugins/moment/moment.min.js"></script>
     <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>

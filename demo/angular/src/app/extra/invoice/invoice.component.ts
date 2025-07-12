@@ -7,24 +7,23 @@ declare var pg: any;
 })
 export class InvoiceComponent implements OnInit {
   isCollapsed = false;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   ngAfterViewInit() {
     this.toggleNavbar();
   }
-  setFullScreen(){
-    pg.setFullScreen(document.querySelector('html'))
+  setFullScreen() {
+    pg.setFullScreen(document.querySelector('html'));
   }
 
-  @HostListener("window:resize", [])
-	onResize() {
+  @HostListener('window:resize', [])
+  onResize() {
     this.toggleNavbar();
   }
-  
-  toggleNavbar(){
-    this.isCollapsed = window.innerWidth < 1025
+
+  toggleNavbar() {
+    this.isCollapsed = window.innerWidth < 1025;
   }
 }

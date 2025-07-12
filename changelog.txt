@@ -1,3 +1,56 @@
+-6.1.0
+* [Updated] Angular 15 update
+* [Updated] React 18 update
+* [Updated] Angular Charts
+
+-6.0.1
+* [Updated] Angular 13 update
+* [Updated] Angular Charts
+
+-6.0.0
+* [New] React version of `pages`
+
+-5.0.2
+* [Fixed] Breadcrumb large list alignment
+* [Fixed] Form group directive highlight color
+
+-5.0.1
+* [Updated] Checkbox and radio controls
+* [Added] New switch control
+* [Removed] Switchery iOS toggle
+* [Fixed] Minor Browser support issues
+* [Fixed] Slideup Modal
+* [Fixed] Horizontal menu auto hide feature
+
+-5.0.0
+* [Updated] Core Color Pallete Generator
+* [New] Color page
+* [Updated] Button styles
+* [New] Buttons page
+* [Removed] Fontawesome icons
+* [Added] Material Design icons
+* [Updated] Pages icons 100+ new icons - supports 20px web format
+* [New] Icons page
+* [Updated] Email app Design
+* [Updated] Dropdowns and quick popups
+* [Updated] Form inputs
+* [Updated] Form checkbox and radio Design
+* [Updated] Form Validation and form Layouts
+* [Updated] Enchance readability and accessbility to W3C standard
+* [Updated] Bootstrap core css and js
+* [Fixed] Angular TSlint issues
+* [Removed] LESS support
+* [Added] Official SASS/SCSS support
+
+-4.2.0
+* [Updated] Angular 8+ Native Support
+* Angular minor issue fixes
+
+-4.1.0
+* [Updated] Angular 6 Native Support
+* [Upgrade] Angular @pages styles support new update
+* [Fixed] [Angular] Modal z-index issues
+
 -v4.0.0
 * [Added] Angular 5 Native Support
 * [Upgrade] Bootstrap v4.1 

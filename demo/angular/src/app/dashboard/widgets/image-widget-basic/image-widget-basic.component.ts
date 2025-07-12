@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'image-widget-basic',
@@ -7,10 +7,7 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ImageWidgetBasicComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

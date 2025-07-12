@@ -5,24 +5,28 @@ import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
 export const FormsRoutes: Routes = [
   {
     path: '',
-    children: [{
-      path: 'elements',
-      component: FormElementsComponent,
-      data: {
-        title: 'forms'
+    children: [
+      {
+        path: 'elements',
+        component: FormElementsComponent,
+        data: {
+          title: 'forms'
+        }
+      },
+      {
+        path: 'layouts',
+        component: FormLayoutsComponent,
+        data: {
+          title: 'form layouts'
+        }
+      },
+      {
+        path: 'wizard',
+        component: FormWizardComponent,
+        data: {
+          title: 'form wizard'
+        }
       }
-    },{
-      path: 'layouts',
-      component: FormLayoutsComponent,
-      data: {
-        title: 'form layouts'
-      }
-    },{
-      path: 'wizard',
-      component: FormWizardComponent,
-      data: {
-        title: 'form wizard'
-      }
-    }]
+    ]
   }
 ];

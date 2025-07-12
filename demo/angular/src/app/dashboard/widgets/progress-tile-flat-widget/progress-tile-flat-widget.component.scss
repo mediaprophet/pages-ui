@@ -3,7 +3,7 @@ $assets-url :"/assets";
 
 pgcard{
 }
-:host /deep/ .widget-9 {
+:host ::ng-deep .widget-9 {
     height: 145px;   
     overflow: hidden;
     .btn-circle-arrow {

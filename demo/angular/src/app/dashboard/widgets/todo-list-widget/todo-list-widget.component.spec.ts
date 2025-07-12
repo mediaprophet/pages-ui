@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TodoListWidgetComponent } from './todo-list-widget.component';
 
@@ -6,11 +6,10 @@ describe('TodoListWidgetComponent', () => {
   let component: TodoListWidgetComponent;
   let fixture: ComponentFixture<TodoListWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoListWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [TodoListWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

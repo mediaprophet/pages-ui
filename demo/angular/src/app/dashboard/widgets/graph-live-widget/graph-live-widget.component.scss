@@ -16,7 +16,7 @@ pgcard{
       z-index: 1;
     }
 }
-:host /deep/ .widget-7 {
+:host  ::ng-deep .widget-7 {
     .slide-back{
       .row-sm-height:nth-child(1){
         height: 60%;

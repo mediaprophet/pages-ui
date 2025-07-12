@@ -1,7 +1,12 @@
-.social-card-img{
-    background-image: url(/assets/img/dashboard/social_new.jpg);
+// Widget related classes
+.widget-11-2 .widget-11-2-table {
+  height: 273px;
 }
 
-.widget-11-2 .widget-11-2-table {
-    height: 273px;
+@media (max-width: 991px) {
+  :host ::ng-deep .share-other {
+    .card-content {
+      min-height: 250px;
+    }
+  }
 }

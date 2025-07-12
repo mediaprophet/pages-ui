@@ -13,9 +13,7 @@ export class RegisterPageComponent implements OnInit {
   txtpassword;
   txtemail;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

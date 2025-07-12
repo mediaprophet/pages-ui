@@ -56,7 +56,7 @@
                     name: 'DB Server'
                 }, {
                     data: seriesData[1],
-                    color: $.Pages.getColor('master-light'),
+                    color: $.Pages.getColor('contrast-low'),
                     name: 'Web Server'
                 }]
             });
@@ -109,7 +109,7 @@
 
         //Get from JSON data and build
 
-        d3.json('http://pages.revox.io/json/min_sales_chart.json', function(data) {
+        d3.json('https://pages.revox.io/json/min_sales_chart.json', function(data) {
 
             // Widget-15
             nv.addGraph(function() {
@@ -203,7 +203,7 @@
 
         // Widget 13
         var mapplicWidget = $('.widget-13-map').mapplic({
-            source: 'http://pages.revox.io/json/dashboard-map.json',
+            source: 'https://pages.revox.io/json/dashboard-map.json',
             height: 465,
             sidebar: false,
             minimap: false,
@@ -240,7 +240,7 @@
 
 
         //NVD3 Charts
-        d3.json('http://pages.revox.io/json/charts.json', function(data) {
+        d3.json('https://pages.revox.io/json/charts.json', function(data) {
 
             // line chart
             (function() {
@@ -357,7 +357,7 @@
                         name: "New users"
                     }, {
                         data: seriesData[1],
-                        color: $.Pages.getColor('master-lighter'),
+                        color: $.Pages.getColor('contrast-lower'),
                         name: "Returning users"
 
                     }]
@@ -415,7 +415,7 @@
                         name: "New users"
                     }, {
                         data: seriesData[1],
-                        color: $.Pages.getColor('master-lighter'),
+                        color: $.Pages.getColor('contrast-lower'),
                         name: "Returning users"
 
                     }]

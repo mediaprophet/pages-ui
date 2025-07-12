@@ -1,29 +1,47 @@
 // tslint:disable:ordered-imports no-any
-import { Component, ChangeDetectionStrategy, ViewChild, ViewEncapsulation, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChanges, SimpleChange, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-import { of } from 'rxjs/observable/of';
-import { filter } from 'rxjs/operators/filter';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  ViewChild,
+  ViewEncapsulation,
+  Input,
+  Output,
+  EventEmitter,
+  OnInit,
+  OnChanges,
+  SimpleChanges,
+  SimpleChange,
+  OnDestroy,
+  ChangeDetectorRef
+} from '@angular/core';
+import { Observable, Subscription, of } from 'rxjs';
+import { filter } from 'rxjs/operators';
 import { toBoolean } from '../util/convert';
 import { pgUploadBtnComponent } from './upload-btn.component';
-import { UploadFile, UploadListType, ShowUploadListInterface, UploadChangeParam, UploadType, ZipButtonOptions, UploadFileStatus, UploadFilter } from './interface';
+import {
+  UploadFile,
+  UploadListType,
+  ShowUploadListInterface,
+  UploadChangeParam,
+  UploadType,
+  ZipButtonOptions,
+  UploadFileStatus,
+  UploadFilter
+} from './interface';
 
 @Component({
   selector: 'pg-upload',
-  templateUrl:"./upload.component.html",
-  styleUrls: [
-    './upload.scss',
-  ],
+  templateUrl: './upload.component.html',
+  styleUrls: ['./upload.scss'],
   encapsulation: ViewEncapsulation.None,
   preserveWhitespaces: false,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
-
   private inited = false;
   private progressTimer: any;
   /** @private */
-  @ViewChild('upload') upload: pgUploadBtnComponent;
+  @ViewChild('upload', { static: false }) upload: pgUploadBtnComponent;
 
   // region: fields
   @Input() Type: UploadType = 'select';
@@ -51,7 +69,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input() Headers: {};
   @Input() ListType: UploadListType = 'text';
-  @Input() extraClass:string;
+  @Input() extraClass: string;
 
   private _multiple = false;
   @Input()
@@ -117,7 +135,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
     if (this.Size > 0 && filters.findIndex(w => w.name === 'size') === -1) {
       filters.push({
         name: 'size',
-        fn: (fileList: UploadFile[]) => fileList.filter(w => (w.size / 1024) <= this.Size)
+        fn: (fileList: UploadFile[]) => fileList.filter(w => w.size / 1024 <= this.Size)
       });
     }
     if (this.FileType && this.FileType.length > 0 && filters.findIndex(w => w.name === 'type') === -1) {
@@ -183,11 +201,11 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
     return removed;
   }
 
-  private uploadErrorText = "Error Upload";
+  private uploadErrorText = 'Error Upload';
   private genErr(file: UploadFile): string {
-    return file.response && typeof file.response === 'string' ?
-            file.response :
-            (file.error && file.error.statusText) || this.uploadErrorText;
+    return file.response && typeof file.response === 'string'
+      ? file.response
+      : (file.error && file.error.statusText) || this.uploadErrorText;
   }
 
   private clearProgressTimer(): void {
@@ -219,26 +237,32 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
     this.clearProgressTimer();
     this.progressTimer = setInterval(() => {
       curPercent = getPercent(curPercent);
-      this.onProgress({
-        percent: curPercent,
-      }, file);
+      this.onProgress(
+        {
+          percent: curPercent
+        },
+        file
+      );
     }, 200);
   }
 
   private genThumb(file: UploadFile): void {
-    if (typeof document === 'undefined' ||
-        typeof window === 'undefined' ||
-        !(window as any).FileReader || !(window as any).File ||
-        !(file.originFileObj instanceof File) ||
-        file.thumbUrl !== undefined
-      ) {
+    if (
+      typeof document === 'undefined' ||
+      typeof window === 'undefined' ||
+      !(window as any).FileReader ||
+      !(window as any).File ||
+      !(file.originFileObj instanceof File) ||
+      file.thumbUrl !== undefined
+    ) {
       return;
     }
 
     file.thumbUrl = '';
-
     const reader = new FileReader();
-    reader.onloadend = () => file.thumbUrl = reader.result;
+    reader.onloadend = e => {
+      file.thumbUrl = reader.result as string;
+    };
     reader.readAsDataURL(file.originFileObj);
   }
 
@@ -255,18 +279,20 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
       this.autoUpdateProgress(targetItem);
     }
     this.cd.detectChanges();
-  }
+  };
 
   private onProgress = (e: { percent: number }, file: UploadFile): void => {
     const fileList = this.FileList;
     const targetItem = this.getFileItem(file, fileList);
     // removed
-    if (!targetItem) return;
+    if (!targetItem) {
+        return;
+    }
     targetItem.percent = e.percent;
     this.Change.emit({
       event: e,
       file: { ...targetItem },
-      fileList: this.FileList,
+      fileList: this.FileList
     });
     this.cd.detectChanges();
   }
@@ -276,12 +302,14 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
     const fileList = this.FileList;
     const targetItem = this.getFileItem(file, fileList);
     // removed
-    if (!targetItem) return;
+    if (!targetItem) {
+        return;
+    }
     targetItem.status = 'complete';
     targetItem.response = res;
     this.Change.emit({
       file: { ...targetItem },
-      fileList,
+      fileList
     });
     this.cd.detectChanges();
   }
@@ -291,13 +319,15 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
     const fileList = this.FileList;
     const targetItem = this.getFileItem(file, fileList);
     // removed
-    if (!targetItem) return;
+    if (!targetItem) {
+        return;
+    }
     targetItem.error = err;
     targetItem.status = 'error';
     targetItem.message = this.genErr(file);
     this.Change.emit({
       file: { ...targetItem },
-      fileList,
+      fileList
     });
     this.cd.detectChanges();
   }
@@ -308,7 +338,9 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
 
   private dragState: string;
   fileDrop(e: DragEvent): void {
-    if (e.type === this.dragState) return;
+    if (e.type === this.dragState) {
+        return;
+    }
     this.dragState = e.type;
     this._setClassMap();
   }
@@ -320,7 +352,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
   onRemove = (file: UploadFile): void => {
     this.upload.abort(file);
     file.status = 'removed';
-    ((this.Remove ? this.Remove instanceof Observable ? this.Remove : of(this.Remove(file)) : of(true)) as Observable<any>)
+    ((this.Remove ? (this.Remove instanceof Observable ? this.Remove : of(this.Remove(file))) : of(true)) as Observable<any>)
       .pipe(filter((res: boolean) => res))
       .subscribe(res => {
         const removedFileList = this.removeFileItem(file, this.FileList);
@@ -334,7 +366,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
           this.cd.detectChanges();
         }
       });
-  }
+  };
 
   // endregion
 
@@ -350,9 +382,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
         this.dragState === 'dragover' && `${this._prefixCls}-drag-hover`
       ];
     } else {
-      subCls = [
-        `${this._prefixCls}-select-${this.ListType}`
-      ];
+      subCls = [`${this._prefixCls}-select-${this.ListType}`];
     }
 
     this._classList = [
@@ -371,7 +401,7 @@ export class pgUploadComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: { [P in keyof this]?: SimpleChange } & SimpleChanges): void {
-    if (changes.FileList) (this.FileList || []).forEach(file => file.message = this.genErr(file));
+    if (changes.FileList) (this.FileList || []).forEach(file => (file.message = this.genErr(file)));
     this.zipOptions()._setClassMap();
   }
 

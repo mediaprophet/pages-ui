@@ -1,7 +1,7 @@
 $assets-url :"/assets";
 @import 'core.scss';
 
-:host /deep/ .widget-13 {
+:host  ::ng-deep .widget-13 {
     .widget-13-map{
         height: 465px;
     }
@@ -23,7 +23,7 @@ $assets-url :"/assets";
         .text-muted{
             opacity: .5;
         }
-        .text-master{
+        .text-color{
             margin-bottom: -5px;
         }
     }

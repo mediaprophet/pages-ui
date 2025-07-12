@@ -4,14 +4,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'image-widget',
   templateUrl: './image-widget.component.html',
   styleUrls: ['./image-widget.component.scss'],
-  encapsulation:ViewEncapsulation.None
-  
+  encapsulation: ViewEncapsulation.None
 })
 export class ImageWidgetComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

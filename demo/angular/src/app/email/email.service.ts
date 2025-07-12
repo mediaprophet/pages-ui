@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
+import { AjaxResponse } from '@pages/interfaces/ajax';
 
 @Injectable()
 export class EmailService {
-
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) {}
 
   // Get all emails from the API
   getEmails() {
-    return this.http.get('assets/data/email.json')
-      .map(res => res.json());
+    return this.http.get<AjaxResponse<any>>('assets/data/email.json')
   }
 }

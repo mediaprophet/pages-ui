@@ -24,30 +24,18 @@ export const AppRoutes: Routes = [
   },
   {
     path: 'casual',
-    data: {
-        breadcrumb: 'Home'
-    },
     component: CasualLayout
   },
   {
     path: 'executive',
-    data: {
-        breadcrumb: 'Home'
-    },
     component: ExecutiveLayout
   },
   {
     path: 'simplywhite',
-    data: {
-        breadcrumb: 'Home'
-    },
     component: SimplyWhiteLayout
   },
   {
     path: 'corporate',
-    data: {
-        breadcrumb: 'Home'
-    },
     component: CorporateLayout
   },
 ];

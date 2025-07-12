@@ -7,16 +7,14 @@ declare var pg: any;
   styleUrls: ['./progress-tile-flat-widget.component.scss']
 })
 export class ProgressTileFlatWidgetComponent implements OnInit {
-  
-  _bgColor:string = 'bg-primary'
+  _bgColor: string = 'bg-primary';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   @Input()
-  set BgColor(value:string) {
-    this._bgColor = value
+  set BgColor(value: string) {
+    this._bgColor = value;
   }
 }

@@ -5,13 +5,8 @@ declare var pg: any;
   selector: 'project-progress-widget',
   templateUrl: './project-progress-widget.component.html',
   styleUrls: ['./project-progress-widget.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
-
 export class ProjectProgressWidgetComponent implements OnInit {
-
-  ngOnInit() {
-    
-  }
-
+  ngOnInit() {}
 }

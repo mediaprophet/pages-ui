@@ -5,18 +5,13 @@ declare var pg: any;
   selector: '[coverpage]'
 })
 export class CoverpageDirective {
-
- 	constructor(private coverpage: ElementRef,private renderer: Renderer2) { 
-   }
-   ngOnInit() {
-        // this.select = new pg.Select(this.select.nativeElement)
-    var coverpage = this.coverpage.nativeElement
-      // Prevent 'vh' bug on iOS7
-    if(pg.getUserAgent() == 'mobile'){
-      coverpage.style.height ="400px";
+  constructor(private coverpage: ElementRef, private renderer: Renderer2) {}
+  ngOnInit() {
+    // this.select = new pg.Select(this.select.nativeElement)
+    var coverpage = this.coverpage.nativeElement;
+    // Prevent 'vh' bug on iOS7
+    if (pg.getUserAgent() == 'mobile') {
+      coverpage.style.height = '400px';
     }
-
-      
-	}
-
+  }
 }

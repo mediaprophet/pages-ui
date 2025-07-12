@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GraphLiveWidgetComponent } from './graph-live-widget.component';
 
@@ -6,11 +6,10 @@ describe('GraphLiveWidgetComponent', () => {
   let component: GraphLiveWidgetComponent;
   let fixture: ComponentFixture<GraphLiveWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ GraphLiveWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [GraphLiveWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

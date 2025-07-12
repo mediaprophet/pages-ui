@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SecondaryHorizontalCasualComponent } from './secondary-horizontal-casual.component';
 
@@ -6,11 +6,10 @@ describe('SecondaryHorizontalCasualComponent', () => {
   let component: SecondaryHorizontalCasualComponent;
   let fixture: ComponentFixture<SecondaryHorizontalCasualComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SecondaryHorizontalCasualComponent ]
-    })
-    .compileComponents();
+      declarations: [SecondaryHorizontalCasualComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

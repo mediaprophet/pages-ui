@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { StatTileWidgetComponent } from './stat-tile-widget.component';
 
@@ -6,11 +6,10 @@ describe('StatTileWidgetComponent', () => {
   let component: StatTileWidgetComponent;
   let fixture: ComponentFixture<StatTileWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ StatTileWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [StatTileWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

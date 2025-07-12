@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TableBasicWidgetComponent } from './table-basic-widget.component';
 
@@ -6,11 +6,10 @@ describe('TableBasicWidgetComponent', () => {
   let component: TableBasicWidgetComponent;
   let fixture: ComponentFixture<TableBasicWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableBasicWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [TableBasicWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

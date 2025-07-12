@@ -7,18 +7,23 @@ import { LockscreenComponent } from './lockscreen/lockscreen.component';
 export const SessionRoute: Routes = [
   {
     path: '',
-    children: [{
-      path: 'login',
-      component: LoginComponent
-    },{
-      path: 'register',
-      component: RegisterPageComponent
-    },{
-      path: 'error/:type',
-      component: ErrorComponent
-    },{
-      path: 'lock',
-      component: LockscreenComponent
-    }]
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'register',
+        component: RegisterPageComponent
+      },
+      {
+        path: 'error/:type',
+        component: ErrorComponent
+      },
+      {
+        path: 'lock',
+        component: LockscreenComponent
+      }
+    ]
   }
 ];

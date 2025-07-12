@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import createNumberMask from 'text-mask-addons/dist/createNumberMask'
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 import * as moment from 'moment';
 @Component({
   selector: 'app-form-elements',
@@ -7,7 +7,6 @@ import * as moment from 'moment';
   styleUrls: ['./form-elements.component.scss']
 })
 export class FormElementsComponent implements OnInit {
-
   options = [
     { value: 'jack', label: 'Jacks' },
     { value: 'lucy', label: 'Lucy' },
@@ -17,10 +16,10 @@ export class FormElementsComponent implements OnInit {
   csoptions = [
     { value: 'Web-safe', label: 'Web-safe' },
     { value: 'Helvetica', label: 'Helvetica' },
-    { value: 'SegeoUI', label: 'SegeoUI' },
+    { value: 'SegeoUI', label: 'SegeoUI' }
   ];
 
-  tags = ["Smith","Jane"];
+  tags = ['Smith', 'Jane'];
   selectedOption;
   selectedOptionCS;
 
@@ -29,7 +28,7 @@ export class FormElementsComponent implements OnInit {
     { value: 'lucy', label: 'Lucy' },
     { value: 'tom', label: 'Tom' }
   ];
-  selectedMultipleOption =[ 'Tom', 'Jack' ];
+  selectedMultipleOption = ['Tom', 'Jack'];
 
   selectedState;
   selectedStateTwo;
@@ -90,13 +89,13 @@ export class FormElementsComponent implements OnInit {
   _date = null;
   _date_time = null;
 
-  //Input Examples Masks
+  // Input Examples Masks
   mask = {
-    date : [/[1-9]/, /\d/,'/', /\d/, /\d/,'/', /\d/, /\d/, /\d/, /\d/],
-    telephone:['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/],
-    custom:[/[1-9]/, /\d/,'-', /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/],
-    ssn:[/[1-9]/, /\d/, /\d/,'-', /\d/, /\d/,'-', /\d/, /\d/, /\d/, /\d/],
-  }
+    date: [/[1-9]/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+    telephone: ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/],
+    custom: [/[1-9]/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/],
+    ssn: [/[1-9]/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+  };
   numberMask = createNumberMask({
     prefix: '$ ',
     suffix: ''
@@ -104,80 +103,90 @@ export class FormElementsComponent implements OnInit {
   wierdMask = createNumberMask({
     prefix: '',
     suffix: '',
-    thousandsSeparatorSymbol:'.',
-    allowDecimal:true,
-    decimalSymbol:','
+    thousandsSeparatorSymbol: '.',
+    allowDecimal: true,
+    decimalSymbol: ','
   });
   dollarPrefix = createNumberMask({
     prefix: '$ ',
     suffix: '',
-    allowDecimal:true
+    allowDecimal: true
   });
   range = createNumberMask({
     prefix: '',
     suffix: '',
-    integerLimit:4
+    integerLimit: 4
   });
-  ngOnInit() {
 
-  }
-
-  fileList = [{
-    uid: -1,
-    name: 'xxx.png',
-    status: 'done',
-    url: 'http://pages.revox.io/dashboard/3.0.0/html/condensed/assets/img/profiles/avatar_small2x.jpg',
-  }];
+  fileList = [
+    {
+      uid: -1,
+      name: 'xxx.png',
+      status: 'done',
+      url: 'http://pages.revox.io/dashboard/3.0.0/html/condensed/assets/img/profiles/avatar_small2x.jpg'
+    }
+  ];
   previewImage = '';
   previewVisible = false;
 
-  fileList1=[];
-  fileList2=[];
+  fileList1 = [];
+  fileList2 = [];
   handlePreview;
 
-  //Fileupload HandleChange
-  handleChange(event){
-  }
-
-  //Tag OnClose CallBack
-  onClose(event){
-    console.log(event);
-  }
-
-  //Date Range Setup
+  // Date Range Setup
   _startDate = null;
   _endDate = null;
-  newArray = (len) => {
+
+  // Advance Date Option - Disable Dates
+  // All Future Dates
+  _advance_date = null;
+  @ViewChild('checkboxIndeterminate', { static: true }) _checkboxIndeterminate: ElementRef;
+  ngOnInit() {
+    this._checkboxIndeterminate.nativeElement.indeterminate = true;
+  }
+  // Fileupload HandleChange
+  handleChange(event) {}
+
+  // Tag OnClose CallBack
+  onClose(event) {
+  }
+
+  newArray = len => {
     const result = [];
     for (let i = 0; i < len; i++) {
       result.push(i);
     }
     return result;
-  };
+  }
+
   _startValueChange = () => {
     if (this._startDate > this._endDate) {
       this._endDate = null;
     }
-  };
+  }
+
   _endValueChange = () => {
     if (this._startDate > this._endDate) {
       this._startDate = null;
     }
-  };
-  _disabledStartDate = (startValue) => {
+  }
+
+  _disabledStartDate = startValue => {
     if (!startValue || !this._endDate) {
       return false;
     }
     return startValue.getTime() >= this._endDate.getTime();
-  };
-  _disabledEndDate = (endValue) => {
+  }
+
+  _disabledEndDate = endValue => {
     if (!endValue || !this._startDate) {
       return false;
     }
     return endValue.getTime() <= this._startDate.getTime();
-  };
+  }
+
   get _isSameDay() {
-    return this._startDate && this._endDate && moment(this._startDate).isSame(this._endDate, 'day')
+    return this._startDate && this._endDate && moment(this._startDate).isSame(this._endDate, 'day');
   }
   get _endTime() {
     return {
@@ -185,7 +194,7 @@ export class FormElementsComponent implements OnInit {
       nzDisabledHours: () => {
         return this._isSameDay ? this.newArray(this._startDate.getHours()) : [];
       },
-      nzDisabledMinutes: (h) => {
+      nzDisabledMinutes: h => {
         if (this._isSameDay && h === this._startDate.getHours()) {
           return this.newArray(this._startDate.getMinutes());
         }
@@ -197,15 +206,12 @@ export class FormElementsComponent implements OnInit {
         }
         return [];
       }
-    }
+    };
   }
-  //END Date Range
+  // END Date Range
 
-  //Advance Date Option - Disable Dates
-  //All Future Dates
-  _advance_date = null;
   _advance_disabledDate(current: Date): boolean {
-    //Future
+    // Future
     return current && current.getTime() < Date.now();
   }
 }

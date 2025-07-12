@@ -2,8 +2,8 @@
 @import 'core.scss';
 @import 'themes/modern/_var.scss';
 
-$base-img-url: "../../assets/images" !global;
-$assets-url: "../../assets" !global;
+$base-img-url: "../../assets/images" ;
+$assets-url: "../../assets" ;
 
 @import "modules/_layout.scss";
 @import "modules/_horizontal_menu.scss";
@@ -30,7 +30,10 @@ $assets-url: "../../assets" !global;
 @import "modules/_datepicker.scss";
 @import "modules/_timepicker.scss";
 @import "modules/_select.scss";
+@import "modules/_selectfx.scss";
 @import "modules/_slider.scss";
+@import "modules/_checkbox.scss";
+@import "modules/_radio.scss";
 @import "modules/_switch.scss";
 @import "modules/_tabs.scss";
 @import "modules/_tags.scss";
@@ -85,8 +88,8 @@ $assets-url: "../../assets" !global;
 //Print
 @import "modules/_print.scss";
 
-//Misc Helpers
-@import "modules/_misc.scss";
+//Widgets
+@import "modules/_widgets.scss";
 
 //Demo - Remove in production
 @import "modules/_demo.scss";

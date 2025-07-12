@@ -3,7 +3,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix ">
-          <button type="button" class="close" (click)="addNewAppModal.hide()" aria-hidden="true"><i class="pg pg-close fs-14"></i>
+          <button type="button" class="close" (click)="addNewAppModal.hide()" aria-hidden="true"><i class="pg-icon">close</i>
           </button>
           <h4 class="p-b-5"><span class="semi-bold">New</span> App</h4>
         </div>
@@ -61,7 +61,7 @@
           <li class="breadcrumb-item"><a href="javascript:void(0);">Tables</a></li>
           <li class="breadcrumb-item active">Advance</li>
         </ol>
-        <!-- END BREADCRUMB --> 
+        <!-- END BREADCRUMB -->
         <div class="row">
           <div class="col-xl-7 col-lg-6 ">
             <!-- START card -->
@@ -123,8 +123,8 @@
               [rowHeight]="'auto'"
               [limit]="5"
               [rows]='basicRows'>
-              <ng-template 
-              ngx-datatable-footer-template 
+              <ng-template
+              ngx-datatable-footer-template
               let-rowCount="rowCount"
               let-pageSize="pageSize"
               let-selectedCount="selectedCount"
@@ -148,7 +148,7 @@
         </div>
         <div class="pull-right">
           <div class="col-xs-12">
-            <button (click)="showModal()"  class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add row
+            <button (click)="showModal()"  class="btn btn-primary btn-cons"><i class="pg-icon">add</i> Add row
             </button>
           </div>
         </div>

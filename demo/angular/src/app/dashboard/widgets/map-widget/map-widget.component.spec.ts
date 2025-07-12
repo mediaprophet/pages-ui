@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MapWidgetComponent } from './map-widget.component';
 
@@ -6,11 +6,10 @@ describe('MapWidgetComponent', () => {
   let component: MapWidgetComponent;
   let fixture: ComponentFixture<MapWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MapWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [MapWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

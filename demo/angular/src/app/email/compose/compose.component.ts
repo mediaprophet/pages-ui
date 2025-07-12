@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { pagesToggleService } from '../../@pages/services/toggler.service'
-import { QuillEditorComponent } from 'ngx-quill/src/quill-editor.component';
-import Quill from 'quill';
+import { pagesToggleService } from '@pages/services/toggler.service';
+import { QuillEditorComponent } from 'ngx-quill';
 
 @Component({
   selector: 'email-compose',
@@ -11,16 +10,11 @@ import Quill from 'quill';
 export class ComposeComponent implements OnInit, OnDestroy {
   editorModules = {
     //https://github.com/KillerCodeMonkey/ngx-quill
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, false] }],
-      ['bold', 'italic', 'underline'],
-      ['link', 'image']  
-    ]
+    toolbar: [[{ header: [1, 2, 3, 4, false] }], ['bold', 'italic', 'underline'], ['link', 'image']]
   };
   timeout;
 
-  constructor(private toggler:pagesToggleService) {
-  }
+  constructor(private toggler: pagesToggleService) {}
 
   ngOnInit() {
     //Async Update -
@@ -29,11 +23,10 @@ export class ComposeComponent implements OnInit, OnDestroy {
       this.toggler.toggleFooter(false);
     });
 
-    this.toggler.setPageContainer("full-height");
-    this.toggler.setContent("full-height");
+    this.toggler.setPageContainer('full-height');
+    this.toggler.setContent('full-height');
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     clearTimeout(this.timeout);
   }
-
 }

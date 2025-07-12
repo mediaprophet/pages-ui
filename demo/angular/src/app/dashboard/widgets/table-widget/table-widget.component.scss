@@ -10,3 +10,13 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 991px) {
+  .widget-11{
+    position: relative;
+    .widget-11-table{
+      height: 273px;
+    }
+  }
+}
+

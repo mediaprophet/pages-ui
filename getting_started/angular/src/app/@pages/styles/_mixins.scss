@@ -42,6 +42,13 @@
     display: flex;
 }
 
+@mixin flex(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 @mixin flex-inline(){
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -74,12 +81,31 @@
 
 
 // Placeholder text
-@mixin placeholder($color: $input-color-placeholder) {
-  &:-moz-placeholder            { color: $color; } // Firefox 4-18
-  &::-moz-placeholder           { color: $color; opacity: 1; } // Firefox 19+
-  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
-  &.placeholder                 { color: $color; } // Fallback
+@mixin placeholder($color, $opacity) {
+    &::-moz-placeholder           {
+        color: $color;   // Firefox
+		opacity: $opacity;
+		font-weight: 400;
+		font-family: $force-mac-font-family;
+    } // See https://github.com/twbs/bootstrap/pull/11526
+    &:-ms-input-placeholder       {
+        color: $color;
+		opacity: $opacity;
+		font-weight: 400;
+		font-family: $force-mac-font-family;
+    } // Internet Explorer 10+
+    &::-webkit-input-placeholder  {
+        color: $color;
+		opacity: $opacity;
+		font-weight: 400;
+		font-family: $force-mac-font-family;
+		} // Safari and Chrome
+		&::placeholder{
+			color: $color;
+			opacity: $opacity;
+			font-weight: 400;
+			font-family: $force-mac-font-family;
+		}
 }
 
 // Placeholder text
@@ -131,18 +157,18 @@
 @mixin generate-paddings-options-prefix($prefix,$n, $j: 0) {
   @if $j <= $n {
     @for $i from $j through $n {
-      $step : $i*5;  
+      $step : $i*5;
       .#{$prefix}-p-t-#{$step} {
-        padding-top: ($step*1px) !important;
+        margin-top: ($step*1px) !important;
       }
       .#{$prefix}-p-r-#{$step} {
-        padding-right: ($step*1px) !important;
+        margin-right: ($step*1px) !important;
       }
       .#{$prefix}-p-l-#{$step} {
-        padding-left: ($step*1px) !important;
+        margin-left: ($step*1px) !important;
       }
       .#{$prefix}-p-b-#{$step} {
-        padding-bottom: ($step*1px) !important;
+        margin-bottom: ($step*1px) !important;
       }
       //@include generate-margin-options($n, ($i + 1));
     }
@@ -152,7 +178,7 @@
 @mixin generate-margin-options-prefix($prefix,$n, $j: 0) {
   @if $j <= $n {
     @for $i from $j through $n {
-      $step : $i*5;  
+      $step : $i*5;
       .#{$prefix}-m-t-#{$step} {
         margin-top: ($step*1px) !important;
       }
@@ -177,10 +203,10 @@
           mask: $arguments;
 }
 @mixin box_scale($scale) {
-    -webkit-transform: scale($scale);  
-      -ms-transform: scale($scale); 
-      -moz-transform: scale($scale); 
-          transform: scale($scale); 
+    -webkit-transform: scale($scale);
+      -ms-transform: scale($scale);
+      -moz-transform: scale($scale);
+          transform: scale($scale);
 }
 // Single side border-radius
 @mixin border-top-radius($radius) {
@@ -486,8 +512,6 @@
   max-width: 100%; // Part 1: Set a maximum relative to the parent
   height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
-
-
 // Import the Compass Plugin
 //--------------------------------
 // Normal
@@ -755,6 +779,16 @@
 }
 @function blend-colorburn-color($foreground, $background) {
   $tmp: (255 - ((255 - $background) * 255) / $foreground);
+
+  // TODO: hacked to replicate photoshop
+  @if $foreground == 0 {
+    $foreground: 255;
+  } @elseif $tmp < 0 {
+    $foreground: 0;
+  } @else {
+    $foreground: $tmp;
+  }
+  @return $foreground;
 }
 
 //--------------------------------
@@ -1008,3 +1042,96 @@
   @return hsl(nth($hsl, 1), nth($hsl, 2), nth($hsl, 3));
 }
 
+//returns a value between 0 - 1
+@function luma($c) {
+	$-local-red: red(rgba($c, 1.0));
+	$-local-green: green(rgba($c, 1.0));
+	$-local-blue: blue(rgba($c, 1.0));
+
+	@return (0.2126 * $-local-red  +
+			 0.7152 * $-local-green +
+			 0.0722 * $-local-blue) / 255;
+}
+
+@function make-shade($color, $mix-percentage, $saturation-shift, $hue-shift, $level){
+	$divider: 1;
+	$base: #000000;
+
+	@if($level == 1 or $level == -1){
+		$divider: 2;
+	}
+
+	@if($level < 0){
+		$base: #ffffff;
+	}
+
+	$color-mix: mix($color, $base, $mix-percentage);
+	$color-saturate: $color-mix;
+	$color-hue: $hue-shift;
+
+	@if(saturation($color-mix) > 5){
+		$color-saturate: saturate($color-mix, $saturation-shift / $divider)
+	}
+
+	@if($level < 0){
+		@if(luma(adjust-hue($color, $hue-shift)) > luma($color)){
+			$color-hue: ($hue-shift / $divider);
+		}@else{
+			$color-hue: -($hue-shift / $divider);
+		}
+	} @else if($level > 0){
+		@if(luma(adjust-hue($color, $hue-shift)) > luma($color)){
+			$color-hue: -($hue-shift / $divider);
+		}@else{
+			$color-hue: ($hue-shift / $divider);
+		}
+	}
+	@return adjust-hue($color-saturate, $color-hue);
+}
+
+
+// Legibility standards, WCAG 2.0 - Returns black or white text color
+@function text-contrast($background-color) {
+	$color-brightness: round((red($background-color) * 299) + (green($background-color) * 587) + (blue($background-color) * 114) / 1000);
+	$light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+	@if abs($color-brightness) < ($light-color/2){
+	  @return $f-color-light;
+	}
+	@else {
+	  @return $f-color-dark;
+	}
+}
+
+// Checks if two colors are contrasting (Legibility standards, WCAG 2.0) - Returns true or false
+@function contrast-checker($foreground, $background) {
+	$r: (max(red($foreground), red($background))) - (min(red($foreground), red($background)));
+	$g: (max(green($foreground), green($background))) - (min(green($foreground), green($background)));
+	$b: (max(blue($foreground), blue($background))) - (min(blue($foreground), blue($background)));
+	$sum-rgb: $r + $g + $b;
+
+	@if $sum-rgb < 500 {
+	  @return false;
+	} @else {
+	  @return true;
+	 }
+}
+
+// Darkens or lightens a text color for Legibility standards
+@function fix-contrast($text-color, $background: #ffffff){
+	@if(luma($background) > 0.5){
+		@while(contrast-checker($text-color, $background) == false) {
+			$text-color: darken($text-color, 1%);
+			@if(contrast-checker($text-color, $background)) {
+				@return $text-color;
+			}
+		}
+	}@else{
+		@while(contrast-checker($text-color, $background) == false) {
+			$text-color: lighten($text-color, 1%);
+			@if(contrast-checker($text-color, $background)) {
+				@return $text-color;
+			}
+		}
+	}
+	  @return $text-color;
+}

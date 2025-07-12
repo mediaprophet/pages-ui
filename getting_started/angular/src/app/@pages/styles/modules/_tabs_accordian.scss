@@ -10,28 +10,23 @@
   & > li {
     padding-left: 0;
     padding-right: 0;
-    &.nav-item-disabled{
-      opacity: 0.6;
-      pointer-events: none;
-    }
     & > a.active {
       &:hover,
       &:focus {
-        border-color: $color-master-light;
-        color: $color-master;
-        background-color: $color-master-light;
+        border-color: $color-contrast-low;
+        color: $color-contrast-high;
+        background-color: $color-contrast-low;
       }
     }
     & > a {
       display: block;
       border-radius: 0;
-      padding: 13px 20px;
-      margin-right:0;
-      font-family: 'Montserrat';
+      padding: 13px 17px;
+      @include margin-right(0);
+      font-family: $secondary-font-family;
       font-weight: 500;
       letter-spacing: 0.06em;
-      color: fade($color-master,
-      70%);
+      color: $color-contrast-medium;
       font-size: 10.5px;
       min-width: 70px;
       text-transform: uppercase;
@@ -42,10 +37,13 @@
       &:focus {
         background: transparent;
         border-color: transparent;
-        color: $color-master;
+        color: $color-contrast-high;
       }
       .tab-icon {
-        margin-right:6px;
+        @include margin-right(6px);
+      }
+      &.active {
+        color: $color-contrast-higher;
       }
     }
   }
@@ -55,7 +53,7 @@
     & > .tab-pane {
       &.slide-left,
       &.slide-right {
-        @include transition(all .3s ease);
+        @include transition(all 0.3s ease);
         &.sliding {
           opacity: 0 !important;
         }
@@ -93,12 +91,12 @@
   }
   &.nav-tabs-left {
     float: left;
-    padding-right:0;
+    padding-right: 0;
     & ~ .tab-content {
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       //IE10 Fix
-     -ms-flex: 1;
-     -ms-flex-negative:0;
+      -ms-flex: 1;
+      -ms-flex-negative: 0;
     }
   }
   &.nav-tabs-right {
@@ -107,20 +105,20 @@
     & ~ .tab-content {
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       //IE10 Fix
-     -ms-flex: 1;
-     -ms-flex-negative:0;
+      -ms-flex: 1;
+      -ms-flex-negative: 0;
     }
   }
 }
 
-/* Tabs : Simple 
+/* Tabs : Simple
 ------------------------------------
 */
 
 .nav-tabs-simple {
   border-bottom: 0px;
   &:after {
-    content:'';
+    content: '';
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
     position: absolute;
@@ -130,7 +128,7 @@
   }
   & > li {
     margin-bottom: 0;
-    & > a{
+    & > a {
       &:after {
         position: absolute;
         @include transition(all 0.1s linear 0s);
@@ -143,26 +141,26 @@
         left: 0;
         z-index: 125;
         top: 100%;
-        &.nav-tabs-primary{
+        &.nav-tabs-primary {
           background-color: $color-primary;
         }
-        &.nav-tabs-success{
+        &.nav-tabs-success {
           background-color: $color-success;
         }
-        &.nav-tabs-complete{
+        &.nav-tabs-complete {
           background-color: $color-complete;
         }
-        &.nav-tabs-danger{
+        &.nav-tabs-danger {
           background-color: $color-danger;
         }
-        &.nav-tabs-warning{
+        &.nav-tabs-warning {
           background-color: $color-warning;
         }
-        &.nav-tabs-info{
+        &.nav-tabs-info {
           background-color: $color-info;
         }
       }
-      &.active  {
+      &.active {
         &:hover,
         &:focus {
           background-color: transparent;
@@ -191,16 +189,14 @@
         bottom: 0;
         position: absolute;
       }
-      & > a{
+      & > a {
         &.active,
-        &:hover{
+        &:hover {
           &:after {
             width: 3px;
           }
         }
       }
-    }
-    & ~ .tab-content {
     }
   }
   &.nav-tabs-left {
@@ -222,8 +218,17 @@
 
 .nav-tabs-linetriangle {
   border-bottom: 0;
+  &:after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    z-index: 100;
+    left: 0;
+  }
   & > li {
-    & > a{
+    & > a {
       &.active {
         background: transparent;
         box-shadow: none;
@@ -237,7 +242,7 @@
         &:after,
         &:before {
           border: medium solid transparent;
-          content: "";
+          content: '';
           height: 0;
           left: 50%;
           pointer-events: none;
@@ -249,12 +254,12 @@
         &:after {
           border-top-color: $body-background;
           border-width: 10px;
-          margin-left:-10px;
+          @include margin-left(-10px);
         }
         &:before {
           border-top-color: rgba(0, 0, 0, 0.2);
           border-width: 11px;
-          margin-left:-11px;
+          @include margin-left(-11px);
         }
       }
       span {
@@ -266,12 +271,12 @@
       &:hover,
       &:focus {
         overflow: visible;
-        @include transition( color 0.2s ease 0s);
+        @include transition(color 0.2s ease 0s);
       }
     }
   }
   & ~ .tab-content {
-    background: #fff;
+    background: $color-contrast-lowest;
   }
   // POSITIONG OPTIONS
   &.nav-tabs-left {
@@ -279,7 +284,7 @@
       &:after {
         border-bottom: none;
       }
-      & > li > a{
+      & > li > a {
         &.active {
           &:before {
             border-top: 11px solid transparent;
@@ -291,7 +296,7 @@
             border-bottom: 10px solid transparent;
             border-left: 10px solid $body-background;
             margin-top: 1px;
-            margin-right:2px;
+            @include margin-right(2px);
           }
           &:after,
           &:before {
@@ -308,38 +313,38 @@
       &:after {
         border-bottom: none;
       }
-      & > li > a{
-          &.active {
-            &:before {
-              border-top: 11px solid transparent;
-              border-bottom: 11px solid transparent;
-              border-right: 11px solid rgba(0, 0, 0, 0.2);
-            }
-            &:after {
-              border-top: 10px solid transparent;
-              border-bottom: 10px solid transparent;
-              border-right: 10px solid $body-background;
-              margin-top: 1px;
-              margin-left:-9px;
-            }
-            &:after,
-            &:before {
-              top: auto;
-              left: -11px;
-              right: auto;
-            }
+      & > li > a {
+        &.active {
+          &:before {
+            border-top: 11px solid transparent;
+            border-bottom: 11px solid transparent;
+            border-right: 11px solid rgba(0, 0, 0, 0.2);
+          }
+          &:after {
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid $body-background;
+            margin-top: 1px;
+            @include margin-left(-9px);
+          }
+          &:after,
+          &:before {
+            top: auto;
+            left: -11px;
+            right: auto;
+          }
         }
       }
     }
   }
 }
-@media screen and (max-width:58em) {
+@media screen and (max-width: 58em) {
   .nav-tabs-linetriangle {
     font-size: 0.6em;
   }
 }
 
-/* Tabs : Fill-up 
+/* Tabs : Fill-up
 ------------------------------------
 */
 
@@ -356,42 +361,38 @@
         @include backface-visibility(hidden);
         background: none repeat scroll 0 0 $color-success;
         border: 1px solid $color-success;
-        content: "";
+        content: '';
         height: calc(100% + 1px);
         left: 0;
         position: absolute;
         top: 0;
-        -webkit-transform: translate3d(0,
-        100%,
-        0px);
-        transform: translate3d(0,
-        100%,
-        0px);
+        -webkit-transform: translate3d(0, 100%, 0px);
+        transform: translate3d(0, 100%, 0px);
         -webkit-transition: -webkit-transform 0.3s ease 0s;
         transition: transform 0.3s ease 0s;
         width: 100%;
         z-index: -1;
-        &.nav-tabs-primary{
+        &.nav-tabs-primary {
           background: none repeat scroll 0 0 $color-primary;
           border: 1px solid $color-primary;
         }
-        &.nav-tabs-success{
+        &.nav-tabs-success {
           background: none repeat scroll 0 0 $color-success;
           border: 1px solid $color-success;
         }
-        &.nav-tabs-complete{
+        &.nav-tabs-complete {
           background: none repeat scroll 0 0 $color-complete;
           border: 1px solid $color-complete;
         }
-        &.nav-tabs-warning{
+        &.nav-tabs-warning {
           background: none repeat scroll 0 0 $color-warning;
           border: 1px solid $color-warning;
         }
-        &.nav-tabs-danger{
+        &.nav-tabs-danger {
           background: none repeat scroll 0 0 $color-danger;
           border: 1px solid $color-danger;
         }
-        &.nav-tabs-info{
+        &.nav-tabs-info {
           background: none repeat scroll 0 0 $color-info;
           border: 1px solid $color-info;
         }
@@ -431,7 +432,7 @@
     margin: 0;
   }
   & ~ .tab-content {
-    background: #fff;
+    background: $color-contrast-lowest;
   }
   // POSITIONG OPTIONS
   &.nav-tabs-left,
@@ -448,7 +449,8 @@
         }
       }
       &.active {
-        a{&:after {
+        a {
+          &:after {
             @include translate3d(0px, 0px, 0px);
           }
         }
@@ -466,7 +468,8 @@
         }
       }
       &.active {
-        a{span {
+        a {
+          span {
             @include translate3d(-5px, 0, 0px);
           }
         }
@@ -488,7 +491,8 @@
         }
       }
       &.active {
-        a{span {
+        a {
+          span {
             @include translate3d(5px, 0, 0px);
           }
         }
@@ -500,54 +504,54 @@
   }
 }
 
-.nav-tabs-header{
+.nav-tabs-header {
   overflow: scroll;
   width: 100%;
-  .nav-tabs{
-    width:auto;
+  .nav-tabs {
+    width: auto;
     white-space: nowrap;
-     & > li{
-        display:inline-block;
-        float: inherit;
-      }
+    & > li {
+      display: inline-block;
+      float: inherit;
+    }
   }
-  &.nav-tabs-linetriangle{
-    height:54px;
+  &.nav-tabs-linetriangle {
+    height: 54px;
     overflow-y: hidden;
-    &:after{
+    &:after {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       width: 100%;
       position: relative;
       bottom: 3px;
-      z-index: 120;    
-      content: "";
-      clear: both;    
+      z-index: 120;
+      content: '';
+      clear: both;
     }
-    &  ~ .tab-content{
+    & ~ .tab-content {
       position: relative;
-      top:-12px;
+      top: -12px;
     }
   }
 }
-.nav-tabs-header ~ .tab-content{
+.nav-tabs-header ~ .tab-content {
   overflow: hidden;
   padding: 15px;
 }
-.nav-tab-dropdown .cs-select{
+.nav-tab-dropdown .cs-select {
   width: 100% !important;
   max-width: 100%;
-  .cs-placeholder{
+  .cs-placeholder {
     height: 48px;
     padding: 12px 34px 15px 15px;
-    font-family: 'Montserrat';
+    font-family: $secondary-font-family;
     font-weight: 500;
     letter-spacing: 0.06em;
     font-size: 10.5px;
     text-transform: uppercase;
   }
-  .cs-backdrop{
-    border:1px solid transparent;
-    border-bottom: 1px solid $form-control-border-color;
+  .cs-backdrop {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $color-border-a;
   }
 }
 
@@ -557,16 +561,13 @@
 
 .card-group {
   margin-bottom: 18px;
-  &.horizontal{
+  &.horizontal {
     display: block;
-    .card+.card{
-      border-left:1px solid $panel-border-color;
-    }
   }
-  .card .card-header {
+  .card-header {
     padding: 13px 18px 10px 22px;
     &.collapsed {
-      background-color: #fff;
+      background-color: $color-contrast-lowest;
     }
     & + .card-collapse {
       .card-body {
@@ -576,44 +577,41 @@
     .card-title {
       width: 100%;
       & > a {
-        color: $color-master;
-        font-size: 13px;
-        font-weight: normal;
+        color: $color-contrast-high;
+        font-size: inherit;
+        padding: inherit;
+        margin: inherit;
         display: block;
         opacity: 1;
         &:hover {
-          color: $color-master !important;
+          color: $color-contrast-high !important;
           &:after {
-            color: $color-master !important;
+            color: $color-contrast-high !important;
           }
         }
         &:after {
-          font-family: 'FontAwesome';
-          content: "\f056";
+          font-family: 'pages-icon';
+          content: '\e987';
+          font-size: 17px;
           position: absolute;
-          right:13px;
+          @include right(13px);
           top: 36%;
-          color: $color-master;
+          color: $color-contrast-high;
         }
         &.collapsed {
-          color: fade($color-master,
-          70%);
+          color: fade($color-contrast-high, 70%);
           opacity: 1;
           &:after {
-            content: "\f055";
-            color: fade($color-master, 70%);
-            opacity: .7;
-          }
-          &:hover {
-            &:after {
-              opacity: 1;
-            }
+            content: '\e986';
+            color: fade($color-contrast-high, 70%);
           }
         }
       }
     }
   }
   .card {
+    box-shadow: none;
+    border: 1px solid $color-border-a;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 0;
     -ms-flex: 1 0 0;
@@ -624,31 +622,33 @@
     .card-body {
       height: auto;
     }
+    &.card-default {
+      box-shadow: none;
+      border: 1px solid transparentize($color-border-a, 0.04);
+    }
   }
 }
 .nav-pills {
   > li {
-    &:first-child{
+    &:first-child {
       padding-left: 0;
     }
     // Links rendered as pills
     > a {
-      color: $color-master;
+      color: $color-contrast-high;
     }
     // Active state
     &.active > a {
       &,
       &:hover,
       &:focus {
-        color: $color-master;
-        background-color: $color-master-light;
+        color: $color-contrast-high;
+        background-color: $color-contrast-low;
       }
     }
   }
-
 }
-@media (max-width:767px) {
-
+@media (max-width: 767px) {
   .nav.nav-tabs.nav-stack-sm {
     li {
       float: none;

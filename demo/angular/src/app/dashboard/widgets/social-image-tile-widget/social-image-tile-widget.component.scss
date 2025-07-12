@@ -1,6 +1,6 @@
 $assets-url :"/assets";
 
-:host /deep/ .widget-18 {
+:host  ::ng-deep .widget-18 {
     .widget-18-post {
         height:342px;
         background: url('#{$assets-url}/img/social/quote.jpg');

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ViewsPageComponent } from './views.component';
 
@@ -6,11 +6,10 @@ describe('ViewsComponent', () => {
   let component: ViewsPageComponent;
   let fixture: ComponentFixture<ViewsPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewsPageComponent ]
-    })
-    .compileComponents();
+      declarations: [ViewsPageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

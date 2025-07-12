@@ -6,7 +6,7 @@ import { ProgressConfig } from './progress.config';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ ProgressComponent],
+  declarations: [ProgressComponent],
   exports: [ProgressComponent]
 })
 export class ProgressModule {

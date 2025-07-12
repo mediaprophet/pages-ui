@@ -1,15 +1,12 @@
-//Angular Dependencies
+// Angular Dependencies
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpModule} from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
-import { pgCardModule} from '../@pages/components/card/card.module';
-import { pgSwitchModule } from '../@pages/components/switch/switch.module';
-import { pgTabsModule } from '../@pages/components/tabs/tabs.module';
+import { pgCardModule } from '@pages/components/card/card.module';
+import { pgTabsModule } from '@pages/components/tabs/tabs.module';
 
-import { NvD3Module } from 'ngx-nvd3';
 import { NgxEchartsModule } from 'ngx-echarts';
 
 import { SwiperModule, SWIPER_CONFIG, SwiperConfigInterface } from 'ngx-swiper-wrapper';
@@ -46,49 +43,43 @@ import { QuickStatsWidgetComponent } from './widgets/quick-stats-widget/quick-st
 import { TodoListWidgetComponent } from './widgets/todo-list-widget/todo-list-widget.component';
 import { GraphWidgetBasicComponent } from './widgets/graph-widget-basic/graph-widget-basic.component';
 
-
 const components = [
-    ImageWidgetComponent,
-    ImageWidgetBasicComponent,
-    GraphTileWidgetComponent,
-    PlainWidgetComponent,
-    PlainLiveWidgetComponent,
-    GraphLiveWidgetComponent,
-    BarTileWidgetComponent,
-    GraphTileFlatWidgetComponent,
-    ProgressTileFlatWidgetComponent,
-    StatTileWidgetComponent,
-    GraphWidgetComponent,
-    GraphWidgetBasicComponent,
-    TableBasicWidgetComponent,
-    MapWidgetComponent,
-    RealtimeWidgetComponent,
-    StackedBarWidgetComponent,
-    GraphOptionsWidgetComponent,
-    WeatherWidgetComponent,
-    TableWidgetComponent,
-    SocialImageTileWidgetComponent,
-    SocialPostTileWidgetComponent,
-    ProjectProgressWidgetComponent,
-    WeeklySalesWidgetComponent,
-    QuickStatsWidgetComponent,
-    TodoListWidgetComponent
+  ImageWidgetComponent,
+  ImageWidgetBasicComponent,
+  GraphTileWidgetComponent,
+  PlainWidgetComponent,
+  PlainLiveWidgetComponent,
+  GraphLiveWidgetComponent,
+  BarTileWidgetComponent,
+  GraphTileFlatWidgetComponent,
+  ProgressTileFlatWidgetComponent,
+  StatTileWidgetComponent,
+  GraphWidgetComponent,
+  GraphWidgetBasicComponent,
+  TableBasicWidgetComponent,
+  MapWidgetComponent,
+  RealtimeWidgetComponent,
+  StackedBarWidgetComponent,
+  GraphOptionsWidgetComponent,
+  WeatherWidgetComponent,
+  TableWidgetComponent,
+  SocialImageTileWidgetComponent,
+  SocialPostTileWidgetComponent,
+  ProjectProgressWidgetComponent,
+  WeeklySalesWidgetComponent,
+  QuickStatsWidgetComponent,
+  TodoListWidgetComponent
 ];
 
 @NgModule({
-  imports: [
-    pgCardModule,
-    pgTabsModule,
-    NvD3Module,
-    NgxEchartsModule,
-    SwiperModule,
-    pgSwitchModule
-  ],
+  imports: [pgCardModule, pgTabsModule, NgxEchartsModule, SwiperModule],
   declarations: components,
   exports: components,
-  providers: [{
-    provide: SWIPER_CONFIG,
-    useValue: DEFAULT_SWIPER_CONFIG
-  }]
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
+  ]
 })
-export class DashboardModule { }
+export class DashboardModule {}

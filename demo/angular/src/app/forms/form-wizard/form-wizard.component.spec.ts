@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { FormWizardComponent } from './form-wizard.component';
 
@@ -6,11 +6,10 @@ describe('FormWizardComponent', () => {
   let component: FormWizardComponent;
   let fixture: ComponentFixture<FormWizardComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormWizardComponent ]
-    })
-    .compileComponents();
+      declarations: [FormWizardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

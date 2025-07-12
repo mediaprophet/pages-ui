@@ -265,6 +265,16 @@
 }
 @function blend-colorburn-color($foreground, $background) {
   $tmp: (255 - ((255 - $background) * 255) / $foreground);
+
+  // TODO: hacked to replicate photoshop
+  @if $foreground == 0 {
+    $foreground: 255;
+  } @elseif $tmp < 0 {
+    $foreground: 0;
+  } @else {
+    $foreground: $tmp;
+  }
+  @return $foreground;
 }
 
 //--------------------------------
@@ -519,5 +529,5 @@
 }
 
 @function fade($color, $opacity){
-  @return fade-in($color, $opacity/100%)
+  @return fade-out($color, 1- ($opacity/100))
 }

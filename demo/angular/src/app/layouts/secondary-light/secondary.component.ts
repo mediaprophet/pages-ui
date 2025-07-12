@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { pagesToggleService } from '../../@pages/services/toggler.service'
+import { pagesToggleService } from '@pages/services/toggler.service';
 @Component({
   selector: 'app-secondary',
   templateUrl: './secondary.component.html',
   styleUrls: ['./secondary.component.scss']
 })
 export class SecondaryComponentLight implements OnInit {
-
-  constructor(private toggler:pagesToggleService) {}
+  constructor(private toggler: pagesToggleService) {}
 
   ngOnInit() {
     //Async Update -
@@ -15,7 +14,6 @@ export class SecondaryComponentLight implements OnInit {
     setTimeout(() => {
       this.toggler.toggleFooter(false);
     });
-    this.toggler.setHeaderClass("light");
+    this.toggler.setHeaderClass('light');
   }
-
 }

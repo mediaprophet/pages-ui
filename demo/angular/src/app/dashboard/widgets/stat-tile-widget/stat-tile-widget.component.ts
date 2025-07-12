@@ -7,11 +7,7 @@ declare var pg: any;
   styleUrls: ['./stat-tile-widget.component.scss']
 })
 export class StatTileWidgetComponent implements OnInit {
-  
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

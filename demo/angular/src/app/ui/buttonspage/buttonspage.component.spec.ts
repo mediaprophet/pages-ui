@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ButtonspageComponent } from './buttonspage.component';
 
@@ -6,11 +6,10 @@ describe('ButtonspageComponent', () => {
   let component: ButtonspageComponent;
   let fixture: ComponentFixture<ButtonspageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ButtonspageComponent ]
-    })
-    .compileComponents();
+      declarations: [ButtonspageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

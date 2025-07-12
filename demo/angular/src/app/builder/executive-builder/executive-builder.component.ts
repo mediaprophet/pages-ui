@@ -8,8 +8,5 @@ import { RootbuilderComponent } from '../rootbuilder/rootbuilder.component';
   encapsulation: ViewEncapsulation.None
 })
 export class ExecutiveBuilderComponent extends RootbuilderComponent implements OnInit {
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

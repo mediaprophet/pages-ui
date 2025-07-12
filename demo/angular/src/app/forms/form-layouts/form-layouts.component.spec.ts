@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { FormLayoutsComponent } from './form-layouts.component';
 
@@ -6,11 +6,10 @@ describe('FormLayoutsComponent', () => {
   let component: FormLayoutsComponent;
   let fixture: ComponentFixture<FormLayoutsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormLayoutsComponent ]
-    })
-    .compileComponents();
+      declarations: [FormLayoutsComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

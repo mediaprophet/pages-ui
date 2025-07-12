@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { WeeklySalesWidgetComponent } from './weekly-sales-widget.component';
 
@@ -6,11 +6,10 @@ describe('WeeklySalesWidgetComponent', () => {
   let component: WeeklySalesWidgetComponent;
   let fixture: ComponentFixture<WeeklySalesWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ WeeklySalesWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [WeeklySalesWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

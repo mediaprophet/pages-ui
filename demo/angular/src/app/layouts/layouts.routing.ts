@@ -10,55 +10,63 @@ import { BoxedAltComponent } from './boxed-alt/boxed-alt.component';
 export const LayoutsRoutes: Routes = [
   {
     path: '',
-    children: [{
-      path: 'default',
-      component: DefaultComponent,
-      data: {
-        title: 'default',
-        boxed:false
+    children: [
+      {
+        path: 'default',
+        component: DefaultComponent,
+        data: {
+          title: 'default',
+          boxed: false
+        }
+      },
+      {
+        path: 'secondary',
+        component: SecondaryComponent,
+        data: {
+          title: '',
+          boxed: false
+        }
+      },
+      {
+        path: 'secondary-light',
+        component: SecondaryComponentLight,
+        data: {
+          title: '',
+          boxed: false
+        }
+      },
+      {
+        path: 'boxed',
+        component: BoxedComponent,
+        data: {
+          boxed: true
+        }
+      },
+      {
+        path: 'boxed-alt',
+        component: BoxedAltComponent,
+        data: {
+          boxed: true
+        }
+      },
+      {
+        path: 'with-sidebar',
+        component: SecondaryHorizontalComponent,
+        data: {
+          title: 'Builder'
+        }
+      },
+      {
+        path: 'with-sidebar-casual',
+        component: SecondaryHorizontalCasualComponent,
+        data: {
+          title: 'Builder'
+        }
+      },
+      {
+        path: 'horizontal-blank',
+        component: DefaultComponent
       }
-    },{
-      path: 'secondary',
-      component: SecondaryComponent,
-      data: {
-        title: '',
-        boxed:false
-      }
-    },{
-      path: 'secondary-light',
-      component: SecondaryComponentLight,
-      data: {
-        title: '',
-        boxed:false
-      }
-    },{
-      path: 'boxed',
-      component: BoxedComponent,
-      data: {
-        boxed:true
-      }
-    },{
-      path: 'boxed-alt',
-      component: BoxedAltComponent,
-      data: {
-        boxed:true
-      }
-    },{
-      path: 'with-sidebar',
-      component: SecondaryHorizontalComponent,
-      data: {
-        title: 'Builder'
-      }
-    },{
-      path: 'with-sidebar-casual',
-      component: SecondaryHorizontalCasualComponent,
-      data: {
-        title: 'Builder'
-      }
-    },
-    {
-      path: 'horizontal-blank',
-      component: DefaultComponent,
-    }]
+    ]
   }
 ];

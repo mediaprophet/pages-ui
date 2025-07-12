@@ -4,28 +4,32 @@ import { RouterModule } from '@angular/router';
 import { ExtraRouts } from './extra.routing';
 
 //NGX Bootstrap Components
-import { CollapseModule } from 'ngx-bootstrap';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 //Thirdparty
-import {NgsRevealModule} from 'ng-scrollreveal';
-import { IsotopeModule } from 'ngx-isotope';
-import { SwiperModule, SWIPER_CONFIG, SwiperConfigInterface } from 'ngx-swiper-wrapper';
+// import { NgsRevealModule } from 'ng-scrollreveal';
+// import { IsotopeModule } from 'ngx-isotope';
+import {
+  SwiperModule,
+  SWIPER_CONFIG,
+  SwiperConfigInterface,
+} from 'ngx-swiper-wrapper';
 
 // Dependant of pg-slider
-import { FormsModule } from '@angular/forms'; 
-import { pgSliderModule } from '../@pages/components/slider/slider.module';
+import { FormsModule } from '@angular/forms';
+import { pgSliderModule } from '@pages/components/slider/slider.module';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
-  slidesPerView: 'auto'
+  slidesPerView: 'auto',
 };
 
-import { ModalModule } from 'ngx-bootstrap';
-
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 //Demo Page
 import { BlankpageComponent } from './blankpage/blankpage.component';
-import { SharedModule } from '../@pages/components/shared.module';
+import { SharedModule } from '@pages/components/shared.module';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { InvoiceComponent } from './invoice/invoice.component';
@@ -39,17 +43,26 @@ import { GalleryService } from './gallery/gallery.service';
     RouterModule.forChild(ExtraRouts),
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
-    NgsRevealModule.forRoot(),
-    IsotopeModule,
+    // NgsRevealModule.forRoot(),
+    // IsotopeModule,
     SwiperModule,
     FormsModule,
     pgSliderModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    CarouselModule,
   ],
-  providers:[GalleryService, {
-    provide: SWIPER_CONFIG,
-    useValue: DEFAULT_SWIPER_CONFIG
-  }],
-  declarations: [BlankpageComponent, GalleryComponent, TimelineComponent, InvoiceComponent]
+  providers: [
+    GalleryService,
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG,
+    },
+  ],
+  declarations: [
+    BlankpageComponent,
+    GalleryComponent,
+    TimelineComponent,
+    InvoiceComponent,
+  ],
 })
-export class ExtraModule { }
+export class ExtraModule {}

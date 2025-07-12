@@ -6,13 +6,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./error.component.scss']
 })
 export class ErrorComponent implements OnInit {
-  error:string;
+  error: string;
   private sub: any;
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-       this.error = params['type'];
+      this.error = params['type'];
     });
   }
 

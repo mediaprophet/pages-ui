@@ -1,15 +1,19 @@
-import { Component, OnInit, ViewChild,ViewChildren, QueryList } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewChild,
+  ViewChildren,
+  QueryList
+} from '@angular/core';
 import {
   animate,
   state,
   style,
   transition,
-  trigger,
+  trigger
 } from '@angular/animations';
-import { IsotopeOptions } from 'ngx-isotope';
-import {GalleryService} from './gallery.service';
-import { SwiperDirective, SwiperComponent
-} from 'ngx-swiper-wrapper';
+
+import { GalleryService } from './gallery.service';
 
 @Component({
   selector: 'app-gallery',
@@ -17,89 +21,120 @@ import { SwiperDirective, SwiperComponent
   styleUrls: ['./gallery.component.scss'],
   animations: [
     trigger('enterAnimation', [
-      state('loading', style({
-        opacity: '0',
-        transform: 'translateY(8%)'
-      })),
-      state('ready', style({
-        opacity: '1',
-        transform: 'translateY(0)'
-      })),
-      transition('loading => ready', animate('300ms cubic-bezier(0.1, 0.0, 0.2, 1)'))
+      state(
+        'loading',
+        style({
+          opacity: '0',
+          transform: 'translateY(8%)'
+        })
+      ),
+      state(
+        'ready',
+        style({
+          opacity: '1',
+          transform: 'translateY(0)'
+        })
+      ),
+      transition(
+        'loading => ready',
+        animate('300ms cubic-bezier(0.1, 0.0, 0.2, 1)')
+      )
     ])
-  ],
+  ]
 })
 export class GalleryComponent implements OnInit {
+  feed;
+  service;
+  _isLoading: boolean = true;
+  constructor(private _service: GalleryService) {}
 
-  @ViewChildren(SwiperDirective) swiperViewes: QueryList<SwiperDirective>
-  
   @ViewChild('slider') public _slider: any;
-  @ViewChild('fadInModal') _modal: any;
+  @ViewChild('fadInModal', { static: true }) _modal: any;
 
-  feed = []
-  config
+  config;
   configModal;
-  index = 0
-  index2 = 0
-  _isLoading:boolean = true 
-  rangeValue
+  index = 0;
+  index2 = 0;
+  //   _isLoading: boolean = true;
+  rangeValue;
+  public slides = [
+    'https://picsum.photos/700/250/?image=27',
+    'https://picsum.photos/700/250/?image=22',
+    'https://picsum.photos/700/250/?image=61',
+    'https://picsum.photos/700/250/?image=23',
+    'https://picsum.photos/700/250/?image=24',
+    'https://picsum.photos/700/250/?image=26',
+    'https://picsum.photos/700/250/?image=41',
+    'https://picsum.photos/700/250/?image=28',
+    'https://picsum.photos/700/250/?image=21',
+    'https://picsum.photos/700/250/?image=20',
+    'https://picsum.photos/400/250/?image=75'
+  ];
 
-  constructor(private _service: GalleryService) {
-  }
+  //   public configModal = {
+  //     a11y: true,
+  //     direction: 'horizontal',
+  //     navigation: {
+  //       nextEl: '.carousel__arrow--prev',
+  //       prevEl: '.carousel__arrow--next',
+  //     },
+  //     breakpoints: {
+  //       // when window width is <= 1024px
+  //       1024: {
+  //         slidesPerView: 5.5,
+  //       },
+  //     },
+  //   };
 
   ngOnInit() {
-    this._service.getFeed().subscribe(feed => {
-      this.feed = feed;
-      setTimeout(()=>{
-        this._isLoading = false
-      }, 2000)
+    this.service = this._service.getFeed().subscribe(data => {
+      this.feed = data;
     });
 
-    this.config = {
-      init: false,
-      observer: true,
-      direction: 'vertical',
-      autoplay: {
-        delay: 5000,
-      }
-    }
+    // this.config = {
+    //   init: false,
+    //   observer: true,
+    //   direction: 'vertical',
+    //   autoplay: {
+    //     delay: 5000
+    //   }
+    // };
 
     this.configModal = {
-      init: false,
-      observer: true,
+      //   autoplay: {
+      //     delay: 5000,
+      //   },
+      a11y: true,
       direction: 'horizontal',
-      pagination: true
-    }
-
-   
+      observer: true,
+      spaceBetween: 10,
+      slideToClickedSlide: true,
+      slidesPerView: 4.5,
+      slidesOffsetBefore: 20,
+      slidesOffsetAfter: 20,
+      simulateTouch: true,
+      resistanceRatio: 0.6,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      watchOverflow: true,
+      navigation: {
+        nextEl: '.carousel__arrow--prev',
+        prevEl: '.carousel__arrow--next'
+      },
+      breakpoints: {
+        // when window width is <= 1024px
+        1024: {
+          slidesPerView: 5.5
+        }
+      }
+    };
   }
 
-  ngAfterViewInit(): void {
-    setTimeout(()=>{
-      this.swiperViewes.forEach(dir =>  {
-        dir.init()
-      })
-      this.swiperViewes.first.startAutoplay()
-    },1)
-  }
-  nextSlide() {
-    this.swiperViewes.last.nextSlide();
-  }
-  prevSlide() {
-    this.swiperViewes.last.prevSlide();
-  }
+  public onIndexChange(index: number): void {}
+
+  public onSwiperEvent(event: string): void {}
+
   toggleModal() {
-    this._modal.show()
-    setTimeout(()=>{
-      this.swiperViewes.last.update()
-    },500)
+    this._modal.show();
   }
-  public galleryOptions: IsotopeOptions = {
-    itemSelector: '.gallery-item',
-    masonry: {
-        columnWidth: 280,
-        gutter: 10,
-        fitWidth: true
-    }
-  };
 }

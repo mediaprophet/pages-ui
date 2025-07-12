@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { pgCollapseComponent } from '../../@pages/components/collapse';
+import { pgCollapseComponent } from '@pages/components/collapse';
 
 @Component({
   selector: 'app-tabspage',
@@ -32,21 +32,19 @@ export class TabspageComponent implements OnInit {
   ];
   tabs = [
     {
-      name   : 'Tab 1',
+      name: 'Tab 1',
       content: 'Content of Tab Pane 1'
     },
     {
-      name   : 'Tab 2',
+      name: 'Tab 2',
       content: 'Content of Tab Pane 2'
     },
     {
-      name   : 'Tab 3',
+      name: 'Tab 3',
       content: 'Content of Tab Pane 3'
     }
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

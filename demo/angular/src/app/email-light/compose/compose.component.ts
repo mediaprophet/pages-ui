@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { pagesToggleService } from '../../@pages/services/toggler.service'
-import { QuillEditorComponent } from 'ngx-quill/src/quill-editor.component';
-import Quill from 'quill';
+import { pagesToggleService } from '@pages/services/toggler.service';
+import { QuillEditorComponent } from 'ngx-quill';
 
 @Component({
   selector: 'email-compose-light',
@@ -11,14 +10,9 @@ import Quill from 'quill';
 export class ComposeComponentLight implements OnInit {
   editorModules = {
     //https://github.com/KillerCodeMonkey/ngx-quill
-    toolbar: [
-      [{ 'header': [1, 2, 3, 4, false] }],
-      ['bold', 'italic', 'underline'],
-      ['link', 'image']  
-    ]
+    toolbar: [[{ header: [1, 2, 3, 4, false] }], ['bold', 'italic', 'underline'], ['link', 'image']]
   };
-  constructor(private toggler:pagesToggleService) {
-  }
+  constructor(private toggler: pagesToggleService) {}
 
   ngOnInit() {
     //Async Update -
@@ -27,9 +21,8 @@ export class ComposeComponentLight implements OnInit {
       this.toggler.toggleFooter(false);
     });
     //Set Layout Options
-    this.toggler.setHeaderClass("light");
-    this.toggler.setPageContainer("full-height");
-    this.toggler.setContent("full-height");
+    this.toggler.setHeaderClass('light');
+    this.toggler.setPageContainer('full-height');
+    this.toggler.setContent('full-height');
   }
-
 }

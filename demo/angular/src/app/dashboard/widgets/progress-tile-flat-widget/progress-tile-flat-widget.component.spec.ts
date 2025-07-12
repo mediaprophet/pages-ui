@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProgressTileFlatWidgetComponent } from './progress-tile-flat-widget.component';
 
@@ -6,11 +6,10 @@ describe('ProgressTileFlatWidgetComponent', () => {
   let component: ProgressTileFlatWidgetComponent;
   let fixture: ComponentFixture<ProgressTileFlatWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProgressTileFlatWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [ProgressTileFlatWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

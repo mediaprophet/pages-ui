@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SocialPostTileWidgetComponent } from './social-post-tile-widget.component';
 
@@ -6,11 +6,10 @@ describe('SocialPostTileWidgetComponent', () => {
   let component: SocialPostTileWidgetComponent;
   let fixture: ComponentFixture<SocialPostTileWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SocialPostTileWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [SocialPostTileWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -5,14 +5,12 @@ import { _MESSAGE_DEFAULT_CONFIG_PROVIDER } from './message-config';
 import { MessageContainerComponent } from './message-container.component';
 import { MessageComponent } from './message.component';
 
-const providers = [
-  _MESSAGE_DEFAULT_CONFIG_PROVIDER
-];
+const providers = [_MESSAGE_DEFAULT_CONFIG_PROVIDER];
 
 @NgModule({
-  imports: [ CommonModule, OverlayModule ],
-  declarations: [ MessageContainerComponent, MessageComponent ],
+  imports: [CommonModule, OverlayModule],
+  declarations: [MessageContainerComponent, MessageComponent],
   providers,
-  entryComponents: [ MessageContainerComponent ]
+  entryComponents: [MessageContainerComponent]
 })
-export class MessageModule { }
+export class MessageModule {}

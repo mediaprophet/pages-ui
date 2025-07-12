@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { RegisterPageComponent } from './register.component';
 
@@ -6,11 +6,10 @@ describe('RegisterComponent', () => {
   let component: RegisterPageComponent;
   let fixture: ComponentFixture<RegisterPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegisterPageComponent ]
-    })
-    .compileComponents();
+      declarations: [RegisterPageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

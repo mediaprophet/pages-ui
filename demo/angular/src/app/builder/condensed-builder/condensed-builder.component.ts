@@ -5,19 +5,18 @@ declare var pg: any;
   selector: 'app-condensed-builder',
   templateUrl: './condensed-builder.component.html',
   styleUrls: ['../builder.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 export class CondensedBuilderComponent extends RootbuilderComponent implements OnInit {
-  layoutType = "headerBelow";
-  ngOnInit() {
-  }
+  layoutType = 'headerBelow';
+  ngOnInit() {}
 
-  headerBelow(){
-    pg.removeClass(document.body,"menu-behind");
-    this.layoutType = "headerBelow"
+  headerBelow() {
+    pg.removeClass(document.body, 'menu-behind');
+    this.layoutType = 'headerBelow';
   }
-  headerTop(){
-    pg.addClass(document.body,"menu-behind");
-    this.layoutType = "headerTop"
+  headerTop() {
+    pg.addClass(document.body, 'menu-behind');
+    this.layoutType = 'headerTop';
   }
 }

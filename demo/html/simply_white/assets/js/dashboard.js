@@ -7,7 +7,7 @@
 (function() {
      'use strict';
     //NVD3 Charts
-    d3.json('http://pages.revox.io/json/charts.json', function(data) {
+    d3.json('https://pages.revox.io/json/charts.json', function(data) {
         nv.addGraph(function() {
             var chart = nv.models.lineChart()
                 .x(function(d) {
@@ -125,7 +125,7 @@
 
         // Widget 13
         var mapplicWidget = $('.widget-13-map').mapplic({
-            source: 'http://pages.revox.io/json/dashboard-map.json',
+            source: 'https://pages.revox.io/json/dashboard-map.json',
             height: 465,
             sidebar: false,
             minimap: false,

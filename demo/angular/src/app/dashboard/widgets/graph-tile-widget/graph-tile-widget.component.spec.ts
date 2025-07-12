@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GraphTileWidgetComponent } from './graph-tile-widget.component';
 
@@ -6,11 +6,10 @@ describe('GraphTileWidgetComponent', () => {
   let component: GraphTileWidgetComponent;
   let fixture: ComponentFixture<GraphTileWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ GraphTileWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [GraphTileWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

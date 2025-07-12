@@ -20,26 +20,26 @@ app-casual-builder,app-executive-builder,app-simplywhite-builder,app-condensed-b
         position: relative;
         display: block;
         width: 100%;
-        color:mix($color-master, #fff, 60%);
+        color:mix($color-contrast-high, #fff, 60%);
         & > img{
             opacity: 0.33;
             @include transition(opacity 0.1s linear);
         }
 
         &.active{
-            color:$color-master;
+            color:$color-contrast-high;
              & > img{
                 opacity: 0.87;
              }
         }
-        
+
         &:hover{
-            color:mix($color-master, #fff, 80%);
+            color:mix($color-contrast-high, #fff, 80%);
              & > img{
                 opacity: 0.7;
              }
         }
-        
+
         &.btn-toggle-layout{
             &.active{
             }
@@ -53,6 +53,9 @@ app-casual-builder,app-executive-builder,app-simplywhite-builder,app-condensed-b
             min-width: 99px;
             padding: 16px 0;
             padding-bottom: 24px;
+            &.active{
+              color:inherit;
+            }
         }
     }
     .builder-close{
@@ -70,7 +73,7 @@ app-casual-builder,app-executive-builder,app-simplywhite-builder,app-condensed-b
         top: 20%;
         left: -48px;
         text-align: center;
-        line-height: 50px;
+        line-height: 56px;
         cursor: pointer;
     }
     &:before{
@@ -96,7 +99,7 @@ app-casual-builder,app-executive-builder,app-simplywhite-builder,app-condensed-b
     }
 
 }
-.builder {
+.quickview-wrapper.builder {
     a.btn-toggle-layout.active:before, .content-select.active:before {
       background-image: url(../../assets/img/demo/tick.svg);
       width: 23px;

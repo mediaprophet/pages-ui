@@ -11,36 +11,42 @@ import { CorporateBuilderComponent } from './corporate-builder/corporate-builder
 export const buiderRoutes: Routes = [
   {
     path: '',
-    children: [{
-      path: 'casual-builder',
-      component: CasualBuilderComponent,
-      data: {
-        title: 'builder'
-      }
-    },{
+    children: [
+      {
+        path: 'casual-builder',
+        component: CasualBuilderComponent,
+        data: {
+          title: 'builder'
+        }
+      },
+      {
         path: 'condensed-builder',
         component: CondensedBuilderComponent,
         data: {
           title: 'builder'
         }
-    },{
+      },
+      {
         path: 'corporate-builder',
         component: CorporateBuilderComponent,
         data: {
           title: 'builder'
         }
-    },{
+      },
+      {
         path: 'executive-builder',
         component: ExecutiveBuilderComponent,
         data: {
           title: 'builder'
         }
-    },{
+      },
+      {
         path: 'simplywhite-builder',
         component: SimplywhiteBuilderComponent,
         data: {
           title: 'builder'
         }
-    }]
+      }
+    ]
   }
 ];

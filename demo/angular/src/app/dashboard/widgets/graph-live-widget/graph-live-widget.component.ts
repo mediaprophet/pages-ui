@@ -8,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class GraphLiveWidgetComponent implements OnInit {
   config;
   index = 0;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.config = {
       direction: 'vertical',
       autoplay: {
-        delay: 5000,
+        delay: 5000
       }
-    }
+    };
   }
-
 }

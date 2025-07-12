@@ -2,32 +2,31 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HttpModule} from '@angular/http';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { emailRoute } from './email.routing';
 //Core Pages Layout Components
-import { SharedModule } from '../@pages/components/shared.module';
+import { SharedModule } from '@pages/components/shared.module';
 
-import { QuillModule } from 'ngx-quill'
-import { pgTagModule } from '../@pages/components/tag/tag.module';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { QuillModule } from 'ngx-quill';
+import { pgTagModule } from '@pages/components/tag/tag.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { EmailListComponentLight } from './list/list.component';
 import { ComposeComponentLight } from './compose/compose.component';
-import {EmailServiceLight} from './email.service';
+import { EmailServiceLight } from './email.service';
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule,
     HttpClientModule,
     SharedModule,
-    QuillModule,
+    QuillModule.forRoot(),
     pgTagModule,
-    FormsModule,ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(emailRoute),
-    BsDropdownModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   declarations: [EmailListComponentLight, ComposeComponentLight],
-  providers:[EmailServiceLight]
+  providers: [EmailServiceLight]
 })
-export class EmailLightModule { }
+export class EmailLightModule {}

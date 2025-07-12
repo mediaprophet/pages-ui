@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
+import { AjaxResponse } from '@pages/interfaces/ajax';
 
 @Injectable()
 export class IconsService {
-
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) {}
 
   // Get all posts from the API
   getFontAwesome() {
-    return this.http.get('assets/data/fontawesome.json')
-      .map(res => res.json());
+    return this.http.get<AjaxResponse<any>>('assets/data/fontawesome.json');
   }
 }

@@ -21,14 +21,11 @@ import { pgDateScroller } from './datepicker-scroller.component';
 import { toBoolean } from '../util/convert';
 import { measureScrollbar } from '../util/mesureScrollBar';
 
-
 @Component({
   selector: 'pg-rangepicker',
   encapsulation: ViewEncapsulation.None,
-  animations: [
-    dropDownAnimation
-  ],
-  templateUrl:'rangepicker.component.html',
+  animations: [dropDownAnimation],
+  templateUrl: 'rangepicker.component.html',
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -36,14 +33,14 @@ import { measureScrollbar } from '../util/mesureScrollBar';
       multi: true
     }
   ],
-  styleUrls    : ['./datepicker.scss'],
+  styleUrls: ['./datepicker.scss']
 })
 export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
   private _disabled = false;
   private _showTime: Partial<pgTimePickerInnerComponent> = null;
   private _now = moment();
   private _el;
-  private _oldValue: Date[]  = this._defaultRangeValue;
+  private _oldValue: Date[] = this._defaultRangeValue;
   private _value: Date[] = this._defaultRangeValue;
 
   // avoid reference types
@@ -68,7 +65,13 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
   _selectedMonth: number[] = [];
   _selectedYear: number[] = [];
   _selectedDate: number[] = [];
-  _showMonth = [this._now.month(), this._now.clone().add(1, 'month').month()];
+  _showMonth = [
+    this._now.month(),
+    this._now
+      .clone()
+      .add(1, 'month')
+      .month()
+  ];
   _showYear = [this._now.year(), this._now.year()];
   _yearPanel: string[][] = [];
   _startDecade = new Array(2).fill(Math.floor(this._showYear[RangePart.Start] / 10) * 10);
@@ -76,8 +79,8 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
   _dropDownPosition = 'bottom';
   _positions: ConnectionPositionPair[] = [...DEFAULT_DATEPICKER_POSITIONS];
   _offsetX: number = 0;
-  @ViewChild(CdkConnectedOverlay) _cdkOverlay: CdkConnectedOverlay;
-  @ViewChild('trigger') trigger;
+  @ViewChild(CdkConnectedOverlay, { static: true }) _cdkOverlay: CdkConnectedOverlay;
+  @ViewChild('trigger', { static: true }) trigger;
   onTouched: () => void = () => null;
   onChange: (value: Date[]) => void = () => null;
   @Input() Size = '';
@@ -175,7 +178,7 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
       return;
     }
     if (this._isComplete()) {
-        this._onChange();
+      this._onChange();
     } else {
       this._value = [...this._oldValue];
     }
@@ -281,8 +284,12 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
     if (this._mode[part] === 'month') {
       return true;
     }
-    const showStart = moment().month(this._showMonth[RangePart.Start]).year(this._showYear[RangePart.Start]);
-    const showEnd = moment().month(this._showMonth[RangePart.End]).year(this._showYear[RangePart.End]);
+    const showStart = moment()
+      .month(this._showMonth[RangePart.Start])
+      .year(this._showYear[RangePart.Start]);
+    const showEnd = moment()
+      .month(this._showMonth[RangePart.End])
+      .year(this._showYear[RangePart.End]);
     return !showStart.add(1, 'month').isSame(showEnd, 'month');
   }
 
@@ -352,7 +359,10 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
   }
 
   adjustShowMonth(): void {
-    if (this._showYear[RangePart.Start] === this._showYear[RangePart.End] && this._showMonth[RangePart.Start] === this._showMonth[RangePart.End]) {
+    if (
+      this._showYear[RangePart.Start] === this._showYear[RangePart.End] &&
+      this._showMonth[RangePart.Start] === this._showMonth[RangePart.End]
+    ) {
       this._nextMonth(RangePart.End);
     }
   }
@@ -390,10 +400,10 @@ export class pgRangePickerComponent implements ControlValueAccessor, OnInit {
 
   isValueChange(): boolean {
     return this._value.some((value: Date, index: number) => {
-      return this._oldValue[index] === null
-        || (moment.isDate(this._oldValue[index])
-          && moment.isDate(value)
-          && this._oldValue[index].getTime() !== value.getTime());
+      return (
+        this._oldValue[index] === null ||
+        (moment.isDate(this._oldValue[index]) && moment.isDate(value) && this._oldValue[index].getTime() !== value.getTime())
+      );
     });
   }
 

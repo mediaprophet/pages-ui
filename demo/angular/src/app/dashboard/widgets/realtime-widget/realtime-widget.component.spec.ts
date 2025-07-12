@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { RealtimeWidgetComponent } from './realtime-widget.component';
 
@@ -6,11 +6,10 @@ describe('RealtimeWidgetComponent', () => {
   let component: RealtimeWidgetComponent;
   let fixture: ComponentFixture<RealtimeWidgetComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RealtimeWidgetComponent ]
-    })
-    .compileComponents();
+      declarations: [RealtimeWidgetComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

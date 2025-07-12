@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TypopageComponent } from './typopage.component';
 
@@ -6,11 +6,10 @@ describe('TypopageComponent', () => {
   let component: TypopageComponent;
   let fixture: ComponentFixture<TypopageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TypopageComponent ]
-    })
-    .compileComponents();
+      declarations: [TypopageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

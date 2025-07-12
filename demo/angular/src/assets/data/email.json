@@ -1,5 +1,5 @@
 {
-    "emails": [
+    "result": [
 
         {
             "group": "Today April 23",
@@ -162,5 +162,6 @@
             }]
         }
 
-    ]
+		],
+		"success":true
 }

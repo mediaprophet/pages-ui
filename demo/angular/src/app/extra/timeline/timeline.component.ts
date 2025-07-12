@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {NgsRevealConfig} from 'ng-scrollreveal';
+// import { NgsRevealConfig } from 'ng-scrollreveal';
 declare var pg: any;
 @Component({
   selector: 'app-timeline',
@@ -8,21 +8,18 @@ declare var pg: any;
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-  //Config Docs
-  //https://tinesoft.github.io/ng-scrollreveal/doc/injectables/NgsRevealConfig.html
-  
-  constructor(private config: NgsRevealConfig,private route: ActivatedRoute) {
-    //Only for demo - Casual and Executive layout
+  // Config Docs
+  // https://tinesoft.github.io/ng-scrollreveal/doc/injectables/NgsRevealConfig.html
+
+  constructor( private route: ActivatedRoute) {
+    // Only for demo - Casual and Executive layout
     this.route.params.subscribe(params => {
-      if(params['type'] == "container"){
-        config.container = document.querySelector(".page-container");
-      }
-      config.distance = "0";
+      // if (params['type'] === 'container') {
+      //   config.container = document.querySelector('.page-container');
+      // }
+      // config.distance = '0';
     });
-
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

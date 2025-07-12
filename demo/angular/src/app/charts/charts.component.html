@@ -36,7 +36,7 @@
                     Realtime Charts
                   </ng-template>
                 <div class="tab-rickshaw-realtime full-width" #realTimeChartWrapper>
-					        <div echarts class="realtimeChart" [merge]="realtimeChartUpdate" [options]="realtimeChartOptions" [initOpts]="realtimeChartInitOptions" (chartInit)="onRealtimeChartInit($event)" (window:resize)="onRealtimeChartResize($event)"></div>				
+					<div echarts class="realtimeChart" [merge]="realtimeChartUpdate" [options]="realtimeChartOptions" [initOpts]="realtimeChartInitOptions" (chartInit)="onRealtimeChartInit($event)" (window:resize)="onRealtimeChartResize($event)"></div>				
                 </div>
                 </pg-tab> 
                 <pg-tab>
@@ -44,7 +44,8 @@
                       Stacked Bar Charts
                     </ng-template>
                     <div class="sample-bar-chart">
-                      <nvd3 [options]="barChartOptions" [data]="barChartData"></nvd3>
+                      <!-- <nvd3 [options]="barChartOptions" [data]="barChartData"></nvd3> -->
+					  <div echarts class="stackedBarChart" [merge]="stackedBarChartUpdate" [options]="stackedBarChartOptions" [initOpts]="stackedBarChartInitOptions" ></div>				
                     </div>
                   </pg-tab>
                   <pg-tab>
@@ -52,7 +53,7 @@
                         Area Chart with Slider
                       </ng-template>
                       <div #areaSliderChartWrapper class="relative rickshaw-slider">
-					              <div echarts class="areaSliderChart" [merge]="areaSliderChartUpdate" [options]="areaSliderChartOptions" [initOpts]="areaSliderChartInitOptions" (window:resize)="onAreaSliderChartResize($event)"></div>				
+					    <div echarts class="areaSliderChart" [merge]="areaSliderChartUpdate" [options]="areaSliderChartOptions" [initOpts]="areaSliderChartInitOptions" (window:resize)="onAreaSliderChartResize($event)"></div>				
                       </div>
                     </pg-tab>
               </pg-tabset>
@@ -88,7 +89,8 @@
                       Line Chart
                   </ng-template>
                   <div class="line-chart text-center p-t-20" data-x-grid="false">
-                  <nvd3 [options]="nvd3LineOptions" [data]="nvd3LineData"></nvd3>
+                  <!-- <nvd3 [options]="nvd3LineOptions" [data]="nvd3LineData"></nvd3> -->
+				  <div echarts class="lineChart" [merge]="lineChartUpdate" [options]="lineChartOptions" [initOpts]="lineChartInitOptions" ></div>	
                   </div>
                 </pg-tab>
                 <pg-tab>
@@ -96,7 +98,8 @@
                         Stacked Area Charts
                     </ng-template>
                     <div class="line-chart text-center  p-t-20" data-x-grid="false">
-                    <nvd3 [options]="options" [data]="data"></nvd3>
+						<div echarts class="stackedAreaChart" [merge]="stackedAreaChartUpdate" [options]="stackedAreaChartOptions" [initOpts]="stackedAreaChartInitOptions" ></div>
+                    <!-- <nvd3 [options]="options" [data]="data"></nvd3> -->
                     </div>
                   </pg-tab>
                   <pg-tab>
@@ -104,7 +107,8 @@
                           Line Charts with area
                       </ng-template>
                       <div class="line-chart text-center  p-t-20" data-x-grid="false">
-                        <nvd3 [options]="nvd3LineAreaOptions" [data]="nvd3LineAreaData"></nvd3>
+						<div echarts class="lineAreaChart" [merge]="lineAreaChartUpdate" [options]="lineAreaChartOptions" [initOpts]="lineAreaChartInitOptions" ></div>
+                        <!-- <nvd3 [options]="nvd3LineAreaOptions" [data]="nvd3LineAreaData"></nvd3> -->
                       </div>
                     </pg-tab>
               </pg-tabset>

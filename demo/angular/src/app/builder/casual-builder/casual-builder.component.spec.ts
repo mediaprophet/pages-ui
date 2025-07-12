@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CasualBuilderComponent } from './casual-builder.component';
 
@@ -6,11 +6,10 @@ describe('CasualBuilderComponent', () => {
   let component: CasualBuilderComponent;
   let fixture: ComponentFixture<CasualBuilderComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CasualBuilderComponent ]
-    })
-    .compileComponents();
+      declarations: [CasualBuilderComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

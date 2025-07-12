@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ModalspageComponent } from './modalspage.component';
 
@@ -6,11 +6,10 @@ describe('ModalspageComponent', () => {
   let component: ModalspageComponent;
   let fixture: ComponentFixture<ModalspageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModalspageComponent ]
-    })
-    .compileComponents();
+      declarations: [ModalspageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,7 +1,7 @@
 @import "core.scss";
 @import '~angular-tree-component/dist/angular-tree-component.css';
 $base-img-url :"../../../../assets/";
-  
+
 .toggle-children {
     z-index: 1;
     background-image: url("#{$base-img-url}/vendor/tree-icons.gif");
@@ -23,6 +23,11 @@ tree-node-expander {
 }
 
 .tree-node{
+    .tree-node-loading .progress-circle-indeterminate{
+        width: 19px;
+        height: 19px;
+        margin:0;
+    }
     .node-content-wrapper{
         padding-left: 26px;
         position: relative;
@@ -34,8 +39,9 @@ tree-node-expander {
             height: 14px;
             background-size: auto;
             content: '';
-            left: 4px;
-        }        
+            left: 5px;
+            top: 5px;
+        }
     }
     &.tree-node-leaf{
         .node-content-wrapper{
@@ -75,7 +81,7 @@ tree-node-expander {
         background-color: transparent;
         border:0;
     }
-    color:$color-master-dark;
+    color:$color-contrast-higher;
     .node-content-wrapper:hover{
         box-shadow: none;
         background: none;

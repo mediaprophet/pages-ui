@@ -9,8 +9,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -26,8 +26,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -40,8 +40,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -54,8 +54,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -68,8 +68,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -82,8 +82,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -96,8 +96,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -110,8 +110,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -124,8 +124,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -138,8 +138,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -152,8 +152,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -166,8 +166,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -180,8 +180,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     },
     {
@@ -194,8 +194,8 @@
         "author": {
             "name": "Alex Nester",
             "rating": 4,
-            "avatar": "/assets/img/profiles/avatar.jpg",
-            "avatar2x": "/assets/img/profiles/avatar2x.jpg"
+            "avatar": "assets/img/profiles/avatar.jpg",
+            "avatar2x": "assets/img/profiles/avatar2x.jpg"
         } 
     }
 ]

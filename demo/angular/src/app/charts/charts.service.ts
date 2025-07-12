@@ -1,15 +1,12 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ChartService {
-
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) {}
 
   // Get all data from the API
   getChartSampleData() {
-    return this.http.get('assets/data/charts.json')
-      .map(res => res.json());
+    return this.http.get('assets/data/charts.json');
   }
 }

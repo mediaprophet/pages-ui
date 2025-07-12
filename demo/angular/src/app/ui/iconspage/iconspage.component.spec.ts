@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { IconspageComponent } from './iconspage.component';
 
@@ -6,11 +6,10 @@ describe('IconspageComponent', () => {
   let component: IconspageComponent;
   let fixture: ComponentFixture<IconspageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconspageComponent ]
-    })
-    .compileComponents();
+      declarations: [IconspageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

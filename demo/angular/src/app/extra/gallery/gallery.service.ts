@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
+import { AjaxResponse } from '@pages/interfaces/ajax';
 
 @Injectable()
 export class GalleryService {
-
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) {}
 
   // Get social feed posts
   getFeed() {
-    return this.http.get('assets/data/gallery.json')
-      .map(res => res.json());
+    return this.http.get<AjaxResponse<any>>('assets/data/gallery.json')
   }
 }

@@ -4,13 +4,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'table-widget',
   templateUrl: './table-widget.component.html',
   styleUrls: ['./table-widget.component.scss'],
-  encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 export class TableWidgetComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

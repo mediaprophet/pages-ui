@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { LayoutsRoutes } from './layouts.routing';
 
 //Core Pages Layout Components
-import { SharedModule } from '../@pages/components/shared.module';
+import { SharedModule } from '@pages/components/shared.module';
 
 //Thirdparty components
 
@@ -20,12 +20,16 @@ import { BoxedAltComponent } from './boxed-alt/boxed-alt.component';
 import { SecondaryHorizontalCasualComponent } from './secondary-horizontal-casual/secondary-horizontal-casual.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SharedModule,
-    RouterModule.forChild(LayoutsRoutes),
+  imports: [CommonModule, SharedModule, RouterModule.forChild(LayoutsRoutes)],
+  declarations: [
+    SecondaryComponent,
+    SecondaryComponentLight,
+    SecondaryHorizontalComponent,
+    DefaultComponent,
+    BoxedComponent,
+    BoxedAltComponent,
+    SecondaryHorizontalCasualComponent
   ],
-  declarations: [SecondaryComponent,SecondaryComponentLight, SecondaryHorizontalComponent, DefaultComponent, BoxedComponent, BoxedAltComponent, SecondaryHorizontalCasualComponent],
   providers: []
 })
-export class LayoutPageModule { }
+export class LayoutPageModule {}

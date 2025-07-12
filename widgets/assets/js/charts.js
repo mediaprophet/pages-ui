@@ -42,7 +42,7 @@
                     name: 'DB Server'
                 }, {
                     data: seriesData[1],
-                    color: $.Pages.getColor('master-light'), // Get Pages contextual color
+                    color: $.Pages.getColor('contrast-low'), // Get Pages contextual color
                     name: 'Web Server'
                 }]
             });
@@ -108,7 +108,7 @@
                     name: "New users"
                 }, {
                     data: seriesData[1],
-                    color: $.Pages.getColor('master-light'), // Get Pages contextual color
+                    color: $.Pages.getColor('contrast-low'), // Get Pages contextual color
                     name: "Returning users"
 
                 }]
@@ -222,7 +222,7 @@
          * ============================================================ */
 
         // Load chart data
-        d3.json('http://pages.revox.io/json/charts.json', function(data) {
+        d3.json('https://pages.revox.io/json/charts.json', function(data) {
 
             (function() {
 
@@ -352,11 +352,10 @@
                             return d[1] / 100
                         })
                         .color([
-                            $.Pages.getColor('success'),
-                            $.Pages.getColor('danger'),
-                            $.Pages.getColor('primary'), //south america
-
-                            $.Pages.getColor('complete'), //europe
+													$.Pages.getColor('success', 0.5),
+													$.Pages.getColor('danger', 0.74),
+													$.Pages.getColor('primary', 0.74), //south america
+													$.Pages.getColor('complete', 0.74), //europe
 
                         ])
                         .useInteractiveGuideline(true);
@@ -438,7 +437,7 @@
                 type: 'pie',
                 width: $("#sparkline-pie").width(),
                 height: '200',
-                sliceColors: [$.Pages.getColor('warning'), $.Pages.getColor('danger'), $.Pages.getColor('master-light'), $.Pages.getColor('master')]
+                sliceColors: [$.Pages.getColor('warning'), $.Pages.getColor('danger'), $.Pages.getColor('contrast-low'), $.Pages.getColor('contrast-high')]
 
             });
 

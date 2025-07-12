@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
@@ -13,15 +13,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="Meet pages - The simplest and fastest way to build web UI for your dashboard or app." name="description" />
+    <meta content="Ace" name="author" />
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/themes/light.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="fixed-header menu-pin">
@@ -38,7 +36,7 @@
       <div class="sidebar-menu">
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
-          <li class="m-t-30 ">
+          <li class="m-t-10">
             <a href="index.html" class="detailed">
               <span class="title">Dashboard</span>
               <span class="details">12 New Updates</span>
@@ -78,7 +76,7 @@
                 <span class="icon-thumbnail">La</span>
               </li>
               <li class="">
-                <a href="https://docs.pages.revox.io/apps/calendar" target="_blank">Documentation</a>
+                <a href="https://docs.pages.revox.io/apps/calendar" rel="noreferrer" target="_blank">Documentation</a>
                 <span class="icon-thumbnail">D</span>
               </li>
             </ul>
@@ -105,10 +103,6 @@
               <li class="">
                 <a href="boxed_layout.html">Boxed</a>
                 <span class="icon-thumbnail">bl</span>
-              </li>
-              <li class="">
-                <a href="rtl_layout.html">RTL</a>
-                <span class="icon-thumbnail">rl</span>
               </li>
             </ul>
           </li>
@@ -319,22 +313,24 @@
       <!-- START HEADER -->
       <div class="header ">
         <!-- START MOBILE SIDEBAR TOGGLE -->
-        <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar">
-        </a>
+        <a href="#" class="btn-link toggle-sidebar d-lg-none  pg-icon btn-icon-link" data-toggle="sidebar">
+      		menu</a>
         <!-- END MOBILE SIDEBAR TOGGLE -->
         <div class="">
           <div class="brand inline">
             <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
           </div>
-          <a href="#" class="btn btn-link text-primary m-l-20 d-none d-lg-inline-block d-xl-inline-block">Add New Item</a>
-          <a href="#" class="search-link d-none d-lg-inline-block d-xl-inline-block" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
+          <a href="#" class="btn btn-link text-primary m-l-20 d-none d-lg-inline-flex d-xl-inline-flex">Add New Item</a>
+          <a href="#" class="search-link d-none d-lg-inline-block d-xl-inline-block" data-toggle="search"><i
+      				class="pg-icon">search</i>Type anywhere to <span class="bold">search</span></a>
         </div>
         <div class="d-flex align-items-center">
           <!-- START NOTIFICATION LIST -->
-          <ul class="d-lg-inline-block d-none notification-list no-margin b-grey b-r no-style p-l-30 p-r-20">
+          <ul class="d-lg-inline-block d-none notification-list no-margin d-lg-inline-block b-grey b-l b-r no-style p-l-20 p-r-20">
             <li class="p-r-10 inline">
               <div class="dropdown">
-                <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
+                <a href="javascript:;" id="notification-center" class="header-icon btn-icon-link" data-bs-toggle="dropdown">
+                  <i class="pg-icon">world</i>
                   <span class="bubble"></span>
                 </a>
                 <!-- START Notification Dropdown -->
@@ -347,23 +343,23 @@
                       <div class="notification-item unread clearfix">
                         <!-- START Notification Item-->
                         <div class="heading open">
-                          <a href="#" class="text-primary pull-left">
-                            <i class="pg-map fs-16 m-r-10"></i>
+                          <a href="#" class="text-complete pull-left d-flex align-items-center">
+                            <i class="pg-icon m-r-10">map</i>
                             <span class="bold">Carrot Design</span>
                             <span class="fs-12 m-l-10">David Nester</span>
                           </a>
                           <div class="pull-right">
                             <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
-                              <div><i class="fa fa-angle-left"></i>
+                              <div><i class="pg-icon">chevron_down</i>
                               </div>
                             </div>
                             <span class=" time">few sec ago</span>
                           </div>
                           <div class="more-details">
                             <div class="more-details-inner">
-                              <h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br> 
-                                                            distinguishes between <br>
-                                                            A leader and a follower.”</h5>
+                              <h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br>
+																															distinguishes between <br>
+																															A leader and a follower.”</h5>
                               <p class="small hint-text">
                                 Commented on john Smiths wall.
                                 <br> via pages framework.
@@ -373,7 +369,7 @@
                         </div>
                         <!-- END Notification Item-->
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -383,7 +379,7 @@
                       <div class="notification-item  clearfix">
                         <div class="heading">
                           <a href="#" class="text-danger pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">98% Server Load</span>
                             <span class="fs-12 m-l-10">Take Action</span>
                           </a>
@@ -399,8 +395,8 @@
                       <!-- START Notification Item-->
                       <div class="notification-item  clearfix">
                         <div class="heading">
-                          <a href="#" class="text-warning-dark pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                          <a href="#" class="text-warning pull-left">
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">Warning Notification</span>
                             <span class="fs-12 m-l-10">Buy Now</span>
                           </a>
@@ -419,14 +415,14 @@
                           <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
                             <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
                           </div>
-                          <a href="#" class="text-primary pull-left">
+                          <a href="#" class="text-complete pull-left">
                             <span class="bold">Revox Design Labs</span>
                             <span class="fs-12 m-l-10">Owners</span>
                           </a>
                           <span class="pull-right time">11:00pm</span>
                         </div>
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -449,35 +445,47 @@
               </div>
             </li>
             <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-link"></a>
+              <a href="#" class="header-icon btn-icon-link">
+                <i class="pg-icon">link_alt</i>
+              </a>
             </li>
             <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-thumbs"></a>
+              <a href="#" class="header-icon btn-icon-link">
+                <i class="pg-icon">grid_alt</i>
+              </a>
             </li>
           </ul>
           <!-- END NOTIFICATIONS LIST -->
           <!-- START User Info-->
-          <div class="pull-left p-r-10 fs-14 font-heading d-lg-inline-block d-none m-l-20">
-            <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+          <div class="pull-left p-r-10 fs-14 d-lg-inline-block d-none m-l-20">
+            <span class="semi-bold">David</span> <span class="text-color">Nest</span>
           </div>
-          <div class="dropdown pull-right d-lg-inline-block d-none">
-            <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="dropdown pull-right d-lg-block d-none">
+            <button class="profile-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="profile dropdown">
               <span class="thumbnail-wrapper d32 circular inline">
-              <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
-              </span>
+      					<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg"
+      						data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+      				</span>
             </button>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-              <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
-              <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
-              <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
-              <a href="#" class="clearfix bg-master-lighter dropdown-item">
-                <span class="pull-left">Logout</span>
-                <span class="pull-right"><i class="pg-power"></i></span>
-              </a>
+              <a href="#" class="dropdown-item"><span>Signed in as <br /><b>David Aunsberg</b></span></a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Your Profile</a>
+              <a href="#" class="dropdown-item">Your Activity</a>
+              <a href="#" class="dropdown-item">Your Archive</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Features</a>
+              <a href="#" class="dropdown-item">Help</a>
+              <a href="#" class="dropdown-item">Settings</a>
+              <a href="#" class="dropdown-item">Logout</a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item fs-12 hint-text">Last edited by David<br />on Friday at 5:27PM</span>
             </div>
           </div>
           <!-- END User Info-->
-          <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
+          <a href="#" class="header-icon btn-icon-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
+            <i class="pg-icon">menu_add</i>
+          </a>
         </div>
       </div>
       <!-- END HEADER -->
@@ -486,46 +494,35 @@
         <!-- START PAGE CONTENT -->
         <div class="content ">
           <!-- START JUMBOTRON -->
-          <div class="jumbotron" data-pages="parallax">
-            <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
+          <div class="jumbotron page-cover bg-black m-b-0" data-pages="parallax">
+            <div class=" container-fluid   container-fixed-lg">
               <div class="inner">
-                <!-- START BREADCRUMB -->
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
-                  <li class="breadcrumb-item active">Color</li>
-                </ol>
-                <!-- END BREADCRUMB -->
-                <div class="container-md-height m-b-20">
+                <div class="container-md-height">
                   <div class="row m-lg-0">
-                    <div class="col-xl-7 col-lg-6 bg-white">
+                    <div class="col-xl-7 col-lg-6">
                       <!-- START card -->
                       <div class="full-height">
-                        <div class="card-body text-center">
-                          <img class="image-responsive-height demo-mw-350" src="assets/img/demo/colors_hero.gif" alt="">
+                        <div class="card-body text-center justify-content-center align-items-center d-flex full-height">
+                          <img src="assets/img/demo/color_banner.gif" alt="Pages color system" data-src="assets/img/demo/color_banner.gif" data-src-retina="assets/img/demo/color_banner@2x.gif" width="240">
                         </div>
                       </div>
                       <!-- END card -->
                     </div>
-                    <div class="col-xl-5 col-lg-6 col-top">
+                    <div class="col-xl-5 col-lg-5 d-flex align-items-center">
                       <!-- START card -->
-                      <div class="card card-transparent">
-                        <div class="card-header ">
+                      <div class="card bg-black text-white text-light">
+                        <div class="card-header p-l-10">
                           <div class="card-title">Getting started
                           </div>
                         </div>
-                        <div class="card-body">
-                          <h3>Paint it the way you Like it.</h3>
-                          <p>Color is a wonderful tool for making your dashboard more interesting with a significant positive impact on your mood. </p>
+                        <div class="card-body p-r-10 p-l-10">
+                          <h3 class="">Introducing pages adaptive color system.</h3>
+                          <p>Color is a core building block of any design system. Pages color system help create scalable color themes, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
                           <br>
                           <div>
-                            <div class="profile-img-wrapper m-t-5 inline">
-                              <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
-                              <div class="chat-status available">
-                              </div>
-                            </div>
-                            <div class="inline m-l-10">
-                              <p class="small hint-text m-t-5">VIA senior product manage
-                                <br>for UI/UX at REVOX</p>
+                            <div class="inline">
+                              <p class="small  hint-text m-t-5">Have an Improvement or a suggestion?
+                                <br>goto request box</p>
                             </div>
                           </div>
                         </div>
@@ -539,217 +536,319 @@
           </div>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
-          <div class=" container-fluid   container-fixed-lg">
-            <div class="row">
-              <div class="col-lg-4">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-header ">
-                    <div class="card-title">Eight base color pallete
+          <div class="bg-white">
+            <div class=" container-fluid  container-fixed-lg bg-white p-t-40 p-b-50">
+              <div class="row">
+                <div class="col-md-6 col-lg-7">
+                  <!-- START card -->
+                  <div class="card card-transparent">
+                    <div class="card-header ">
+                      <div class="card-title">Tints and shades
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3>Pages color spectrum</h3>
+                      <p>Color should be used consistently in any product so that certain colors always mean the same thing. For example, Pages red is used to show alerts and warnings. The Pages color spectrum ensures all possible context for use of color is covered with each base color having its shades and tints generated automatically.</p>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <p>The dashboard will synergize with the colour selection made by the user and appropriately amend. Similarly, all other elements will sync according to the base colours. </p>
-                    <br>
-                    <div>
-                      <i class="pg-download pull-left fs-14 m-t-5"></i>
-                      <p class="no-margin p-l-30">
-                        <a href="http://pages.revox.io/swatches.zip">Download full color pallete (swatches)</a>
-                      </p>
-                      <p class="no-margin p-l-30 small">0.31MB</p>
+                  <!-- END card -->
+                </div>
+                <div class="col-md-6 col-lg-5">
+                  <div class="col-xl-8 pull-right">
+                    <!-- START card -->
+                    <div class="border b-grey rounded-sm m-t-10">
+                      <div class="padding-10">
+                        <div class="d-flex m-b-10">
+                          <div class="">
+                            <img src="assets/img/demo/palette.png" alt="Pages color swatcher" data-src="assets/img/demo/palette.png" data-src-retina="assets/img/demo/palette@2x.png" width="56" height="56">
+                          </div>
+                          <div class="m-l-20">
+                            <p class="m-t-0 bold m-b-5">Pages color swatches</p>
+                            <p class="m-b-5">Download pages dashboard compleate spectrum color palette for photoshop</p>
+                          </div>
+                        </div>
+                        <div>
+                          <a href="http://pages.revox.io/swatches.zip" class="btn btn-sm no-border no-padding hint-text fs-12 btn-block text-left">
+                            <span>Download swatcher</span>
+                            <i class="pg-icon">arrow_top_right</i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
+                    <!-- END card -->
                   </div>
                 </div>
-                <!-- END card -->
               </div>
-              <div class="col-lg-8">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-master b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Master color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-primary  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Primary color - Pages purple</p>
+                          <p class="p-b-15">color-primary</p>
                         </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
                       </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-primary b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10 text-master">
-                            <p class=" no-margin pull-left">Primary color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-primary-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
                         </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-complete b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Complete</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
+                        <div class="flex-1 bg-primary-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
                         </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-success b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Success color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
+                        <div class="flex-1 bg-primary-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-menu b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Menu color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-info b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Info color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-danger b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Danger color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-3 col-md-6">
-                        <div class="bg-warning b-a b-grey m-b-15">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class=" no-margin pull-left">Warning color</p>
-                            <p class=" no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
+                        <div class="flex-1 bg-primary-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- END card -->
-              </div>
-            </div>
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class=" container-fluid   container-fixed-lg bg-white">
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Menu options</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #0a0a0a</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-darkest text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-darkest</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">0%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Menu</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #1A1A1A</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">27%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text heading</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #2C2C2C</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">45%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Default text (base)</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #626262</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master b-a b-grey no-padding">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-master</p>
-                          <p class="small no-margin pull-left">#626262</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-complete  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Complete color - Pages blue</p>
+                          <p class="p-b-15">color-complete</p>
                         </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
                       </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Dividers</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #E6E6E6</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-light m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">16%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Cover page</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #F0F0F0</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-lighter m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">9.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #FAFAFA</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-master-lightest m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-master-lightest</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">3%</p>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-complete-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
+                        </div>
+                        <div class="flex-1 bg-complete-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
+                        </div>
+                        <div class="flex-1 bg-complete-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
+                        </div>
+                        <div class="flex-1 bg-complete-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- END card -->
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-success  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Success color - Pages green</p>
+                          <p class="p-b-15">color-success</p>
+                        </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-success-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
+                        </div>
+                        <div class="flex-1 bg-success-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
+                        </div>
+                        <div class="flex-1 bg-success-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
+                        </div>
+                        <div class="flex-1 bg-success-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-5 offset-md-1">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <h5 class="m-t-0">Master color shades</h5>
-                    <div class="padding-15 bg-master pull-left"></div>
-                    <p class="m-l-45 small hint-text m-b-0">RGB : 0 65 73</p>
-                    <p class="m-l-45 small hint-text m-b-0">Pantone cool gray 10c</p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-warning  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Warning color - Pages yellow</p>
+                          <p class="p-b-15">color-warning</p>
+                        </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-warning-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
+                        </div>
+                        <div class="flex-1 bg-warning-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
+                        </div>
+                        <div class="flex-1 bg-warning-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
+                        </div>
+                        <div class="flex-1 bg-warning-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-danger  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Danger color - Pages red</p>
+                          <p class="p-b-15">color-danger</p>
+                        </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-danger-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
+                        </div>
+                        <div class="flex-1 bg-danger-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
+                        </div>
+                        <div class="flex-1 bg-danger-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
+                        </div>
+                        <div class="flex-1 bg-danger-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-info  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Info color - Pages gray</p>
+                          <p class="p-b-15">color-info</p>
+                        </div>
+                        <div class="pull-right">0</div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-info-lighter">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35">-2</span>
+                        </div>
+                        <div class="flex-1 bg-info-light">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">-1</span>
+                        </div>
+                        <div class="flex-1 bg-info-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">1</span>
+                        </div>
+                        <div class="flex-1 bg-info-darker">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-b-40">
+                <div class="col-md-4">
+                  <!-- START card -->
+                  <div class="card  card-transparent">
+                    <div class="card-body">
+                      <div class="bg-menu  padding-15">
+                        <div class="pull-left">
+                          <p class="m-b-0">Menu color - Pages gray</p>
+                          <p class="p-b-15">color-menu</p>
+                        </div>
+                        <div class="pull-right"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="flex-1 bg-menu-light">
+                          <span class="pull-right p-t-10 p-r-15 p-b-35"></span>
+                        </div>
+                        <div class="flex-1 bg-menu-dark">
+                          <span class=" pull-right p-t-10 p-r-15 p-b-35"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-7">
+                  <!-- START card -->
+                  <div class="card card-transparent">
+                    <div class="card-body">
+                      <h3>Neutral color spectrum</h3>
+                      <p>The neutral color palette is made with two contrasting colors on either side, usually white and black. The rest of the colors in the middle are auto-generated to be used for various UI elements and surfaces, for example, color-contrast-lower is used for background and color-contrast-high is used for regular paragraphs.</p>
+                    </div>
+                  </div>
+                  <!-- END card -->
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="flex-1 bg-contrast-lowest">
+                  <div class=" padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-lowest</p>
+                      <p class="p-b-15">Background</p>
+                    </div>
                     <div class="clearfix"></div>
-                    <br>
-                    <p>With a coterie of features based on zero- saturation resulting in mutilple colour adaptability, this colour is the essential Master colour which affects the fonts, background and content. The upper dark shades are made having the master base color on top of a black (#000000) with certain opacity. Thus the lower light shades are made with a white (#ffffff) color .</p>
-                    <br>
-                    <p class="small">NOTE: Changing the base color will change the other shades of the relative base.</p>
                   </div>
                 </div>
-                <!-- END card -->
+                <div class="flex-1 bg-contrast-lower">
+                  <div class=" padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-lower</p>
+                      <p class="p-b-15">Background light</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="flex-1 bg-contrast-low">
+                  <div class="  padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-low</p>
+                      <p class="p-b-15">Borderds</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="flex-1 bg-contrast-medium">
+                  <div class="  padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-medium</p>
+                      <p class="p-b-15">Muted/helper text</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="flex-1 bg-contrast-high">
+                  <div class="  padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-high</p>
+                      <p class="p-b-15">Regular paragraphs</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="flex-1 bg-contrast-higher">
+                  <div class="  padding-15">
+                    <div class="pull-left">
+                      <p class="m-b-0">color-contrast-higher</p>
+                      <p class="p-b-15">Headings</p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -759,517 +858,81 @@
             <div class="row">
               <div class="col-md-4">
                 <!-- START card -->
-                <div class="card card-transparent">
+                <div class="card no-border">
                   <div class="card-header ">
-                    <div class="card-title">Chroma base colors
+                    <div class="card-title">ACCESSABILITY
                     </div>
                   </div>
                   <div class="card-body">
-                    <h5>Stress free colors</h5>
-                    <p>The monochrome base color is made by having a zero saturation percentage which will adapat to any color placed near it.</p>
-                    <h5>Easy code</h5>
-                    <p>Changing the following base colors will change the other base colors.</p>
+                    <h4>Legibility standards</h4>
+                    <p>We believe any user of diverse abilities should be able to navigate and understand and use UI, especially when the content a user is dealing with is sensitive and important. Making every text accessible from almost 17 million colors in the hexadecimal scale is a big challenge for anyone. </p>
+                    <p class="m-b-15">Pages color system automatically picks the best legible text color for a given background maintaining a AA contrast ration according to Web Content Accessibility Guidelines or WCAG.</p>
+                    <img class="image-responsive-height demo-mw-AA" src="assets/img/demo/legibility.gif" alt="text legibility" data-src="assets/img/demo/legibility.gif" data-src-retina="assets/img/demo/legibility@2x.gif" width="485">
                   </div>
                 </div>
                 <!-- END card -->
               </div>
               <div class="col-md-8">
                 <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-xl-4 col-md-6 sm-m-b-15">
-                        <div class="bg-primary b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10 text-master">
-                            <p class="font-montserrat all-caps small m-b-5">@color-primary</p>
-                            <p class="small no-margin pull-left">#6D5CAE</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-4 col-md-6 sm-m-b-15">
-                        <div class="bg-complete b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class="font-montserrat all-caps small m-b-5">@color-complete</p>
-                            <p class="small no-margin pull-left">#48B0F7</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-4 col-md-6">
-                        <div class="bg-success b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class="font-montserrat all-caps small m-b-5">@color-success</p>
-                            <p class="small no-margin pull-left">#10CFBD</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-xl-4 col-md-6 sm-m-b-15">
-                        <div class="bg-warning b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class="font-montserrat all-caps small m-b-5">@color-warning</p>
-                            <p class="small no-margin pull-left">#F8D053</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-4 col-md-6 sm-m-b-15">
-                        <div class="bg-danger b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class="font-montserrat all-caps small m-b-5">@color-danger</p>
-                            <p class="small no-margin pull-left">#F55753</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-4 col-md-6">
-                        <div class="bg-info b-a b-grey">
-                          <div class="bg-white m-t-45 padding-10">
-                            <p class="font-montserrat all-caps small m-b-5">@color-info</p>
-                            <p class="small no-margin pull-left">#3B4752</p>
-                            <p class="small no-margin pull-right">100%</p>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-            </div>
-          </div>
-          <!-- END CONTAINER FLUID -->
-          <!-- START CONTAINER FLUID -->
-          <div class=" container-fluid   container-fixed-lg m-t-20">
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #413768</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-primary-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-primary-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #5B4D91</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-primary-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-primary-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #6D5CAE</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-primary no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-primary</p>
-                          <p class="small no-margin pull-left">#6D5CAE</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #8A7DBE</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-primary-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-primary-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #E2DEEF</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-primary-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-primary-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #2B6A94</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-complete-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-complete-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #3C93CE</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-complete-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-complete-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #48B0F7</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-complete no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-complete</p>
-                          <p class="small no-margin pull-left">#48B0F7</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #6DC0F9</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-complete-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-complete-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #DAEFFD</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-complete-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-complete-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #0A7C71</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-success-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-success-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #0DAD9E</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-success-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-success-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #10CFBD</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-success no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-success</p>
-                          <p class="small no-margin pull-left">#10CFBD</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #40D9CA</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-success-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-success-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #CFF5F2</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-success-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-success-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #957D32</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-warning-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-warning-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #CFAE45</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-warning-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-warning-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #F8D053</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-warning no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-warning</p>
-                          <p class="small no-margin pull-left">#F8D053</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #F9D975</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-warning-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-warning-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #FEF6DD</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-warning-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-warning-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #933432</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-danger-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-danger-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #CD4945</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-danger-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-danger-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #F55753</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-danger no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-danger</p>
-                          <p class="small no-margin pull-left">#F55753</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #F77975</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-danger-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-danger-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #FDDDDD</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-danger-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-danger-lighter</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Notifications text</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #232B31</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-info-darker text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-info-darker</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">60%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #313B44</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-info-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-info-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">83.5%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #3B4752</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-info no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-info</p>
-                          <p class="small no-margin pull-left">#3B4752</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Button overlay</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #626C75</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-info-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-info-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">80%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Background opt.</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #D8DADC</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-info-lighter text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-info-ligher</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">20%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END card -->
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- START card -->
-                <div class="card card-transparent">
+                <div class="card no-border">
                   <div class="card-header ">
-                    <div class="card-title">Menu base color
+                    <div class="card-title">SYSTEM
                     </div>
                   </div>
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Menu open color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #191B1F</p>
+                      <div class="col-md-6">
+                        <h4>Color calibration</h4>
+                        <p>Pages color system is equipped with a set of modifiers to give you the total control and freedom on how colors should apply and adapt accordingly. Color calibration helps to give flat shades and tints more vibrance while making sure we perceive the difference between the colors from shades to tints.</p>
+                        <p class="small hint-text">Hue shift takes a color's relative luminance into consideration in order to determine the direction of the hue rotation. </p>
+                        <p class="fs-13 m-t-30">Pages purple - color-primary shades</p>
+                        <img class="image-responsive-height demo-mw-calib" src="assets/img/demo/color_calib.gif" alt="Pages color calibration" data-src="assets/img/demo/color_calib.gif" data-src-retina="assets/img/demo/color_calib@2x.gif" width="310">
                       </div>
-                      <div class="col-8 col-xl-9 bg-menu-dark text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-menu-dark</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">77%</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Base color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #202328</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-menu no-padding b-a b-grey text-master">
-                        <div class="bg-white m-t-45 p-t-5 p-l-15 p-b-5 p-r-15">
-                          <p class="font-montserrat all-caps no-margin small">@color-menu</p>
-                          <p class="small no-margin pull-left">#202328</p>
-                          <p class="small no-margin pull-right">100%</p>
-                          <div class="clearfix"></div>
+                      <div class="col-md-6">
+                        <h5>Global color variables</h5>
+                        <div clas="row">
+                          <div class="b-b b-grey">
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$mix-percentage-lighter</p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">20%</p>
+                            <div class="clearfix"></div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row m-t-10">
-                      <div class="col-4 col-xl-3">
-                        <p class="no-margin">Text/icon color</p>
-                        <p class="small hint-text"><span class="bold">HEX</span> : #646972</p>
-                      </div>
-                      <div class="col-8 col-xl-9 bg-menu-light text-white m-b-10">
-                        <p class="pull-left no-margin p-t-10 p-b-10 font-montserrat all-caps semi-bold small">@color-menu-light</p>
-                        <p class="pull-right no-margin p-t-10 p-b-10">92%</p>
+                        <div clas="row">
+                          <div class="b-b b-grey">
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$mix-percentage-lighter</p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">90%</p>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div clas="row">
+                          <div class="b-b b-grey">
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$mix-percentage-dark</p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">60%</p>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div clas="row">
+                          <div class="b-b b-grey">
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$mix-percentage-darker</p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">30%</p>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div clas="row">
+                          <div class="b-b b-grey">
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$saturation-shift </p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">14%</p>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <div clas="row">
+                          <div>
+                            <p class="pull-left no-margin p-t-10 p-b-10 fs-13">$hue-shift</p>
+                            <p class="pull-right no-margin p-t-10 p-b-10 fs-13">8%</p>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-default m-t-30">See documentation</a>
                       </div>
                     </div>
                   </div>
@@ -1286,11 +949,9 @@
         <!-- START CONTAINER FLUID -->
         <div class=" container-fluid  container-fixed-lg footer">
           <div class="copyright sm-text-center">
-            <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2017 </span>
-              <span class="font-montserrat">REVOX</span>.
-              <span class="hint-text">All rights reserved. </span>
-              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
+            <p class="small-text no-margin pull-left sm-pull-reset">
+              ©2014-2020 All Rights Reserved. Pages® and/or its subsidiaries or affiliates are registered trademark of Revox Ltd.
+              <span class="hint-text m-l-15">Pages v05.23 20201105.r.190</span>
             </p>
             <p class="small no-margin pull-right sm-pull-reset">
               Hand-crafted <span class="hint-text">&amp; made with Love</span>
@@ -1308,16 +969,16 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="">
-          <a href="#quickview-notes" data-target="#quickview-notes" data-toggle="tab" role="tab">Notes</a>
+          <a href="#quickview-notes" data-bs-target="#quickview-notes" data-bs-toggle="tab" role="tab">Notes</a>
         </li>
         <li>
-          <a href="#quickview-alerts" data-target="#quickview-alerts" data-toggle="tab" role="tab">Alerts</a>
+          <a href="#quickview-alerts" data-bs-target="#quickview-alerts" data-bs-toggle="tab" role="tab">Alerts</a>
         </li>
         <li class="">
-          <a class="active" href="#quickview-chat" data-toggle="tab" role="tab">Chat</a>
+          <a class="active" href="#quickview-chat" data-bs-toggle="tab" role="tab">Chat</a>
         </li>
       </ul>
-      <a class="btn-link quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-close"></i></a>
+      <a class="btn-icon-link invert quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-icon">close</i></a>
       <!-- Tab panes -->
       <div class="tab-content">
         <!-- BEGIN Notes !-->
@@ -1328,20 +989,20 @@
               <div class="toolbar clearfix">
                 <ul class="pull-right ">
                   <li>
-                    <a href="#" class="delete-note-link"><i class="fa fa-trash-o"></i></a>
+                    <a href="#" class="delete-note-link"><i class="pg-icon">trash_alt</i></a>
                   </li>
                   <li>
-                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-plus"></i></a>
+                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">add</i></a>
                   </li>
                 </ul>
-                <button class="btn-remove-notes btn btn-xs btn-block hide"><i class="fa fa-times"></i> Delete</button>
+                <button aria-label="" class="btn-remove-notes btn btn-xs btn-block hide"><i class="pg-icon">close</i>Delete</button>
               </div>
               <ul>
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="1">
+                <li data-noteid="1" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox1" type="checkbox" value="1">
                       <label for="qncheckbox1"></label>
                     </div>
@@ -1351,20 +1012,22 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push">
+                      <i class="pg-icon">chevron_right</i>
+                    </a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox2" type="checkbox" value="1">
                       <label for="qncheckbox2"></label>
                     </div>
@@ -1374,20 +1037,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox3" type="checkbox" value="1">
                       <label for="qncheckbox3"></label>
                     </div>
@@ -1397,20 +1060,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="3">
+                <li data-noteid="3" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox4" type="checkbox" value="1">
                       <label for="qncheckbox4"></label>
                     </div>
@@ -1420,20 +1083,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="4">
+                <li data-noteid="4" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox5" type="checkbox" value="1">
                       <label for="qncheckbox5"></label>
                     </div>
@@ -1443,10 +1106,10 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
@@ -1458,19 +1121,19 @@
             <div class="view note" id="quick-note">
               <div>
                 <ul class="toolbar">
-                  <li><a href="#" class="close-note-link"><i class="pg-arrow_left"></i></a>
+                  <li><a href="#" class="close-note-link"><i class="pg-icon">chevron_left</i></a>
                   </li>
-                  <li><a href="#" data-action="Bold" class="fs-12"><i class="fa fa-bold"></i></a>
+                  <li><a href="#" data-action="Bold" class="fs-12"><i class="pg-icon">format_bold</i></a>
                   </li>
-                  <li><a href="#" data-action="Italic" class="fs-12"><i class="fa fa-italic"></i></a>
+                  <li><a href="#" data-action="Italic" class="fs-12"><i class="pg-icon">format_italics</i></a>
                   </li>
-                  <li><a href="#" class="fs-12"><i class="fa fa-link"></i></a>
+                  <li><a href="#" class="fs-12"><i class="pg-icon">link</i></a>
                   </li>
                 </ul>
                 <div class="body">
                   <div>
                     <div class="top">
-                      <span>21st april 2014 2:13am</span>
+                      <span>21st april 2020 2:13am</span>
                     </div>
                     <div class="content">
                       <div class="quick-note-editor full-width full-height js-input" contenteditable="true"></div>
@@ -1491,16 +1154,16 @@
               <div class="navbar navbar-default navbar-sm">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-more"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
                     Notications
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-search"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">search</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1521,14 +1184,14 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">David Nester Birthday</span>
+                          <span class="text-color">David Nester Birthday</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today <br></span>
-                          <span class="text-master">All Day</span>
+                          <span class="text-color">All Day</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1540,10 +1203,10 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">Meeting at 2:30</span>
+                          <span class="text-color">Meeting at 2:30</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today</span>
@@ -1567,11 +1230,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1582,11 +1245,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1606,11 +1269,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-danger fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-danger fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">12:13AM GTM, 10230, ID:WR174s<br></span>
-                          <span class="text-master">Server Load Exceeted. Take action</span>
+                          <span class="text-color link">12:13AM GTM, 10230, ID:WR174s<br></span>
+                          <span class="text-color">Server Load Exceeted. Take action</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1632,8 +1295,8 @@
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-plus"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">add</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
@@ -1641,8 +1304,8 @@
                     <div class="fs-11">Show All</div>
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-more"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1660,8 +1323,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ava flores</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ava flores</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1678,8 +1341,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bella mccoy</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bella mccoy</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1691,8 +1354,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bob stephens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bob stephens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1709,8 +1372,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">carole roberts</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">carole roberts</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1722,8 +1385,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">christopher perez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">christopher perez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1740,8 +1403,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">danielle fletcher</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">danielle fletcher</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1753,8 +1416,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">david sutton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">david sutton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1771,8 +1434,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">earl hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">earl hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1784,8 +1447,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">elaine lawrence</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">elaine lawrence</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1797,8 +1460,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ellen grant</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ellen grant</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1810,8 +1473,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">erik taylor</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">erik taylor</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1823,8 +1486,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">everett wagner</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">everett wagner</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1841,8 +1504,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">freddie gomez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">freddie gomez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1859,8 +1522,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">glen jensen</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">glen jensen</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1872,8 +1535,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">gwendolyn walker</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">gwendolyn walker</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1890,8 +1553,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">janet romero</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">janet romero</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1908,8 +1571,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">kim martinez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">kim martinez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1926,8 +1589,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lawrence white</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lawrence white</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1939,8 +1602,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">leroy bell</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">leroy bell</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1952,8 +1615,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">letitia carr</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">letitia carr</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1965,8 +1628,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lucy castro</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lucy castro</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1983,8 +1646,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mae hayes</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mae hayes</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -1996,8 +1659,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marilyn owens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marilyn owens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2009,8 +1672,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marlene cole</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marlene cole</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2022,8 +1685,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha warren</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha warren</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2035,8 +1698,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha dean</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha dean</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2048,8 +1711,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mia diaz</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mia diaz</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2067,8 +1730,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">noah elliott</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">noah elliott</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2085,8 +1748,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">phyllis hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">phyllis hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2103,8 +1766,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">raul rodriquez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">raul rodriquez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2116,8 +1779,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">rhonda barnett</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">rhonda barnett</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2129,8 +1792,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">roberta king</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">roberta king</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2147,8 +1810,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">scott armstrong</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">scott armstrong</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2160,8 +1823,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sebastian austin</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sebastian austin</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2173,8 +1836,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sofia davis</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sofia davis</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2191,8 +1854,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">terrance young</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">terrance young</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2204,8 +1867,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">theodore woods</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">theodore woods</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2217,8 +1880,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">todd wood</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">todd wood</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2230,8 +1893,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">tommy jenkins</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">tommy jenkins</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2248,8 +1911,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">wilma hicks</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">wilma hicks</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2263,15 +1926,15 @@
               <!-- BEGIN Header  !-->
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
-                  <a href="javascript:;" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-arrow_left"></i>
+                  <a href="javascript:;" class="link text-color action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">chevron_left</i>
                   </a>
                   <div class="view-heading">
                     John Smith
                     <div class="fs-11 hint-text">Online</div>
                   </div>
-                  <a href="#" class="link text-master inline action p-r-10 pull-right ">
-                    <i class="pg-more"></i>
+                  <a href="#" class="link text-color action p-r-10 pull-right ">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                 </div>
               </div>
@@ -2325,13 +1988,14 @@
               <div class="b-t b-grey bg-white clearfix p-l-10 p-r-10">
                 <div class="row">
                   <div class="col-1 p-t-15">
-                    <a href="#" class="link text-master"><i class="fa fa-plus-circle"></i></a>
+                    <a href="#" class="link text-color"><i class="pg-icon">add</i></a>
                   </div>
                   <div class="col-8 no-padding">
+                    <label class="d-none">Reply</label>
                     <input type="text" class="form-control chat-input" data-chat-input="" data-chat-conversation="#my-conversation" placeholder="Say something">
                   </div>
-                  <div class="col-2 link text-master m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
-                    <a href="#" class="link text-master"><i class="pg-camera"></i></a>
+                  <div class="col-2 link text-color m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
+                    <a href="#" class="link text-color"><i class="pg-icon">camera</i></a>
                   </div>
                 </div>
               </div>
@@ -2353,8 +2017,8 @@
           <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
           <!-- END Overlay Logo !-->
           <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light overlay-close text-black fs-16">
-            <i class="pg-close"></i>
+          <a href="#" class="close-icon-light btn-link btn-rounded  overlay-close text-black">
+            <i class="pg-icon">close</i>
           </a>
           <!-- END Overlay Close !-->
         </div>
@@ -2363,111 +2027,104 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <div class="inline-block">
-            <div class="checkbox right">
-              <input id="checkboxn" type="checkbox" value="1" checked="checked">
-              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
+          <div class="d-flex align-items-center">
+            <div class="form-check right m-b-0">
+              <input id="checkboxn" type="checkbox" value="1">
+              <label for="checkboxn">Search within page</label>
             </div>
-          </div>
-          <div class="inline-block m-l-10">
-            <p class="fs-13">Press enter to search</p>
+            <p class="fs-13 hint-text m-l-10 m-b-0">Press enter to search</p>
           </div>
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span>
-                <strong>suggestions :</strong>
+        <div class="container-fluid p-t-20">
+          <span class="hint-text">
+                suggestions :
             </span>
-          <span id="overlay-suggestions"></span>
+          <span class="overlay-suggestions"></span>
           <br>
-          <div class="search-results m-t-40">
-            <p class="bold">Pages Search Results</p>
+          <div class="search-results m-t-30">
+            <p class="bold">Pages Search Results: <span class="overlay-suggestions"></span></p>
             <div class="row">
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>
-                      <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <img width="36" height="36" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="hint-text">via john smith</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on pages</h5>
+                    <p class="small-text hint-text">via john smith</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
                     <div>T</div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="hint-text">via pages</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> related topics</h5>
+                    <p class="small-text hint-text">via pages</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div><i class="fa fa-headphones large-text "></i>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <div>M
                     </div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="hint-text">via pagesmix</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> music</h5>
+                    <p class="small-text hint-text">via pagesmix</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
               </div>
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                    <div><i class="fa fa-facebook large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-info text-white d-flex align-items-center">
+                    <i class="pg-icon">facebook</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="hint-text">via facebook</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on facebook</h5>
+                    <p class="small-text hint-text">via facebook</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                    <div><i class="fa fa-twitter large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-complete text-white d-flex align-items-center">
+                    <i class="pg-icon">twitter</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via twitter</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via twitter</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                    <div><i class="fa fa-google-plus large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular text-white bg-danger d-flex align-items-center">
+                    <i class="pg-icon">google_plus</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via google plus</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via google plus</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
@@ -2483,6 +2140,8 @@
     <!-- BEGIN VENDOR JS -->
     <script src="assets/plugins/feather-icons/feather.min.js" type="text/javascript"></script>
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
+    <script src="assets/plugins/liga.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
@@ -2495,7 +2154,6 @@
     <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
     <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
-    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <!-- BEGIN CORE TEMPLATE JS -->

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProgresspageComponent } from './progresspage.component';
 
@@ -6,11 +6,10 @@ describe('ProgresspageComponent', () => {
   let component: ProgresspageComponent;
   let fixture: ComponentFixture<ProgresspageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProgresspageComponent ]
-    })
-    .compileComponents();
+      declarations: [ProgresspageComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

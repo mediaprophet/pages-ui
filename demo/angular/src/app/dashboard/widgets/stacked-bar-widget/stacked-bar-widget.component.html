@@ -12,7 +12,8 @@
 				<div class="full-width">
 					<div class="full-width" #chartContainer>
 						<div class="widget-15-chart">
-							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+							<div echarts [options]="chartOption" class="demo-chart"></div>
+							<!-- <nvd3 [options]="chartOptions" [data]="chartData"></nvd3> -->
 						</div>
 					</div>
 				</div>
@@ -29,7 +30,8 @@
 				<div class="full-width">
 					<div class="full-width" #chartContainer>
 						<div class="widget-15-chart">
-							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+							<div echarts [options]="chartOption" class="demo-chart"></div>
+							<!-- <nvd3 [options]="chartOptions" [data]="chartData"></nvd3> -->
 						</div>
 					</div>
 				</div>
@@ -46,21 +48,22 @@
 				<div class="full-width">
 					<div class="full-width" #chartContainer>
 						<div class="widget-15-chart">
-							<nvd3 [options]="chartOptions" [data]="chartData"></nvd3>
+							<!-- <nvd3 [options]="chartOptions" [data]="chartData"></nvd3> -->
+							<div echarts [options]="chartOption" class="demo-chart"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</pg-tab>
 	</pg-tabset>
-	<div class="p-t-10 p-l-20 p-r-20 p-b-30">
+	<div class="p-t-20 p-l-20 p-r-20 p-b-15">
 		<div class="row">
 			<div class="col-md-9">
-				<p class="fs-16 text-black">Apple’s Motivation - Innovation
+				<p class="fs-16">Apple’s Motivation - Innovation
 					<br>distinguishes between A leader and a follower.
 				</p>
 
-				<p class="small hint-text p-b-10">VIA Apple Store (Consumer and Education Individuals)
+				<p class="small hint-text">VIA Apple Store (Consumer and Education Individuals)
 					<br>(800) MY-APPLE (800-692-7753)
 				</p>
 			</div>

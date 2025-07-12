@@ -8,8 +8,8 @@
                     <li class="breadcrumb-item"><a href="javascript:void(0);">UI Elements</a></li>
                     <li class="breadcrumb-item active">Treeview</li>
                   </ol>
-                </pg-breadcrumb> 
-                <!-- END BREADCRUMB --> 
+                </pg-breadcrumb>
+                <!-- END BREADCRUMB -->
                 <div class="row">
                   <div class="col-xl-7 col-lg-6 ">
                     <!-- START card -->
@@ -90,7 +90,7 @@
                       <div class="input-group transparent col-md-8 m-b-15">
                           <input type="text" placeholder="Type here to Search" class="form-control"  #filter3 (keyup)="filterFn(filter3.value, tree.treeModel)">
                           <div class="input-group-append">
-                              <span class="input-group-text transparent"><i class="pg pg-search"></i>
+                              <span class="input-group-text transparent"><i class="pg-icon">search</i>
                               </span>
                           </div>
                         </div>
@@ -107,10 +107,10 @@
                   </div>
                   <div class="card-body">
                     <p>You can search you tree in real time. Please refer the documentation for more details or angular 2 tree documentation</p>
-                    <tree-root [nodes]="asyncNodes" [options]="options" class="tree-wrapper bold-node-text level1-document-icon-only">
-                        <template #loadingTemplate>
+                    <tree-root [nodes]="asyncNodes" [options]="asyncOptions" class="tree-wrapper bold-node-text level1-document-icon-only">
+                        <ng-template #loadingTemplate>
                             <pg-progress type="circle" indeterminate="true" class=""></pg-progress>
-                        </template>
+                        </ng-template>
                     </tree-root>
                   </div>
                 </div>

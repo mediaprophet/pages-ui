@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BoxedAltComponent } from './boxed-alt.component';
 
@@ -6,11 +6,10 @@ describe('BoxedAltComponent', () => {
   let component: BoxedAltComponent;
   let fixture: ComponentFixture<BoxedAltComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ BoxedAltComponent ]
-    })
-    .compileComponents();
+      declarations: [BoxedAltComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

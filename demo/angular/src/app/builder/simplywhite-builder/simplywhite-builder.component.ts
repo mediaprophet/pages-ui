@@ -8,21 +8,19 @@ declare var pg: any;
   encapsulation: ViewEncapsulation.None
 })
 export class SimplywhiteBuilderComponent extends RootbuilderComponent implements OnInit {
-  layoutType = "menuPined";
+  layoutType = 'menuPined';
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  menuPined() {
+    pg.removeClass(document.body, 'menu-behind');
+    this.toggler.setHeaderClass('');
+    this.layoutType = 'menuPined';
   }
 
-  menuPined(){
-    pg.removeClass(document.body,"menu-behind");
-    this.toggler.setHeaderClass("");
-    this.layoutType = "menuPined"
+  headerTop() {
+    pg.addClass(document.body, 'menu-behind');
+    this.toggler.setHeaderClass('bg-white light');
+    this.layoutType = 'headerTop';
   }
-
-  headerTop(){
-    pg.addClass(document.body,"menu-behind");
-    this.toggler.setHeaderClass("bg-white light");
-    this.layoutType = "headerTop"
-  }
-
 }

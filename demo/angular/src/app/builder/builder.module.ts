@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 //Bootstrap Components by ngx-bootstrap
-import { TabsModule } from 'ngx-bootstrap';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 //Pages Components by ace
-import { SharedModule } from '../@pages/components/shared.module';
-import { pgTabsModule } from '../@pages/components/tabs/tabs.module';
-import { pgCollapseModule } from '../@pages/components/collapse';
+import { SharedModule } from '@pages/components/shared.module';
+import { pgTabsModule } from '@pages/components/tabs/tabs.module';
+import { pgCollapseModule } from '@pages/components/collapse';
 
 //Demo Pages
 import { RootbuilderComponent } from './rootbuilder/rootbuilder.component';
@@ -17,6 +17,9 @@ import { ExecutiveBuilderComponent } from './executive-builder/executive-builder
 import { SimplywhiteBuilderComponent } from './simplywhite-builder/simplywhite-builder.component';
 import { buiderRoutes } from './builder.routing';
 import { CorporateBuilderComponent } from './corporate-builder/corporate-builder.component';
+import { PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = { suppressScrollX: true, };
 
 @NgModule({
   imports: [
@@ -26,14 +29,15 @@ import { CorporateBuilderComponent } from './corporate-builder/corporate-builder
     pgCollapseModule.forRoot(),
     SharedModule,
     pgTabsModule,
+	PerfectScrollbarModule
   ],
   declarations: [
     RootbuilderComponent,
     CasualBuilderComponent,
-    CondensedBuilderComponent, 
-    ExecutiveBuilderComponent, 
-    SimplywhiteBuilderComponent, 
+    CondensedBuilderComponent,
+    ExecutiveBuilderComponent,
+    SimplywhiteBuilderComponent,
     CorporateBuilderComponent
   ]
 })
-export class BuilderModule { }
+export class BuilderModule {}

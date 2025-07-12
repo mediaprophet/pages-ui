@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
@@ -13,17 +13,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="Meet pages - The simplest and fastest way to build web UI for your dashboard or app." name="description" />
+    <meta content="Ace" name="author" />
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" />
+    <!-- Please remove the file below for production: Contains demo classes -->
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="fixed-header menu-pin menu-behind">
     <!-- BEGIN SIDEBPANEL-->
@@ -31,21 +31,21 @@
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
       <div class="sidebar-overlay-slide from-top" id="appMenu">
         <div class="row">
-          <div class="col-xs-6 no-padding">
+          <div class="col-sm-6 no-padding">
             <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
             </a>
           </div>
-          <div class="col-xs-6 no-padding">
+          <div class="col-sm-6 no-padding">
             <a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
             </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-6 m-t-20 no-padding">
+          <div class="col-sm-6 m-t-20 no-padding">
             <a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
             </a>
           </div>
-          <div class="col-xs-6 m-t-20 no-padding">
+          <div class="col-sm-6 m-t-20 no-padding">
             <a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
             </a>
           </div>
@@ -56,9 +56,11 @@
       <div class="sidebar-header">
         <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
         <div class="sidebar-header-controls">
-          <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
+          <button aria-label="Toggle Drawer" type="button" class="btn btn-icon-link invert sidebar-slide-toggle m-l-20 m-r-10" data-pages-toggle="#appMenu">
+            <i class="pg-icon">chevron_down</i>
           </button>
-          <button type="button" class="btn btn-link d-lg-inline-block d-xlg-inline-block d-md-inline-block d-sm-none d-none" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
+          <button aria-label="Pin Menu" type="button" class="btn btn-icon-link invert d-lg-inline-block d-xlg-inline-block d-md-inline-block d-sm-none d-none" data-toggle-pin="sidebar">
+            <i class="pg-icon"></i>
           </button>
         </div>
       </div>
@@ -67,48 +69,48 @@
       <div class="sidebar-menu">
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
-          <li class="m-t-30 ">
+          <li class="m-t-20 ">
             <a href="index.html" class="detailed">
               <span class="title">Dashboard</span>
               <span class="details">12 New Updates</span>
             </a>
-            <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">home</i></span>
           </li>
           <li class="">
             <a href="email.html" class="detailed">
               <span class="title">Email</span>
               <span class="details">234 New Emails</span>
             </a>
-            <span class="icon-thumbnail"><i class="pg-mail"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">inbox</i></span>
           </li>
           <li class="">
             <a href="social.html"><span class="title">Social</span></a>
-            <span class="icon-thumbnail"><i class="pg-social"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">social</i></span>
           </li>
           <li>
             <a href="javascript:;"><span class="title">Calendar</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-calender"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">calendar</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="calendar.html">Basic</a>
-                <span class="icon-thumbnail">c</span>
+                <span class="icon-thumbnail"><i class="pg-icon">c</i></span>
               </li>
               <li class="">
                 <a href="calendar_lang.html">Languages</a>
-                <span class="icon-thumbnail">L</span>
+                <span class="icon-thumbnail"><i class="pg-icon">l</i></span>
               </li>
               <li class="">
                 <a href="calendar_month.html">Month</a>
-                <span class="icon-thumbnail">M</span>
+                <span class="icon-thumbnail"><i class="pg-icon">m</i></span>
               </li>
               <li class="">
                 <a href="calendar_lazy.html">Lazy load</a>
-                <span class="icon-thumbnail">La</span>
+                <span class="icon-thumbnail"><i class="pg-icon">la</i></span>
               </li>
               <li class="">
-                <a href="https://docs.pages.revox.io/apps/calendar" target="_blank">Documentation</a>
-                <span class="icon-thumbnail">D</span>
+                <a href="https://docs.pages.revox.io/apps/calendar" rel="noreferrer" target="_blank">Documentation</a>
+                <span class="icon-thumbnail"><i class="pg-icon">d</i></span>
               </li>
             </ul>
           </li>
@@ -116,79 +118,75 @@
             <a href="builder.html">
               <span class="title">Builder</span>
             </a>
-            <span class="icon-thumbnail"><i class="pg-layouts"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">brush</i></span>
           </li>
           <li>
             <a href="javascript:;"><span class="title">Layouts</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-layouts2"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">grid</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="default_layout.html">Default</a>
-                <span class="icon-thumbnail">dl</span>
+                <span class="icon-thumbnail"><i class="pg-icon">dl</i></span>
               </li>
               <li class="">
                 <a href="secondary_layout.html">Secondary</a>
-                <span class="icon-thumbnail">sl</span>
+                <span class="icon-thumbnail"><i class="pg-icon">sl</i></span>
               </li>
               <li class="">
                 <a href="boxed_layout.html">Boxed</a>
-                <span class="icon-thumbnail">bl</span>
-              </li>
-              <li class="">
-                <a href="rtl_layout.html">RTL</a>
-                <span class="icon-thumbnail">rl</span>
+                <span class="icon-thumbnail"><i class="pg-icon">bl</i></span>
               </li>
             </ul>
           </li>
           <li class="open active">
             <a href="javascript:;"><span class="title">UI Elements</span>
             <span class=" open  arrow"></span></a>
-            <span class="icon-thumbnail">Ui</span>
+            <span class="icon-thumbnail"><i class="pg-icon">shapes</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="color.html">Color</a>
-                <span class="icon-thumbnail">c</span>
+                <span class="icon-thumbnail"><i class="pg-icon">c</i></span>
               </li>
               <li class="">
                 <a href="typography.html">Typography</a>
-                <span class="icon-thumbnail">t</span>
+                <span class="icon-thumbnail"><i class="pg-icon">t</i></span>
               </li>
               <li class="">
                 <a href="icons.html">Icons</a>
-                <span class="icon-thumbnail">i</span>
+                <span class="icon-thumbnail"><i class="pg-icon">i</i></span>
               </li>
               <li class="">
                 <a href="buttons.html">Buttons</a>
-                <span class="icon-thumbnail">b</span>
+                <span class="icon-thumbnail"><i class="pg-icon">b</i></span>
               </li>
               <li class="">
                 <a href="notifications.html">Notifications</a>
-                <span class="icon-thumbnail">n</span>
+                <span class="icon-thumbnail"><i class="pg-icon">n</i></span>
               </li>
               <li class="">
                 <a href="modals.html">Modals</a>
-                <span class="icon-thumbnail">m</span>
+                <span class="icon-thumbnail"><i class="pg-icon">m</i></span>
               </li>
               <li class="">
                 <a href="progress.html">Progress &amp; Activity</a>
-                <span class="icon-thumbnail">pa</span>
+                <span class="icon-thumbnail"><i class="pg-icon">pa</i></span>
               </li>
               <li class="">
                 <a href="tabs_accordian.html">Tabs &amp; Accordions</a>
-                <span class="icon-thumbnail">ta</span>
+                <span class="icon-thumbnail"><i class="pg-icon">ta</i></span>
               </li>
               <li class="">
                 <a href="sliders.html">Sliders</a>
-                <span class="icon-thumbnail">s</span>
+                <span class="icon-thumbnail"><i class="pg-icon">s</i></span>
               </li>
               <li class="">
                 <a href="tree_view.html">Tree View</a>
-                <span class="icon-thumbnail">tv</span>
+                <span class="icon-thumbnail"><i class="pg-icon">tv</i></span>
               </li>
               <li class="">
                 <a href="nestables.html">Nestable</a>
-                <span class="icon-thumbnail">ns</span>
+                <span class="icon-thumbnail"><i class="pg-icon">ns</i></span>
               </li>
             </ul>
           </li>
@@ -197,19 +195,19 @@
               <span class="title">Forms</span>
               <span class=" arrow"></span>
             </a>
-            <span class="icon-thumbnail"><i class="pg-form"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">note</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="form_elements.html">Form Elements</a>
-                <span class="icon-thumbnail">fe</span>
+                <span class="icon-thumbnail"><i class="pg-icon">fe</i></span>
               </li>
               <li class="">
                 <a href="form_layouts.html">Form Layouts</a>
-                <span class="icon-thumbnail">fl</span>
+                <span class="icon-thumbnail"><i class="pg-icon">fl</i></span>
               </li>
               <li class="">
                 <a href="form_wizard.html">Form Wizard</a>
-                <span class="icon-thumbnail">fw</span>
+                <span class="icon-thumbnail"><i class="pg-icon">fw</i></span>
               </li>
             </ul>
           </li>
@@ -217,124 +215,124 @@
             <a href="cards.html">
               <span class="title">Cards</span>
             </a>
-            <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">card</i></span>
           </li>
           <li class="">
             <a href="views.html">
               <span class="title">Views</span>
             </a>
-            <span class="icon-thumbnail"><i class="pg pg-ui"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">layout</i></span>
           </li>
           <li>
             <a href="javascript:;"><span class="title">Tables</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-tables"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">table</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="tables.html">Basic Tables</a>
-                <span class="icon-thumbnail">bt</span>
+                <span class="icon-thumbnail"><i class="pg-icon">bt</i></span>
               </li>
               <li class="">
                 <a href="datatables.html">Data Tables</a>
-                <span class="icon-thumbnail">dt</span>
+                <span class="icon-thumbnail"><i class="pg-icon">dt</i></span>
               </li>
             </ul>
           </li>
           <li>
             <a href="javascript:;"><span class="title">Maps</span> 
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-map"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">map</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="google_map.html">Google Maps</a>
-                <span class="icon-thumbnail">gm</span>
+                <span class="icon-thumbnail"><i class="pg-icon">gm</i></span>
               </li>
               <li class="">
                 <a href="vector_map.html">Vector Maps</a>
-                <span class="icon-thumbnail">vm</span>
+                <span class="icon-thumbnail"><i class="pg-icon">vm</i></span>
               </li>
             </ul>
           </li>
           <li class="">
             <a href="charts.html"><span class="title">Charts</span></a>
-            <span class="icon-thumbnail"><i class="pg-charts"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">chart</i></span>
           </li>
           <li>
             <a href="javascript:;"><span class="title">Extra</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-bag"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">effects</i></span>
             <ul class="sub-menu">
               <li class="">
                 <a href="invoice.html">Invoice</a>
-                <span class="icon-thumbnail">in</span>
+                <span class="icon-thumbnail"><i class="pg-icon">in</i></span>
               </li>
               <li class="">
                 <a href="404.html">404 Page</a>
-                <span class="icon-thumbnail">pg</span>
+                <span class="icon-thumbnail"><i class="pg-icon">pg</i></span>
               </li>
               <li class="">
                 <a href="500.html">500 Page</a>
-                <span class="icon-thumbnail">pg</span>
+                <span class="icon-thumbnail"><i class="pg-icon">pg</i></span>
               </li>
               <li class="">
                 <a href="blank_template.html">Blank Page</a>
-                <span class="icon-thumbnail">bp</span>
+                <span class="icon-thumbnail"><i class="pg-icon">bp</i></span>
               </li>
               <li class="">
                 <a href="login.html">Login</a>
-                <span class="icon-thumbnail">l</span>
+                <span class="icon-thumbnail"><i class="pg-icon">li</i></span>
               </li>
               <li class="">
                 <a href="register.html">Register</a>
-                <span class="icon-thumbnail">re</span>
+                <span class="icon-thumbnail"><i class="pg-icon">re</i></span>
               </li>
               <li class="">
                 <a href="lock_screen.html">Lockscreen</a>
-                <span class="icon-thumbnail">ls</span>
+                <span class="icon-thumbnail"><i class="pg-icon">ls</i></span>
               </li>
               <li class="">
                 <a href="gallery.html">Gallery</a>
-                <span class="icon-thumbnail">gl</span>
+                <span class="icon-thumbnail"><i class="pg-icon">gl</i></span>
               </li>
               <li class="">
                 <a href="timeline.html">Timeline</a>
-                <span class="icon-thumbnail">t</span>
+                <span class="icon-thumbnail"><i class="pg-icon">tl</i></span>
               </li>
             </ul>
           </li>
           <li class="">
             <a href="javascript:;"><span class="title">Menu Levels</span>
             <span class="arrow"></span></a>
-            <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>
+            <span class="icon-thumbnail"><i class="pg-icon">menu_level</i></span>
             <ul class="sub-menu">
               <li>
                 <a href="javascript:;">Level 1</a>
-                <span class="icon-thumbnail">L1</span>
+                <span class="icon-thumbnail"><i class="pg-icon">l1</i></span>
               </li>
               <li>
                 <a href="javascript:;"><span class="title">Level 2</span>
                 <span class="arrow"></span></a>
-                <span class="icon-thumbnail">L2</span>
+                <span class="icon-thumbnail"><i class="pg-icon">L2</i></span>
                 <ul class="sub-menu">
                   <li>
                     <a href="javascript:;">Sub Menu</a>
-                    <span class="icon-thumbnail">Sm</span>
+                    <span class="icon-thumbnail"><i class="pg-icon">sm</i></span>
                   </li>
                   <li>
                     <a href="ujavascript:;">Sub Menu</a>
-                    <span class="icon-thumbnail">Sm</span>
+                    <span class="icon-thumbnail"><i class="pg-icon">sm</i></span>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li class="">
-            <a href="https://docs.pages.revox.io/" target="_blank"><span class="title">Docs</span></a>
-            <span class="icon-thumbnail"><i class="pg-note"></i></span>
+            <a href="https://docs.pages.revox.io/" rel="noreferrer" target="_blank"><span class="title">Docs</span></a>
+            <span class="icon-thumbnail"><i class="pg-icon">flag</i></span>
           </li>
-          <li class="">
-            <a href="http://changelog.pages.revox.io/" target="_blank"><span class="title">Changelog</span></a>
-            <span class="icon-thumbnail">Cl</span>
+          <li class="m-b-40">
+            <a href="http://changelog.pages.revox.io/" rel="noreferrer" target="_blank"><span class="title">Changelog</span></a>
+            <span class="icon-thumbnail"><i class="pg-icon">clipboard</i></span>
           </li>
         </ul>
         <div class="clearfix"></div>
@@ -348,18 +346,19 @@
       <!-- START HEADER -->
       <div class="header ">
         <!-- START MOBILE SIDEBAR TOGGLE -->
-        <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar">
-        </a>
+        <a href="#" class="btn-link toggle-sidebar d-lg-none pg-icon btn-icon-link" data-toggle="sidebar">
+      		menu</a>
         <!-- END MOBILE SIDEBAR TOGGLE -->
         <div class="">
           <div class="brand inline  m-l-10 ">
             <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
           </div>
           <!-- START NOTIFICATION LIST -->
-          <ul class="d-lg-inline-block d-none notification-list no-margin d-lg-inline-block b-grey b-l b-r no-style p-l-30 p-r-20">
-            <li class="p-r-10 inline">
+          <ul class="d-lg-inline-block d-none notification-list no-margin d-lg-inline-block b-grey b-l b-r no-style p-l-20 p-r-20">
+            <li class="p-r-5 inline">
               <div class="dropdown">
-                <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
+                <a href="javascript:;" id="notification-center" class="header-icon  btn-icon-link" data-bs-toggle="dropdown">
+                  <i class="pg-icon">world</i>
                   <span class="bubble"></span>
                 </a>
                 <!-- START Notification Dropdown -->
@@ -372,14 +371,14 @@
                       <div class="notification-item unread clearfix">
                         <!-- START Notification Item-->
                         <div class="heading open">
-                          <a href="#" class="text-complete pull-left">
-                            <i class="pg-map fs-16 m-r-10"></i>
+                          <a href="#" class="text-complete pull-left d-flex align-items-center">
+                            <i class="pg-icon m-r-10">map</i>
                             <span class="bold">Carrot Design</span>
                             <span class="fs-12 m-l-10">David Nester</span>
                           </a>
                           <div class="pull-right">
                             <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
-                              <div><i class="fa fa-angle-left"></i>
+                              <div><i class="pg-icon">chevron_down</i>
                               </div>
                             </div>
                             <span class=" time">few sec ago</span>
@@ -387,8 +386,8 @@
                           <div class="more-details">
                             <div class="more-details-inner">
                               <h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br>
-                                                            distinguishes between <br>
-                                                            A leader and a follower.”</h5>
+																															distinguishes between <br>
+																															A leader and a follower.”</h5>
                               <p class="small hint-text">
                                 Commented on john Smiths wall.
                                 <br> via pages framework.
@@ -398,7 +397,7 @@
                         </div>
                         <!-- END Notification Item-->
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -408,7 +407,7 @@
                       <div class="notification-item  clearfix">
                         <div class="heading">
                           <a href="#" class="text-danger pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">98% Server Load</span>
                             <span class="fs-12 m-l-10">Take Action</span>
                           </a>
@@ -424,8 +423,8 @@
                       <!-- START Notification Item-->
                       <div class="notification-item  clearfix">
                         <div class="heading">
-                          <a href="#" class="text-warning-dark pull-left">
-                            <i class="fa fa-exclamation-triangle m-r-10"></i>
+                          <a href="#" class="text-warning pull-left">
+                            <i class="pg-icon m-r-10">alert_warning</i>
                             <span class="bold">Warning Notification</span>
                             <span class="fs-12 m-l-10">Buy Now</span>
                           </a>
@@ -451,7 +450,7 @@
                           <span class="pull-right time">11:00pm</span>
                         </div>
                         <!-- START Notification Item Right Side-->
-                        <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                        <div class="option" data-bs-toggle="tooltip" data-bs-placement="left" title="mark as read">
                           <a href="#" class="mark"></a>
                         </div>
                         <!-- END Notification Item Right Side-->
@@ -473,39 +472,49 @@
                 <!-- END Notification Dropdown -->
               </div>
             </li>
-            <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-link"></a>
+            <li class="p-r-5 inline">
+              <a href="#" class="header-icon  btn-icon-link">
+                <i class="pg-icon">link_alt</i>
+              </a>
             </li>
-            <li class="p-r-10 inline">
-              <a href="#" class="header-icon pg pg-thumbs"></a>
+            <li class="p-r-5 inline">
+              <a href="#" class="header-icon  btn-icon-link">
+                <i class="pg-icon">grid_alt</i>
+              </a>
             </li>
           </ul>
           <!-- END NOTIFICATIONS LIST -->
-          <a href="#" class="search-link d-lg-inline-block d-none" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
+          <a href="#" class="search-link d-lg-inline-block d-none" data-toggle="search"><i
+      				class="pg-icon">search</i>Type anywhere to <span class="bold">search</span></a>
         </div>
         <div class="d-flex align-items-center">
           <!-- START User Info-->
-          <div class="pull-left p-r-10 fs-14 font-heading d-lg-block d-none">
-            <span class="semi-bold">David</span> <span class="text-master">Nest</span>
-          </div>
           <div class="dropdown pull-right d-lg-block d-none">
-            <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="profile-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="profile dropdown">
               <span class="thumbnail-wrapper d32 circular inline">
-              <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
-              </span>
+      					<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg"
+      						data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+      				</span>
             </button>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-              <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
-              <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
-              <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
-              <a href="#" class="clearfix bg-master-lighter dropdown-item">
-                <span class="pull-left">Logout</span>
-                <span class="pull-right"><i class="pg-power"></i></span>
-              </a>
+              <a href="#" class="dropdown-item"><span>Signed in as <br /><b>David Aunsberg</b></span></a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Your Profile</a>
+              <a href="#" class="dropdown-item">Your Activity</a>
+              <a href="#" class="dropdown-item">Your Archive</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Features</a>
+              <a href="#" class="dropdown-item">Help</a>
+              <a href="#" class="dropdown-item">Settings</a>
+              <a href="#" class="dropdown-item">Logout</a>
+              <div class="dropdown-divider"></div>
+              <span class="dropdown-item fs-12 hint-text">Last edited by David<br />on Friday at 5:27PM</span>
             </div>
           </div>
           <!-- END User Info-->
-          <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
+          <a href="#" class="header-icon m-l-5 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
+            <i class="pg-icon btn-icon-link">menu_add</i>
+          </a>
         </div>
       </div>
       <!-- END HEADER -->
@@ -516,28 +525,25 @@
           <!-- START JUMBOTRON -->
           <div class="jumbotron lg vertical center bg-white column-w4 vertical-bottom" data-pages="parallax">
             <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0 full-height">
-              <div class="inner text-center p-t-50 m-t-80 full-height">
-                <img class="sm-image-responsive-height" src="assets/img/demo/icons_hero.png" data-src="assets/img/demo/icons_hero.png" data-src-retina="assets/img/demo/icons_hero2x.png" alt="" width="612" height="69">
-                <div class="m-b-10">
-                  <h2 class=" p-t-10 inline">Carefully hand crafted icons exclusively only on pages</h2>
-                </div>
-                <div class="input-group transparent col-lg-4 center-margin">
-                  <input type="text" class="form-control" placeholder="Search for icon - home, camera, world etc." id="icon-filter" name="icon-filter">
-                  <div class="input-group-append ">
-                    <span class="input-group-text transparent"> <i class="pg-search"></i></span>
-                  </div>
-                </div>
-                <div class="m-t-20 m-b-40 ">
-                  <p class="small hint-text">Pages Pixel perfect icons / Font awesome / line icons</p>
-                </div>
-                <div class="input-group col-lg-4 center-margin ">
-                  <div class="col-lg-7 b-grey b-r">
-                    <p class="hinted-text text-left p-t-15 p-b-t-15">Built upon a 14x14px Grid System.
-                      <br>Vector Font icons</p>
-                  </div>
-                  <div class="col-lg-5">
-                    <p class="hinted-text text-left p-t-15 p-b-t-15 p-l-10">Svg files available
-                      <br>Pixel Perfect</p>
+              <div class="d-flex flex-column justify-content-center inner full-height sm-p-l-25 sm-p-r-25 sm-p-t-25">
+                <div class="row">
+                  <div class="col-md-7 col-lg-4">
+                    <div class="m-b-0">
+                      <h2 class="p-b-15 p-t-10 inline">Meaningful, easy, and more accessible icons</h2>
+                      <p>Pages icons take advantage of the typographic rendering capabilities of modern browsers allowing to call icons with common that terms screen readers and search engines can read while users see icons.</p>
+                      <p class="p-t-45 bold">Test run the icon font</p>
+                    </div>
+                    <div class="transparent no-padding">
+                      <input type="text" class="form-control pg-icon p-l-0 transparent icon-text-search" placeholder="Try typing, magic, earth" id="icon-filter" name="icon-filter">
+                    </div>
+                    <div class="m-t-20 m-b-40">
+                      <p class="no-margin">Yes, it's purely the font only!</p>
+                      <p class="hint-text d-flex align-items-center">Try — person, eye, draw, love, bin
+                        <a href="" class="btn btn-icon-link hint-text m-l-5">
+                          <i class="pg-icon">more</i>
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -546,1073 +552,122 @@
           <!-- END JUMBOTRON -->
           <div class=" container-fluid   container-fixed-lg">
             <br>
-            <div class="row icon-set-preview">
-              <div class="col-lg-4">
-                <div class="card card-default">
-                  <div class="card-header ">
-                    <div class="card-title">Pages icon
-                    </div>
-                  </div>
+            <div class="row icon-set-preview m-t-30">
+              <div class="col-lg-6">
+                <div class="card card-default overflow-hidden">
                   <div class="card-body">
-                    <div class="icon-preview m-t-10">
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-charts"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-comment"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-desktop"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-bag"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-calender"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-camera"></i>
-                        </div>
+                    <div class="row">
+                      <div class="col-lg-11">
+                        <h2 class="p-b-40 mw-500">Pixel perfect hand hinted </br> material icons exclusive for pages UI</h2>
+                        <img class="sm-image-responsive-height m-b-40" src="assets/img/demo/icons_hero.png" data-src="assets/img/demo/icons_hero.png" data-src-retina="assets/img/demo/icons_hero2x.png" alt="" width="612" height="69">
+                        <p class="p-b-30">Ever noticed that material design icons are comparatively large? and when you resize them to suit your web app, it gets blurred? Material design icons are made for phone apps.They don’t work with web dashboard apps. We re-made the icons pixel-perfect to fit a 20px grid that works perfectly for web apps. </p>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-centeralign"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-clock"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-close"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-refresh_new"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-comment"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-credit_card_line"></i>
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 col-lg-4 m-t-10">
+                        <a href="" class="btn btn-default">Request an icon</a>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-menu_justify"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-grid"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-menu"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-desktop"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-minus"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-plus"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-search"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-power"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-refresh"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-tables"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-ui"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-video"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-mail"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-map"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-cupboard"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-download"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-home"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-laptop"></i>
-                        </div>
+                      <div class="col-md-6 col-lg-8">
+                        <p class="hint-text small m-t-10">We continuously work hard to improve the quality and performance of Pages . We value every bit of customer input. We have a special box for any icon requests.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="card card-default">
+              <div class="col-lg-6">
+                <div class="card card-transparent card-bordless">
                   <div class="card-header ">
-                    <div class="card-title">Fontawesome
+                    <div class="card-title">Explore all icons
                     </div>
                   </div>
                   <div class="card-body">
-                    <div class="icon-preview m-t-10">
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-cloud"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-cloud-download"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-code-fork"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-dashboard"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-cube"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-cubes"></i>
-                        </div>
+                    <p>
+                      Pages icon is the easiest way to incorporate icons into your app or dashboard. We have packaged all the icons into a single compressed font file which will load faster and looks great at any scale, retina displays, low-dpi display screens.
+                    </p>
+                    <div class="row b-t b-l b-grey m-t-35 m-l-0 m-r-0 m-b-25">
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon m-20">person</i>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-heart"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-lock"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-rss"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-signal"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-magic"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-question"></i>
-                        </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">bin</i>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-paint-brush"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-terminal"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-tag"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-wifi"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-tablet"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 pg-plus"></i>
-                        </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <div> <i class="pg-icon">user</i> </div>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-bars"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-search"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-phone"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-share-alt"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-phone"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-bolt"></i>
-                        </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">users</i>
                       </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-adjust"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-check"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-font"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-th"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-repeat"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 fa fa-folder-o"></i>
-                        </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">spam</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">grid</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon m-20">paint_bucket</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">paint_brush</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">effects</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">draw</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">drop</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">image</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon m-20">lock</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">flag</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">inbox</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">inbox_all</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">world</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">grid_alt</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon m-20">heart</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">keyboard</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">map_alt</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">map</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">eye</i>
+                      </div>
+                      <div class="col-sm-2 b-r b-b b-grey text-center padding-15">
+                        <i class="pg-icon">mic</i>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card card-default">
-                  <div class="card-header ">
-                    <div class="card-title">Line Icon
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="icon-preview m-t-10">
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-user-follow"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-screen-desktop"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-mouse"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-energy"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-disc"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-crop"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-crop"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-user"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-speedometer"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-shield"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-magic-wand"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-bell"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-wallet"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-printer"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-map"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-playlist"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-handbag"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-film"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-feed"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-docs"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-directions"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-calculator"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-bag"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-tag"></i>
-                        </div>
-                      </div>
-                      <div class="row center-margin m-b-10">
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-microphone"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-loop"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-login"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-list"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-like"></i>
-                        </div>
-                        <div class="col-2 text-center">
-                          <i class="fs-14 sl-calendar"></i>
-                        </div>
-                      </div>
+                    <div class="col-md-3 col-lg-4 no-padding">
+                      <a href="" class="btn btn-default">See icon cheatsheet</a>
+                      <p class="hint-text small m-t-10">Go to icon cheatsheet to see all the icons in the font with its corresponding name.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- END GRID -->
-            <div id="icon-list" class="hidden">
-              <div class="card card-transparent">
-                <div class="card-header ">
-                  <div class="card-title">Search Results
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="row margin-bottom-20 icon-list">
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-signals"></i> pg-signals</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-crop"></i> pg-crop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-folder_alt"></i> pg-folder_alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-folder"></i> pg-folder</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-theme"></i> pg-theme</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-battery_empty"></i> pg-battery_empty</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-battery"></i> pg-battery</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-note"></i> pg-note</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-server_hard"></i> pg-server_hard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-servers"></i> pg-servers</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-menu_justify"></i> pg-menu_justify</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-credit_card"></i> pg-credit_card</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-fullscreen_restore"></i> pg-fullscreen_restore</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-fullscreen"></i> pg-fullscreen</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-minus"></i> pg-minus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-minus_circle"></i> pg-minus_circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-plus_circle"></i> pg-plus_circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-refresh_new"></i> pg-refresh_new</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-close_line"></i> pg-close_line</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-close"></i> pg-close</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_down"></i> pg-arrow_down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_left_line_alt"></i> pg-arrow_left_line_alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_left"></i> pg-arrow_left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_lright_line_alt"></i> pg-arrow_lright_line_alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_maximize_line"></i> pg-arrow_maximize_line</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_maximize"></i> pg-arrow_maximize</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_minimize_line"></i> pg-arrow_minimize_line</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_minimize"></i> pg-arrow_minimize</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_right"></i> pg-arrow_right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-arrow_up"></i> pg-arrow_up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-more"></i> pg-more</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-bag"></i> pg-bag</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-bag1"></i> pg-bag1</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-bold"></i> pg-bold</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-calender"></i> pg-calender</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-camera"></i> pg-camera</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-centeralign"></i> pg-centeralign</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-charts"></i> pg-charts</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-clock"></i> pg-clock</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-comment"></i> pg-comment</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-contact_book"></i> pg-contact_book</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-credit_card_line"></i> pg-credit_card_line</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-cupboard"></i> pg-cupboard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-desktop"></i> pg-desktop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-download"></i> pg-download</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-eraser"></i> pg-eraser</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-extra"></i> pg-extra</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-form"></i> pg-form</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-grid"></i> pg-grid</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-home"></i> pg-home</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-image"></i> pg-image</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-inbox"></i> pg-inbox</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-indent"></i> pg-indent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-italic"></i> pg-italic</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-laptop"></i> pg-laptop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-layouts"></i> pg-layouts</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-layouts2"></i> pg-layouts2</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-layouts3"></i> pg-layouts3</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-layouts4"></i> pg-layouts4</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-leftalign"></i> pg-leftalign</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-like"></i> pg-like</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-like1"></i> pg-like1</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-lock"></i> pg-lock</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-mail"></i> pg-mail</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-map"></i> pg-map</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-menu_lv"></i> pg-menu_lv</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-menu"></i> pg-menu</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-movie"></i> pg-movie</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-ordered_list"></i> pg-ordered_list</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-outdent"></i> pg-outdent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-phone"></i> pg-phone</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-plus"></i> pg-plus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-power"></i> pg-power</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-printer"></i> pg-printer</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-refresh"></i> pg-refresh</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-resize"></i> pg-resize</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-right_align"></i> pg-right_align</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-save"></i> pg-save</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-search"></i> pg-search</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-sent"></i> pg-sent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-settings_small_1"></i> pg-settings_small_1</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-settings_small"></i> pg-settings_small</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-settings"></i> pg-settings</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-shopping_cart"></i> pg-shopping_cart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-social"></i> pg-social</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-spam"></i> pg-spam</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-suitcase"></i> pg-suitcase</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-tables"></i> pg-tables</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-tablet"></i> pg-tablet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-telephone"></i> pg-telephone</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-text_style"></i> pg-text_style</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-trash_line"></i> pg-trash_line</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-trash"></i> pg-trash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-ui"></i> pg-ui</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-underline"></i> pg-underline</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-unordered_list"></i> pg-unordered_list</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="pg-video"></i> pg-video</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-adjust"></i> fa-adjust</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-anchor"></i> fa-anchor</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-archive"></i> fa-archive</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-area-chart"></i> fa-area-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows"></i> fa-arrows</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-h"></i> fa-arrows-h</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-v"></i> fa-arrows-v</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-asterisk"></i> fa-asterisk</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-at"></i> fa-at</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-automobile"></i> fa-automobile</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ban"></i> fa-ban</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bank"></i> fa-bank</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bar-chart"></i> fa-bar-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bar-chart-o"></i> fa-bar-chart-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-barcode"></i> fa-barcode</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bars"></i> fa-bars</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-beer"></i> fa-beer</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bell"></i> fa-bell</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bell-o"></i> fa-bell-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bell-slash"></i> fa-bell-slash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bell-slash-o"></i> fa-bell-slash-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bicycle"></i> fa-bicycle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-binoculars"></i> fa-binoculars</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-birthday-cake"></i> fa-birthday-cake</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bolt"></i> fa-bolt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bomb"></i> fa-bomb</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-book"></i> fa-book</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bookmark"></i> fa-bookmark</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bookmark-o"></i> fa-bookmark-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-briefcase"></i> fa-briefcase</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bug"></i> fa-bug</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-building"></i> fa-building</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-building-o"></i> fa-building-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bullhorn"></i> fa-bullhorn</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bullseye"></i> fa-bullseye</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bus"></i> fa-bus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cab"></i> fa-cab</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-calculator"></i> fa-calculator</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-calendar"></i> fa-calendar</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-calendar-o"></i> fa-calendar-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-camera"></i> fa-camera</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-camera-retro"></i> fa-camera-retro</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-car"></i> fa-car</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc"></i> fa-cc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-certificate"></i> fa-certificate</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check"></i> fa-check</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-circle"></i> fa-check-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-circle-o"></i> fa-check-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-square"></i> fa-check-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-square-o"></i> fa-check-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-child"></i> fa-child</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle"></i> fa-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle-o"></i> fa-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle-o-notch"></i> fa-circle-o-notch</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle-thin"></i> fa-circle-thin</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-clock-o"></i> fa-clock-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-close"></i> fa-close</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cloud"></i> fa-cloud</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cloud-download"></i> fa-cloud-download</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cloud-upload"></i> fa-cloud-upload</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-code"></i> fa-code</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-code-fork"></i> fa-code-fork</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-coffee"></i> fa-coffee</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cog"></i> fa-cog</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cogs"></i> fa-cogs</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-comment"></i> fa-comment</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-comment-o"></i> fa-comment-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-comments"></i> fa-comments</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-comments-o"></i> fa-comments-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-compass"></i> fa-compass</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-copyright"></i> fa-copyright</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-credit-card"></i> fa-credit-card</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-crop"></i> fa-crop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-crosshairs"></i> fa-crosshairs</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cube"></i> fa-cube</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cubes"></i> fa-cubes</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cutlery"></i> fa-cutlery</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dashboard"></i> fa-dashboard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-database"></i> fa-database</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-desktop"></i> fa-desktop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-download"></i> fa-download</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-edit"></i> fa-edit</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ellipsis-h"></i> fa-ellipsis-h</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ellipsis-v"></i> fa-ellipsis-v</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-envelope"></i> fa-envelope</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-envelope-o"></i> fa-envelope-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-envelope-square"></i> fa-envelope-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eraser"></i> fa-eraser</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-exchange"></i> fa-exchange</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-exclamation"></i> fa-exclamation</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-exclamation-circle"></i> fa-exclamation-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-exclamation-triangle"></i> fa-exclamation-triangle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-external-link"></i> fa-external-link</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-external-link-square"></i> fa-external-link-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eye"></i> fa-eye</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eye-slash"></i> fa-eye-slash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eyedropper"></i> fa-eyedropper</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fax"></i> fa-fax</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-female"></i> fa-female</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fighter-jet"></i> fa-fighter-jet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-archive-o"></i> fa-file-archive-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-audio-o"></i> fa-file-audio-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-code-o"></i> fa-file-code-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-excel-o"></i> fa-file-excel-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-image-o"></i> fa-file-image-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-movie-o"></i> fa-file-movie-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-pdf-o"></i> fa-file-pdf-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-photo-o"></i> fa-file-photo-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-picture-o"></i> fa-file-picture-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-powerpoint-o"></i> fa-file-powerpoint-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-sound-o"></i> fa-file-sound-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-video-o"></i> fa-file-video-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-word-o"></i> fa-file-word-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-zip-o"></i> fa-file-zip-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-film"></i> fa-film</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-filter"></i> fa-filter</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fire"></i> fa-fire</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fire-extinguisher"></i> fa-fire-extinguisher</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flag"></i> fa-flag</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flag-checkered"></i> fa-flag-checkered</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flag-o"></i> fa-flag-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flash"></i> fa-flash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flask"></i> fa-flask</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-folder"></i> fa-folder</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-folder-o"></i> fa-folder-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-folder-open"></i> fa-folder-open</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-folder-open-o"></i> fa-folder-open-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-frown-o"></i> fa-frown-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-futbol-o"></i> fa-futbol-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gamepad"></i> fa-gamepad</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gavel"></i> fa-gavel</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gear"></i> fa-gear</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gears"></i> fa-gears</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gift"></i> fa-gift</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-glass"></i> fa-glass</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-globe"></i> fa-globe</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-graduation-cap"></i> fa-graduation-cap</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-group"></i> fa-group</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hdd-o"></i> fa-hdd-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-headphones"></i> fa-headphones</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-heart"></i> fa-heart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-heart-o"></i> fa-heart-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-history"></i> fa-history</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-home"></i> fa-home</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-image"></i> fa-image</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-inbox"></i> fa-inbox</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-info"></i> fa-info</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-info-circle"></i> fa-info-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-institution"></i> fa-institution</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-key"></i> fa-key</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-keyboard-o"></i> fa-keyboard-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-language"></i> fa-language</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-laptop"></i> fa-laptop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-leaf"></i> fa-leaf</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-legal"></i> fa-legal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-lemon-o"></i> fa-lemon-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-level-down"></i> fa-level-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-level-up"></i> fa-level-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-life-bouy"></i> fa-life-bouy</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-life-buoy"></i> fa-life-buoy</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-life-ring"></i> fa-life-ring</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-life-saver"></i> fa-life-saver</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-lightbulb-o"></i> fa-lightbulb-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-line-chart"></i> fa-line-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-location-arrow"></i> fa-location-arrow</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-lock"></i> fa-lock</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-magic"></i> fa-magic</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-magnet"></i> fa-magnet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mail-forward"></i> fa-mail-forward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mail-reply"></i> fa-mail-reply</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mail-reply-all"></i> fa-mail-reply-all</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-male"></i> fa-male</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-map-marker"></i> fa-map-marker</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-meh-o"></i> fa-meh-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-microphone"></i> fa-microphone</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-microphone-slash"></i> fa-microphone-slash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus"></i> fa-minus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus-circle"></i> fa-minus-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus-square"></i> fa-minus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mobile"></i> fa-mobile</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mobile-phone"></i> fa-mobile-phone</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-money"></i> fa-money</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-moon-o"></i> fa-moon-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-mortar-board"></i> fa-mortar-board</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-music"></i> fa-music</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-navicon"></i> fa-navicon</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-newspaper-o"></i> fa-newspaper-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paint-brush"></i> fa-paint-brush</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paper-plane"></i> fa-paper-plane</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paper-plane-o"></i> fa-paper-plane-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paw"></i> fa-paw</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pencil"></i> fa-pencil</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pencil-square"></i> fa-pencil-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pencil-square-o"></i> fa-pencil-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-phone"></i> fa-phone</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-phone-square"></i> fa-phone-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-photo"></i> fa-photo</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-picture-o"></i> fa-picture-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pie-chart"></i> fa-pie-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plane"></i> fa-plane</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plug"></i> fa-plug</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus"></i> fa-plus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-circle"></i> fa-plus-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-square"></i> fa-plus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-power-off"></i> fa-power-off</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-print"></i> fa-print</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-puzzle-piece"></i> fa-puzzle-piece</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-qrcode"></i> fa-qrcode</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-question"></i> fa-question</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-question-circle"></i> fa-question-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-quote-left"></i> fa-quote-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-quote-right"></i> fa-quote-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-random"></i> fa-random</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-recycle"></i> fa-recycle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-refresh"></i> fa-refresh</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-remove"></i> fa-remove</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-reorder"></i> fa-reorder</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-reply"></i> fa-reply</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-reply-all"></i> fa-reply-all</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-retweet"></i> fa-retweet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-road"></i> fa-road</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rocket"></i> fa-rocket</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rss"></i> fa-rss</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rss-square"></i> fa-rss-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-search"></i> fa-search</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-search-minus"></i> fa-search-minus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-search-plus"></i> fa-search-plus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-send"></i> fa-send</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-send-o"></i> fa-send-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share"></i> fa-share</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-alt"></i> fa-share-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-alt-square"></i> fa-share-alt-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-square"></i> fa-share-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-square-o"></i> fa-share-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-shield"></i> fa-shield</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-shopping-cart"></i> fa-shopping-cart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sign-in"></i> fa-sign-in</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sign-out"></i> fa-sign-out</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-signal"></i> fa-signal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sitemap"></i> fa-sitemap</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sliders"></i> fa-sliders</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-smile-o"></i> fa-smile-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-soccer-ball-o"></i> fa-soccer-ball-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort"></i> fa-sort</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-alpha-asc"></i> fa-sort-alpha-asc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-alpha-desc"></i> fa-sort-alpha-desc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-amount-asc"></i> fa-sort-amount-asc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-amount-desc"></i> fa-sort-amount-desc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-asc"></i> fa-sort-asc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-desc"></i> fa-sort-desc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-down"></i> fa-sort-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-numeric-asc"></i> fa-sort-numeric-asc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-numeric-desc"></i> fa-sort-numeric-desc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sort-up"></i> fa-sort-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-space-shuttle"></i> fa-space-shuttle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-spinner"></i> fa-spinner</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-spoon"></i> fa-spoon</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-square"></i> fa-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-square-o"></i> fa-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star"></i> fa-star</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star-half"></i> fa-star-half</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star-half-empty"></i> fa-star-half-empty</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star-half-full"></i> fa-star-half-full</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star-half-o"></i> fa-star-half-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-star-o"></i> fa-star-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-suitcase"></i> fa-suitcase</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sun-o"></i> fa-sun-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-support"></i> fa-support</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tablet"></i> fa-tablet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tachometer"></i> fa-tachometer</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tag"></i> fa-tag</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tags"></i> fa-tags</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tasks"></i> fa-tasks</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-taxi"></i> fa-taxi</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-terminal"></i> fa-terminal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-thumb-tack"></i> fa-thumb-tack</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-thumbs-down"></i> fa-thumbs-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-thumbs-o-down"></i> fa-thumbs-o-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-thumbs-o-up"></i> fa-thumbs-o-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-thumbs-up"></i> fa-thumbs-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ticket"></i> fa-ticket</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-times"></i> fa-times</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-times-circle"></i> fa-times-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-times-circle-o"></i> fa-times-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tint"></i> fa-tint</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-down"></i> fa-toggle-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-left"></i> fa-toggle-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-off"></i> fa-toggle-off</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-on"></i> fa-toggle-on</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-right"></i> fa-toggle-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-up"></i> fa-toggle-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-trash"></i> fa-trash</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-trash-o"></i> fa-trash-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tree"></i> fa-tree</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-trophy"></i> fa-trophy</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-truck"></i> fa-truck</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tty"></i> fa-tty</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-umbrella"></i> fa-umbrella</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-university"></i> fa-university</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-unlock"></i> fa-unlock</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-unlock-alt"></i> fa-unlock-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-unsorted"></i> fa-unsorted</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-upload"></i> fa-upload</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-user"></i> fa-user</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-users"></i> fa-users</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-video-camera"></i> fa-video-camera</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-volume-down"></i> fa-volume-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-volume-off"></i> fa-volume-off</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-volume-up"></i> fa-volume-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-warning"></i> fa-warning</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wheelchair"></i> fa-wheelchair</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wifi"></i> fa-wifi</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wrench"></i> fa-wrench</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file"></i> fa-file</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-archive-o"></i> fa-file-archive-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-audio-o"></i> fa-file-audio-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-code-o"></i> fa-file-code-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-excel-o"></i> fa-file-excel-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-image-o"></i> fa-file-image-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-movie-o"></i> fa-file-movie-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-o"></i> fa-file-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-pdf-o"></i> fa-file-pdf-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-photo-o"></i> fa-file-photo-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-picture-o"></i> fa-file-picture-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-powerpoint-o"></i> fa-file-powerpoint-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-sound-o"></i> fa-file-sound-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-text"></i> fa-file-text</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-text-o"></i> fa-file-text-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-video-o"></i> fa-file-video-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-word-o"></i> fa-file-word-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-zip-o"></i> fa-file-zip-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle-o-notch"></i> fa-circle-o-notch</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cog"></i> fa-cog</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gear"></i> fa-gear</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-refresh"></i> fa-refresh</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-spinner"></i> fa-spinner</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-square"></i> fa-check-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-check-square-o"></i> fa-check-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle"></i> fa-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-circle-o"></i> fa-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus-square"></i> fa-minus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-square"></i> fa-plus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-square"></i> fa-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-square-o"></i> fa-square-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-amex"></i> fa-cc-amex</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-discover"></i> fa-cc-discover</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-mastercard"></i> fa-cc-mastercard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-paypal"></i> fa-cc-paypal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-stripe"></i> fa-cc-stripe</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-visa"></i> fa-cc-visa</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-credit-card"></i> fa-credit-card</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-google-wallet"></i> fa-google-wallet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paypal"></i> fa-paypal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-area-chart"></i> fa-area-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bar-chart"></i> fa-bar-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bar-chart-o"></i> fa-bar-chart-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-line-chart"></i> fa-line-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pie-chart"></i> fa-pie-chart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bitcoin"></i> fa-bitcoin</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-btc"></i> fa-btc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cny"></i> fa-cny</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dollar"></i> fa-dollar</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eur"></i> fa-eur</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-euro"></i> fa-euro</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gbp"></i> fa-gbp</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ils"></i> fa-ils</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-inr"></i> fa-inr</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-jpy"></i> fa-jpy</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-krw"></i> fa-krw</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-money"></i> fa-money</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rmb"></i> fa-rmb</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rouble"></i> fa-rouble</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rub"></i> fa-rub</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ruble"></i> fa-ruble</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rupee"></i> fa-rupee</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-shekel"></i> fa-shekel</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-sheqel"></i> fa-sheqel</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-try"></i> fa-try</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-turkish-lira"></i> fa-turkish-lira</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-usd"></i> fa-usd</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-won"></i> fa-won</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-yen"></i> fa-yen</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-align-center"></i> fa-align-center</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-align-justify"></i> fa-align-justify</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-align-left"></i> fa-align-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-align-right"></i> fa-align-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bold"></i> fa-bold</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chain"></i> fa-chain</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chain-broken"></i> fa-chain-broken</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-clipboard"></i> fa-clipboard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-columns"></i> fa-columns</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-copy"></i> fa-copy</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cut"></i> fa-cut</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dedent"></i> fa-dedent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eraser"></i> fa-eraser</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file"></i> fa-file</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-o"></i> fa-file-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-text"></i> fa-file-text</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-file-text-o"></i> fa-file-text-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-files-o"></i> fa-files-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-floppy-o"></i> fa-floppy-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-font"></i> fa-font</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-header"></i> fa-header</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-indent"></i> fa-indent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-italic"></i> fa-italic</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-link"></i> fa-link</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-list"></i> fa-list</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-list-alt"></i> fa-list-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-list-ol"></i> fa-list-ol</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-list-ul"></i> fa-list-ul</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-outdent"></i> fa-outdent</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paperclip"></i> fa-paperclip</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paragraph"></i> fa-paragraph</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paste"></i> fa-paste</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-repeat"></i> fa-repeat</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rotate-left"></i> fa-rotate-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rotate-right"></i> fa-rotate-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-save"></i> fa-save</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-scissors"></i> fa-scissors</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-strikethrough"></i> fa-strikethrough</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-subscript"></i> fa-subscript</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-superscript"></i> fa-superscript</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-table"></i> fa-table</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-text-height"></i> fa-text-height</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-text-width"></i> fa-text-width</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-th"></i> fa-th</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-th-large"></i> fa-th-large</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-th-list"></i> fa-th-list</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-underline"></i> fa-underline</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-undo"></i> fa-undo</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-unlink"></i> fa-unlink</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-double-down"></i> fa-angle-double-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-double-left"></i> fa-angle-double-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-double-right"></i> fa-angle-double-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-double-up"></i> fa-angle-double-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-down"></i> fa-angle-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-left"></i> fa-angle-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-right"></i> fa-angle-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angle-up"></i> fa-angle-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-down"></i> fa-arrow-circle-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-left"></i> fa-arrow-circle-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-o-down"></i> fa-arrow-circle-o-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-o-up"></i> fa-arrow-circle-o-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-right"></i> fa-arrow-circle-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-circle-up"></i> fa-arrow-circle-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-down"></i> fa-arrow-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-left"></i> fa-arrow-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-right"></i> fa-arrow-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrow-up"></i> fa-arrow-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows"></i> fa-arrows</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-h"></i> fa-arrows-h</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-v"></i> fa-arrows-v</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-down"></i> fa-caret-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-left"></i> fa-caret-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-right"></i> fa-caret-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-caret-up"></i> fa-caret-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-circle-down"></i> fa-chevron-circle-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-circle-left"></i> fa-chevron-circle-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-circle-right"></i> fa-chevron-circle-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-circle-up"></i> fa-chevron-circle-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-down"></i> fa-chevron-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-left"></i> fa-chevron-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-right"></i> fa-chevron-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-chevron-up"></i> fa-chevron-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hand-o-down"></i> fa-hand-o-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hand-o-left"></i> fa-hand-o-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hand-o-right"></i> fa-hand-o-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hand-o-up"></i> fa-hand-o-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-long-arrow-down"></i> fa-long-arrow-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-long-arrow-left"></i> fa-long-arrow-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-long-arrow-right"></i> fa-long-arrow-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-long-arrow-up"></i> fa-long-arrow-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-down"></i> fa-toggle-down</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-left"></i> fa-toggle-left</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-right"></i> fa-toggle-right</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-toggle-up"></i> fa-toggle-up</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-backward"></i> fa-backward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-compress"></i> fa-compress</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-eject"></i> fa-eject</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-expand"></i> fa-expand</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fast-backward"></i> fa-fast-backward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-fast-forward"></i> fa-fast-forward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-forward"></i> fa-forward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pause"></i> fa-pause</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-play"></i> fa-play</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-play-circle"></i> fa-play-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-play-circle-o"></i> fa-play-circle-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-step-backward"></i> fa-step-backward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-step-forward"></i> fa-step-forward</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stop"></i> fa-stop</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-youtube-play"></i> fa-youtube-play</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-adn"></i> fa-adn</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-android"></i> fa-android</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-angellist"></i> fa-angellist</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-apple"></i> fa-apple</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-behance"></i> fa-behance</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-behance-square"></i> fa-behance-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bitbucket"></i> fa-bitbucket</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bitbucket-square"></i> fa-bitbucket-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-bitcoin"></i> fa-bitcoin</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-btc"></i> fa-btc</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-amex"></i> fa-cc-amex</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-discover"></i> fa-cc-discover</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-mastercard"></i> fa-cc-mastercard</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-paypal"></i> fa-cc-paypal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-stripe"></i> fa-cc-stripe</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-cc-visa"></i> fa-cc-visa</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-codepen"></i> fa-codepen</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-css3"></i> fa-css3</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-delicious"></i> fa-delicious</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-deviantart"></i> fa-deviantart</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-digg"></i> fa-digg</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dribbble"></i> fa-dribbble</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-dropbox"></i> fa-dropbox</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-drupal"></i> fa-drupal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-empire"></i> fa-empire</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-facebook"></i> fa-facebook</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-facebook-square"></i> fa-facebook-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-flickr"></i> fa-flickr</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-foursquare"></i> fa-foursquare</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ge"></i> fa-ge</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-git"></i> fa-git</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-git-square"></i> fa-git-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-github"></i> fa-github</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-github-alt"></i> fa-github-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-github-square"></i> fa-github-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-gittip"></i> fa-gittip</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-google"></i> fa-google</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-google-plus"></i> fa-google-plus</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-google-plus-square"></i> fa-google-plus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-google-wallet"></i> fa-google-wallet</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hacker-news"></i> fa-hacker-news</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-html5"></i> fa-html5</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-instagram"></i> fa-instagram</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ioxhost"></i> fa-ioxhost</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-joomla"></i> fa-joomla</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-jsfiddle"></i> fa-jsfiddle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-lastfm"></i> fa-lastfm</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-lastfm-square"></i> fa-lastfm-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-linkedin"></i> fa-linkedin</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-linkedin-square"></i> fa-linkedin-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-linux"></i> fa-linux</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-maxcdn"></i> fa-maxcdn</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-meanpath"></i> fa-meanpath</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-openid"></i> fa-openid</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pagelines"></i> fa-pagelines</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-paypal"></i> fa-paypal</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pied-piper"></i> fa-pied-piper</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pied-piper-alt"></i> fa-pied-piper-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pinterest"></i> fa-pinterest</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-pinterest-square"></i> fa-pinterest-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-qq"></i> fa-qq</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ra"></i> fa-ra</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-rebel"></i> fa-rebel</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-reddit"></i> fa-reddit</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-reddit-square"></i> fa-reddit-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-renren"></i> fa-renren</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-alt"></i> fa-share-alt</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-share-alt-square"></i> fa-share-alt-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-skype"></i> fa-skype</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-slack"></i> fa-slack</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-slideshare"></i> fa-slideshare</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-soundcloud"></i> fa-soundcloud</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-spotify"></i> fa-spotify</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stack-exchange"></i> fa-stack-exchange</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stack-overflow"></i> fa-stack-overflow</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-steam"></i> fa-steam</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-steam-square"></i> fa-steam-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stumbleupon"></i> fa-stumbleupon</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stumbleupon-circle"></i> fa-stumbleupon-circle</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tencent-weibo"></i> fa-tencent-weibo</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-trello"></i> fa-trello</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tumblr"></i> fa-tumblr</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-tumblr-square"></i> fa-tumblr-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-twitch"></i> fa-twitch</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-twitter"></i> fa-twitter</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-twitter-square"></i> fa-twitter-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-vimeo-square"></i> fa-vimeo-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-vine"></i> fa-vine</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-vk"></i> fa-vk</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wechat"></i> fa-wechat</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-weibo"></i> fa-weibo</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-weixin"></i> fa-weixin</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-windows"></i> fa-windows</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wordpress"></i> fa-wordpress</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-xing"></i> fa-xing</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-xing-square"></i> fa-xing-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-yahoo"></i> fa-yahoo</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-yelp"></i> fa-yelp</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-youtube"></i> fa-youtube</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-youtube-play"></i> fa-youtube-play</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-youtube-square"></i> fa-youtube-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-ambulance"></i> fa-ambulance</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-h-square"></i> fa-h-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-hospital-o"></i> fa-hospital-o</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-medkit"></i> fa-medkit</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-plus-square"></i> fa-plus-square</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-stethoscope"></i> fa-stethoscope</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-user-md"></i> fa-user-md</div>
-                    <div class="fa-item col-lg-3 col-md-4"><i class="fa fa-wheelchair"></i> fa-wheelchair</div>
-                  </div>
-                </div>
-                <!-- END FONT AWEOMSE -->
-              </div>
-            </div>
           </div>
         </div>
         <!-- END PAGE CONTENT -->
@@ -1621,11 +676,9 @@
         <!-- START CONTAINER FLUID -->
         <div class=" container-fluid  container-fixed-lg footer">
           <div class="copyright sm-text-center">
-            <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2017 </span>
-              <span class="font-montserrat">REVOX</span>.
-              <span class="hint-text">All rights reserved. </span>
-              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
+            <p class="small-text no-margin pull-left sm-pull-reset">
+              ©2014-2020 All Rights Reserved. Pages® and/or its subsidiaries or affiliates are registered trademark of Revox Ltd.
+              <span class="hint-text m-l-15">Pages v05.23 20201105.r.190</span>
             </p>
             <p class="small no-margin pull-right sm-pull-reset">
               Hand-crafted <span class="hint-text">&amp; made with Love</span>
@@ -1643,16 +696,16 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="">
-          <a href="#quickview-notes" data-target="#quickview-notes" data-toggle="tab" role="tab">Notes</a>
+          <a href="#quickview-notes" data-bs-target="#quickview-notes" data-bs-toggle="tab" role="tab">Notes</a>
         </li>
         <li>
-          <a href="#quickview-alerts" data-target="#quickview-alerts" data-toggle="tab" role="tab">Alerts</a>
+          <a href="#quickview-alerts" data-bs-target="#quickview-alerts" data-bs-toggle="tab" role="tab">Alerts</a>
         </li>
         <li class="">
-          <a class="active" href="#quickview-chat" data-toggle="tab" role="tab">Chat</a>
+          <a class="active" href="#quickview-chat" data-bs-toggle="tab" role="tab">Chat</a>
         </li>
       </ul>
-      <a class="btn-link quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-close"></i></a>
+      <a class="btn-icon-link invert quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-icon">close</i></a>
       <!-- Tab panes -->
       <div class="tab-content">
         <!-- BEGIN Notes !-->
@@ -1663,20 +716,20 @@
               <div class="toolbar clearfix">
                 <ul class="pull-right ">
                   <li>
-                    <a href="#" class="delete-note-link"><i class="fa fa-trash-o"></i></a>
+                    <a href="#" class="delete-note-link"><i class="pg-icon">trash_alt</i></a>
                   </li>
                   <li>
-                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-plus"></i></a>
+                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">add</i></a>
                   </li>
                 </ul>
-                <button class="btn-remove-notes btn btn-xs btn-block hide"><i class="fa fa-times"></i> Delete</button>
+                <button aria-label="" class="btn-remove-notes btn btn-xs btn-block hide"><i class="pg-icon">close</i>Delete</button>
               </div>
               <ul>
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="1">
+                <li data-noteid="1" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox1" type="checkbox" value="1">
                       <label for="qncheckbox1"></label>
                     </div>
@@ -1686,20 +739,22 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push">
+                      <i class="pg-icon">chevron_right</i>
+                    </a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox2" type="checkbox" value="1">
                       <label for="qncheckbox2"></label>
                     </div>
@@ -1709,20 +764,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="2">
+                <li data-noteid="2" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox3" type="checkbox" value="1">
                       <label for="qncheckbox3"></label>
                     </div>
@@ -1732,20 +787,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="3">
+                <li data-noteid="3" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox4" type="checkbox" value="1">
                       <label for="qncheckbox4"></label>
                     </div>
@@ -1755,20 +810,20 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
                 </li>
                 <!-- END Note List !-->
                 <!-- BEGIN Note Item !-->
-                <li data-noteid="4">
+                <li data-noteid="4" class="d-flex justify-space-between">
                   <div class="left">
                     <!-- BEGIN Note Action !-->
-                    <div class="checkbox check-warning no-margin">
+                    <div class="form-check warning no-margin">
                       <input id="qncheckbox5" type="checkbox" value="1">
                       <label for="qncheckbox5"></label>
                     </div>
@@ -1778,10 +833,10 @@
                     <!-- BEGIN Note Preview Text !-->
                   </div>
                   <!-- BEGIN Note Details !-->
-                  <div class="right pull-right">
+                  <div class="d-flex right justify-content-end">
                     <!-- BEGIN Note Date !-->
-                    <span class="date">12/12/14</span>
-                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <span class="date">12/12/20</span>
+                    <a href="#" class="d-flex align-items-center" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="pg-icon">chevron_right</i></a>
                     <!-- END Note Date !-->
                   </div>
                   <!-- END Note Details !-->
@@ -1793,19 +848,19 @@
             <div class="view note" id="quick-note">
               <div>
                 <ul class="toolbar">
-                  <li><a href="#" class="close-note-link"><i class="pg-arrow_left"></i></a>
+                  <li><a href="#" class="close-note-link"><i class="pg-icon">chevron_left</i></a>
                   </li>
-                  <li><a href="#" data-action="Bold" class="fs-12"><i class="fa fa-bold"></i></a>
+                  <li><a href="#" data-action="Bold" class="fs-12"><i class="pg-icon">format_bold</i></a>
                   </li>
-                  <li><a href="#" data-action="Italic" class="fs-12"><i class="fa fa-italic"></i></a>
+                  <li><a href="#" data-action="Italic" class="fs-12"><i class="pg-icon">format_italics</i></a>
                   </li>
-                  <li><a href="#" class="fs-12"><i class="fa fa-link"></i></a>
+                  <li><a href="#" class="fs-12"><i class="pg-icon">link</i></a>
                   </li>
                 </ul>
                 <div class="body">
                   <div>
                     <div class="top">
-                      <span>21st april 2014 2:13am</span>
+                      <span>21st april 2020 2:13am</span>
                     </div>
                     <div class="content">
                       <div class="quick-note-editor full-width full-height js-input" contenteditable="true"></div>
@@ -1826,16 +881,16 @@
               <div class="navbar navbar-default navbar-sm">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-more"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
                     Notications
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-search"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">search</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1856,14 +911,14 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">David Nester Birthday</span>
+                          <span class="text-color">David Nester Birthday</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today <br></span>
-                          <span class="text-master">All Day</span>
+                          <span class="text-color">All Day</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1875,10 +930,10 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-warning fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="p-l-10 overflow-ellipsis fs-12">
-                          <span class="text-master">Meeting at 2:30</span>
+                          <span class="text-color">Meeting at 2:30</span>
                         </p>
                         <p class="p-r-10 ml-auto fs-12 text-right">
                           <span class="text-warning">Today</span>
@@ -1902,11 +957,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1917,11 +972,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="javascript:;" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-complete fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">Jame Smith commented on your status<br></span>
-                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                          <span class="text-color link">Jame Smith commented on your status<br></span>
+                          <span class="text-color">“Perfection Simplified - Company Revox"</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1941,11 +996,11 @@
                       <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
                       <a href="#" class="p-t-10 p-b-10 align-items-center" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
                         <p class="">
-                          <span class="text-danger fs-10"><i class="fa fa-circle"></i></span>
+                          <span class="text-danger fs-10"><i class="pg-icon">circle_fill</i></span>
                         </p>
                         <p class="col overflow-ellipsis fs-12 p-l-10">
-                          <span class="text-master link">12:13AM GTM, 10230, ID:WR174s<br></span>
-                          <span class="text-master">Server Load Exceeted. Take action</span>
+                          <span class="text-color link">12:13AM GTM, 10230, ID:WR174s<br></span>
+                          <span class="text-color">Server Load Exceeted. Take action</span>
                         </p>
                       </a>
                       <!-- END Alert Item!-->
@@ -1967,8 +1022,8 @@
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
                   <!-- BEGIN Header Controler !-->
-                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-plus"></i>
+                  <a href="javascript:;" class="action p-l-10 link text-color" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">add</i>
                   </a>
                   <!-- END Header Controler !-->
                   <div class="view-heading">
@@ -1976,8 +1031,8 @@
                     <div class="fs-11">Show All</div>
                   </div>
                   <!-- BEGIN Header Controler !-->
-                  <a href="#" class="inline action p-r-10 pull-right link text-master">
-                    <i class="pg-more"></i>
+                  <a href="#" class="action p-r-10 pull-right link text-color">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                   <!-- END Header Controler !-->
                 </div>
@@ -1995,8 +1050,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ava flores</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ava flores</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2013,8 +1068,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bella mccoy</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bella mccoy</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2026,8 +1081,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">bob stephens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">bob stephens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2044,8 +1099,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">carole roberts</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">carole roberts</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2057,8 +1112,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">christopher perez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">christopher perez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2075,8 +1130,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">danielle fletcher</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">danielle fletcher</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2088,8 +1143,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">david sutton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">david sutton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2106,8 +1161,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">earl hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">earl hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2119,8 +1174,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">elaine lawrence</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">elaine lawrence</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2132,8 +1187,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">ellen grant</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">ellen grant</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2145,8 +1200,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">erik taylor</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">erik taylor</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2158,8 +1213,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">everett wagner</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">everett wagner</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2176,8 +1231,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">freddie gomez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">freddie gomez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2194,8 +1249,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">glen jensen</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">glen jensen</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2207,8 +1262,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">gwendolyn walker</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">gwendolyn walker</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2225,8 +1280,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">janet romero</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">janet romero</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2243,8 +1298,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">kim martinez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">kim martinez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2261,8 +1316,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lawrence white</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lawrence white</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2274,8 +1329,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">leroy bell</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">leroy bell</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2287,8 +1342,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">letitia carr</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">letitia carr</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2300,8 +1355,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">lucy castro</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">lucy castro</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2318,8 +1373,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mae hayes</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mae hayes</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2331,8 +1386,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marilyn owens</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marilyn owens</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2344,8 +1399,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marlene cole</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marlene cole</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2357,8 +1412,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha warren</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha warren</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2370,8 +1425,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">marsha dean</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">marsha dean</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2383,8 +1438,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">mia diaz</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">mia diaz</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2402,8 +1457,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">noah elliott</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">noah elliott</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2420,8 +1475,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">phyllis hamilton</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">phyllis hamilton</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2438,8 +1493,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">raul rodriquez</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">raul rodriquez</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2451,8 +1506,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">rhonda barnett</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">rhonda barnett</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2464,8 +1519,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">roberta king</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">roberta king</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2482,8 +1537,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">scott armstrong</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">scott armstrong</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2495,8 +1550,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sebastian austin</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sebastian austin</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2508,8 +1563,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">sofia davis</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">sofia davis</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2526,8 +1581,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">terrance young</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">terrance young</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2539,8 +1594,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">theodore woods</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">theodore woods</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2552,8 +1607,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">todd wood</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">todd wood</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2565,8 +1620,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">tommy jenkins</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">tommy jenkins</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2583,8 +1638,8 @@
                             <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
                         </span>
                         <p class="p-l-10 ">
-                          <span class="text-master">wilma hicks</span>
-                          <span class="block text-master hint-text fs-12">Hello there</span>
+                          <span class="text-color">wilma hicks</span>
+                          <span class="block text-color hint-text fs-12">Hello there</span>
                         </p>
                       </a>
                     </li>
@@ -2598,15 +1653,15 @@
               <!-- BEGIN Header  !-->
               <div class="navbar navbar-default">
                 <div class="navbar-inner">
-                  <a href="javascript:;" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
-                    <i class="pg-arrow_left"></i>
+                  <a href="javascript:;" class="link text-color action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-icon">chevron_left</i>
                   </a>
                   <div class="view-heading">
                     John Smith
                     <div class="fs-11 hint-text">Online</div>
                   </div>
-                  <a href="#" class="link text-master inline action p-r-10 pull-right ">
-                    <i class="pg-more"></i>
+                  <a href="#" class="link text-color action p-r-10 pull-right ">
+                    <i class="pg-icon">more_horizontal</i>
                   </a>
                 </div>
               </div>
@@ -2660,13 +1715,14 @@
               <div class="b-t b-grey bg-white clearfix p-l-10 p-r-10">
                 <div class="row">
                   <div class="col-1 p-t-15">
-                    <a href="#" class="link text-master"><i class="fa fa-plus-circle"></i></a>
+                    <a href="#" class="link text-color"><i class="pg-icon">add</i></a>
                   </div>
                   <div class="col-8 no-padding">
+                    <label class="d-none">Reply</label>
                     <input type="text" class="form-control chat-input" data-chat-input="" data-chat-conversation="#my-conversation" placeholder="Say something">
                   </div>
-                  <div class="col-2 link text-master m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
-                    <a href="#" class="link text-master"><i class="pg-camera"></i></a>
+                  <div class="col-2 link text-color m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
+                    <a href="#" class="link text-color"><i class="pg-icon">camera</i></a>
                   </div>
                 </div>
               </div>
@@ -2688,8 +1744,8 @@
           <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
           <!-- END Overlay Logo !-->
           <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light overlay-close text-black fs-16">
-            <i class="pg-close"></i>
+          <a href="#" class="close-icon-light btn-link btn-rounded  overlay-close text-black">
+            <i class="pg-icon">close</i>
           </a>
           <!-- END Overlay Close !-->
         </div>
@@ -2698,111 +1754,104 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <div class="inline-block">
-            <div class="checkbox right">
-              <input id="checkboxn" type="checkbox" value="1" checked="checked">
-              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
+          <div class="d-flex align-items-center">
+            <div class="form-check right m-b-0">
+              <input id="checkboxn" type="checkbox" value="1">
+              <label for="checkboxn">Search within page</label>
             </div>
-          </div>
-          <div class="inline-block m-l-10">
-            <p class="fs-13">Press enter to search</p>
+            <p class="fs-13 hint-text m-l-10 m-b-0">Press enter to search</p>
           </div>
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span>
-                <strong>suggestions :</strong>
+        <div class="container-fluid p-t-20">
+          <span class="hint-text">
+                suggestions :
             </span>
-          <span id="overlay-suggestions"></span>
+          <span class="overlay-suggestions"></span>
           <br>
-          <div class="search-results m-t-40">
-            <p class="bold">Pages Search Results</p>
+          <div class="search-results m-t-30">
+            <p class="bold">Pages Search Results: <span class="overlay-suggestions"></span></p>
             <div class="row">
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>
-                      <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <img width="36" height="36" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="hint-text">via john smith</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on pages</h5>
+                    <p class="small-text hint-text">via john smith</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
                     <div>T</div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="hint-text">via pages</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> related topics</h5>
+                    <p class="small-text hint-text">via pages</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div><i class="fa fa-headphones large-text "></i>
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white ">
+                    <div>M
                     </div>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="hint-text">via pagesmix</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> music</h5>
+                    <p class="small-text hint-text">via pagesmix</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
               </div>
               <div class="col-md-6">
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                    <div><i class="fa fa-facebook large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-info text-white d-flex align-items-center">
+                    <i class="pg-icon">facebook</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="hint-text">via facebook</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin "><span class="semi-bold result-name">ice cream</span> on facebook</h5>
+                    <p class="small-text hint-text">via facebook</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                    <div><i class="fa fa-twitter large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular bg-complete text-white d-flex align-items-center">
+                    <i class="pg-icon">twitter</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via twitter</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via twitter</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
                 <!-- BEGIN Search Result Item !-->
-                <div class="">
+                <div class="d-flex m-t-15">
                   <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                    <div><i class="fa fa-google-plus large-text "></i>
-                    </div>
+                  <div class="thumbnail-wrapper d48 circular text-white bg-danger d-flex align-items-center">
+                    <i class="pg-icon">google_plus</i>
                   </div>
                   <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via google plus</p>
+                  <div class="p-l-10">
+                    <h5 class="no-margin ">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="small-text hint-text">via google plus</p>
                   </div>
                 </div>
                 <!-- END Search Result Item !-->
@@ -2817,6 +1866,8 @@
     <!-- END OVERLAY -->
     <!-- BEGIN VENDOR JS -->
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
+    <script src="assets/plugins/liga.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
@@ -2829,7 +1880,6 @@
     <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
     <script type="text/javascript" src="assets/plugins/select2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
-    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery.sieve.min.js" type="text/javascript"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
@@ -2841,7 +1891,6 @@
     <!-- END PAGE LEVEL JS -->
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
-    <script src="assets/js/icon.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
   </body>

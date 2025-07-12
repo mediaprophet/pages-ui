@@ -1,19 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  FormControl,
-  Validators,
-  ReactiveFormsModule
-} from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-form-layouts',
   templateUrl: './form-layouts.component.html',
   styleUrls: ['./form-layouts.component.scss']
 })
 export class FormLayoutsComponent implements OnInit {
-
-  //Sample Form Data 
+  //Sample Form Data
   fName;
   lName;
   username;
@@ -22,29 +15,27 @@ export class FormLayoutsComponent implements OnInit {
   HorizontalfName;
   HorizontalWork;
   HorizontalPosition;
-  
-  constructor(private fb: FormBuilder) { 
+
+  constructor(private fb: UntypedFormBuilder) {
     this.attachedForm = this.fb.group({
-      projectName :[ '', [ Validators.required ] ],
-      firstName :[ '', [ Validators.required ] ],
-      lastName :[ '', [ Validators.required ] ],
-      investor :[ '', [ Validators.required ] ],
-      startDate :[ '', [ Validators.required ] ],
-      endDate :[ '', [ Validators.required ] ],
-      budget :[ '', [ Validators.required ] ],
-      profit :[ '', [ Validators.required ] ],
-      revenue :[ '', [ Validators.required ] ],
-      url :[ '', [ Validators.required ] ],
+      projectName: ['', [Validators.required]],
+      firstName: ['', [Validators.required]],
+      lastName: ['', [Validators.required]],
+      investor: ['', [Validators.required]],
+      startDate: ['', [Validators.required]],
+      endDate: ['', [Validators.required]],
+      budget: ['', [Validators.required]],
+      profit: ['', [Validators.required]],
+      revenue: ['', [Validators.required]],
+      url: ['', [Validators.required]]
     });
-    
   }
-  attachedForm: FormGroup;
-  ngOnInit() {
-  }
+  attachedForm: UntypedFormGroup;
+  ngOnInit() {}
   isFieldValid(field: string) {
     return !this.attachedForm.get(field).valid && this.attachedForm.get(field).touched;
   }
-  
+
   displayFieldCss(field: string) {
     return {
       'has-error': this.isFieldValid(field),
@@ -53,11 +44,11 @@ export class FormLayoutsComponent implements OnInit {
   }
 
   getFormControl(name) {
-    return this.attachedForm.controls[ name ];
+    return this.attachedForm.controls[name];
   }
   _submitForm() {
     for (const i in this.attachedForm.controls) {
-      this.attachedForm.controls[ i ].markAsDirty();
+      this.attachedForm.controls[i].markAsDirty();
     }
   }
 }
